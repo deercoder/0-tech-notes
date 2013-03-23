@@ -1,15 +1,15 @@
-1. 在后缀名为.c或者.h的文件中查找内容为rotateX的函数，
+1. 锟节猴拷缀锟斤拷为.c锟斤拷锟斤拷.h锟斤拷锟侥硷拷锟叫诧拷锟斤拷锟斤拷锟斤拷为rotateX锟侥猴拷锟斤拷锟斤拷
 find -name *.[ch] | xargs grep -E "rotateX"
 
-2. bashrc 与 bashprofile的区别
-/etc/bash.bashrc: 当前用户有效
-/etc/bashprofile: 所有用户有效
-~/.bashrc: 当前用户有效(每次新建一个bash执行一次)
-~/.bashprofile: 所有用户有效(系统启动的时候执行一次)
+2. bashrc 锟斤拷 bashprofile锟斤拷锟斤拷锟斤拷
+/etc/bash.bashrc: 锟斤拷前锟矫伙拷锟斤拷效
+/etc/bashprofile: 锟斤拷锟斤拷锟矫伙拷锟斤拷效
+~/.bashrc: 锟斤拷前锟矫伙拷锟斤拷效(每锟斤拷锟铰斤拷一锟斤拷bash执锟斤拷一锟斤拷)
+~/.bashprofile: 锟斤拷锟斤拷锟矫伙拷锟斤拷效(系统锟斤拷锟斤拷锟斤拷时锟斤拷执锟斤拷一锟斤拷)
 
 ## Note: must add gid and uid to get write access. no matter what option you set
-sudo mount -t smbfs -o rw,username=liuchang,password=tplinkliuchang,uid=liuchang,gid=liuchang //172.31.130.100/liuchang ~/100-server/
-sudo mount -t smbfs -o rw,username=liuchang,password=tplinkliuchang,uid=liuchang,gid=liuchang //172.31.130.130/liuchang ~/130-server/
-sudo mount -t smbfs -o rw,username=liuchang,password=tplinkliuchang,uid=liuchang,gid=liuchang //172.31.130.100/liuchang/mini ~/mini/
+sudo mount -t smbfs -o rw,username=liuchang,password=uid=liuchang,gid=liuchang //172.31.130.100/liuchang ~/100-server/
+sudo mount -t smbfs -o rw,username=liuchang,password,uid=liuchang,gid=liuchang //172.31.130.130/liuchang ~/130-server/
+sudo mount -t smbfs -o rw,username=liuchang,password=,uid=liuchang,gid=liuchang //172.31.130.100/liuchang/mini ~/mini/
 ### The above part is used to mount automatically
 
