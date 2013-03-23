@@ -1,0 +1,76 @@
+李果正先生之 GNU/Linux 初学者之旅： http://info.sayya.org/~edt1023/linux_entry.html  
+鸟哥这里有也一个备份 
+http://linux.vbird.org/linux_basic/0120howtolinux/0120howtolinux_3.php  
+?  信息人的有效学习(洪朝贵教授网页) 
+http://www.cyut.edu.tw/~ckhung/published/018learn.shtml  
+
+
+=========
+
+?  Linux 自己的文件数据： /usr/share/doc (在你的 PC 中)  
+?  CLDP 中文文件计划 http://www.linux.org.tw/CLDP/  
+?  Unix 的一般常见问题 http://www.csie.nctu.edu.tw/document/unixfaq/ 
+?  The Linux Documentation Project：http://www.tldp.org/  
+
+
+=======
+
+?  Study-Area http://www.study-area.org  
+?  鸟哥的私房菜馆 http://linux.vbird.org  
+?  狼主的网络实验室 http://netlab.kh.edu.tw/index.htm  
+?  卧龙大师的网络技术文件 http://linux.tnc.edu.tw/techdoc/  
+?  大南国小（林克敏主任文件集） http://freebsd.lab.mlc.edu.tw/  
+?  张毓麟先生的小文章 http://www.se.ntou.edu.tw/~ylchang/MyDocuments/index.html  
+?  台湾 Linux 社群 http://www.linux.org.tw/  
+?  吴仁智的文件集 http://www.cses.tcc.edu.tw/~chihwu/  
+
+
+=========
+
+?  请推荐有关网络的书 
+http://linux.vbird.org/linux_basic/0120howtolinux/0120howtolinux_1.php 
+
+?  计算机基础 (http://www.study-area.org/compu/compu.htm)  
+?  网络基础 (http://www.study-area.org/network/network.htm)  
+
+========
+
+?  杨老师的图解桌面 http://apt.nc.hcc.edu.tw/docs/FC3_X/  
+?  中文指南 http://tw.ubuntuguide.org/  
+
+=======
+
+?  Ubuntu: http://www.ubuntulinux.org/  
+?  Novell SuSE: http://www.novell.com/linux/suse/  
+?  Mandriva: http://www.mandriva.com  
+
+
+=====
+
+?  有系统地设计档案目录﹐不要随便到处保存档案以至以后不知道放哪里了﹐ 或找到档案也不知
+道为何物。  
+?  养成一个做记录的习惯。尤其是发现问题的时候﹐把错误信息和引发状况以及 解决方法记录清楚
+﹐同时最后归类几定期整理。别以为您还年轻﹐ 等你再弄多几年计算机了﹐您将会非常庆幸您有
+此一习惯。  
+?  如果看在网络上看到任何好文章﹐可以为自己留一份copy﹐同时定好题目﹐归类存档。  
+?  作为一个使用者﹐人要迁就机器﹔做为一个开发者﹐要机器迁就人。  
+?  学写 script 的确没设定 server 那么好玩﹐不过以我自己的感觉是﹕ 关键是会得“偷”﹐偷
+了会得改﹐改了会得变﹐变则通矣。  
+?  在Windows里面﹐设定不好设备﹐您可以骂它﹔在Linux里面﹐如果设定好设备了﹐您得要感激
+它﹗  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

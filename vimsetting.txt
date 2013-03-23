@@ -1,0 +1,24 @@
+## Standard setting for gvim/Vim in /etc/vim/vimrc.
+### Note: I use it in my office with gvim & vim
+
+set nu
+set tabstop=4
+set expandtab
+set shiftwidth=4
+set nobackup
+set softtabstop=4
+" encoding
+set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=utf-8
+"set fileencodings=ucs-bom,utf-8,chinese,latin-1
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set langmenu=zh_CN.utf-8
+set fileformats=unix,dos
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+language messages zh_CN.UTF-8
+
+### Doesn't need to set for /etc/vim/gvim as it may read /etc/vim/vimrc
+### the location /usr/share/vimrc or gvimrc is soft link to /etc/vim/vimrc or gvimrc, so don't need to change it when you change /etc/vim/vimrc it will refer to it
+

@@ -1,0 +1,19 @@
+How to surf internet in the computer using smartphone network in Ubuntu?
+
+Description:
+A computer (Ubuntu 11.04)
+A smartphone(Galaxy Nexus)
+
+Target:
+Surf the internet in the computer, the network we use the phone, not the computer.
+
+Steps:
+1. plug usb in the computer.
+2. in smartphone, More - Tethering&portable hotspot - USB tethering
+   set on the option.
+3. Disconnect the computer wire or wifi. only leaves the usb 
+4. select the usb network to use this internet.
+5. (Option) If we want to use other network, then turn on the WIFI or plug in the wire. We then could both use these network.
+
+
+

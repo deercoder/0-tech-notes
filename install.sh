@@ -1,0 +1,1 @@
+wget -q -O - https://raw.github.com/gist/2204072/install_tmux_1.6_on_ubuntu_10.04.sh | sudo bash

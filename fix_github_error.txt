@@ -1,0 +1,20 @@
+Fix github push error:
+
+when using github in the office through proxy, even though I set right the proxy address using:
+
+export http_proxy=xxxxx
+export https_proxy=xxxxx
+
+I cannot push to the remote successfully.
+Howerver I can successuflly git pull using https or http proxy.
+
+After stackoverflowing the answers, I find that using following method fix the problem:(http://stackoverflow.com/questions/7700824/rpc-failed-result-28-http-code-0)
+
+git config --global http.postBuffer 524288000
+
+after setting it, you can git push as much as you like, enjoy it!
+
+=========================================================================
+
+No other means could fix it and I could only use https proxy to post because of the network setting in the office.
+

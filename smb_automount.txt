@@ -1,0 +1,24 @@
+# 如何挂载Smaba共享目录到Linux下面的文件，映射为一个磁盘？
+
+在linux下挂载windows系统的网络共享磁盘:
+mount -t smbfs -o username=longyufei,password=123456 //192.168.0.80/E$ /mnt/samba
+
+删除挂载点！
+umount /mnt/samba/
+
+在linux下挂载linux的Smaba服务磁盘：
+mount -t smbfs -o username=lyf,password=123456 //192.168.0.80/lyf /www/t_disk
+
+删除挂载点！
+umount /mnt/t_disk/
+
+挂载linux系统的NFS网络共享磁盘
+mount -t nfs -o rw 192.168.0.80:/home/lyf /mnt/nfs
+
+windows环境下访问linux下的NFS共享目录，不怎么方便！建议使用Smaba服务器！.
+就可以是\\方式访问了。
+
+==========================================================================
+WINDOWS系统的网络磁盘只能是一个盘符，比如上面例子中的E$，而Linux则可以挂载某个
+目录，比如上面的lyf这个文件夹。
+

@@ -1,0 +1,17 @@
+GitHub可以使用Https的方式来拉取更新，推送代码。
+
+e.g: git pull https://github.com/deercoder/HelloWorld.git
+拉取更新完毕之后，本地上进行修改。
+git add .
+git commit -a
+
+然后进行提交。
+git push https://github.com/deercoder/HelloWorld.git
+会提示输入信息，然后输入即可。
+username:
+password:
+
+使用别名机制来保存url，避免每一次都输入相关的用户名和密码。
+git remote add https://github.com/deercoder/HelloWorld.git
+
+

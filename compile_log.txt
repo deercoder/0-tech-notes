@@ -1,0 +1,69 @@
+## 关于程序Debug信息的输出和Log系统的分析 ##
+
+在程序中，可能有很多信息是需要在DEBUG版本的时候输出的，而有些信息，则可以不必要输出，编写
+Release版本的时候，就可以不输出相应的信息。
+
+那么，在C语言中如何快速的做到这一点，不需要频繁的加入注释呢？一种做法就是，使用预编译指令。
+
+在前面也说到，预编译指定定义一个宏，然后在要输出的信息的地方，加入对应的判断，如果定义了相关
+宏则输出，大致的框架应该是：
+
+#define SHOWLOG
+// if we want to show log, then in the code add this
+#ifdef SHOWLOG
+   balabala
+#endif
+
+上面的这个框架，只需要在每个需要加入的地方都加上上面的话就可以了。
+但是，阅读内核源码后凡发现，Linux提供了一套更好的机制来实现。即进一步封装。
+
+在开头加入对应的宏定义的函数，
+#ifdef DEBUG
+#define dbg(func parameter)
+    printf("debug only output")
+#else
+#define dbg(func paramter)
+    printf("release only output")
+#endif
+
+这样，我们只需要在需要加上Log的地方，加入dbg(paramter)，就可以实现，
+1. debug版本情况下，直接输出相关信息。（实际上定义体可以加入参数，%s，%d等来灵活输出信息）
+2. release版本输出对应的消息，或者压根就不输出，任何事情不做。（这样就相当于没有Log信息）
+
+注：
+在C-Free中测试的时候，虽然没有下面的文件中没有加入#define DEBUG，但是发现是按照DEBUG来输出，
+这是因为编译器默认的就使用的时DEBUG来编译出来的，切换选项为RELEASE后，发现就是走的下面的流程，
+按照RELEASE来编译出来的，Log也是输出的Release版本的，这就是编译器默认的一个处理，其实也就相
+当于定义了一个宏DEBUG或者没有定义而已。
+
+
+=========================================================================================
+P.S: The following is the program
+
+#include<stdio.h>
+
+#ifdef DEBUG
+#define dbg(format, arg...)                                             \
+        printf("%s: " format "\n", __FILE__, ##arg)
+#else
+#define dbg(format, arg...)                                             \
+do {                                                                    \
+        if (0)                                                          \
+                printf( "%s: " format "\n", __FILE__, ##arg); \
+} while (0)
+#endif
+
+#define err(format, arg...)                                     \
+        printf(": " format "\n", ##arg)
+
+
+int main()
+{
+	#ifdef DEBUG
+		printf("default is debug Mode\n");
+	#endif
+    dbg("test");
+	return 0;
+}
+
+

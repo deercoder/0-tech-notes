@@ -1,0 +1,15 @@
+1. 在后缀名为.c或者.h的文件中查找内容为rotateX的函数，
+find -name *.[ch] | xargs grep -E "rotateX"
+
+2. bashrc 与 bashprofile的区别
+/etc/bash.bashrc: 当前用户有效
+/etc/bashprofile: 所有用户有效
+~/.bashrc: 当前用户有效(每次新建一个bash执行一次)
+~/.bashprofile: 所有用户有效(系统启动的时候执行一次)
+
+## Note: must add gid and uid to get write access. no matter what option you set
+sudo mount -t smbfs -o rw,username=liuchang,password=tplinkliuchang,uid=liuchang,gid=liuchang //172.31.130.100/liuchang ~/100-server/
+sudo mount -t smbfs -o rw,username=liuchang,password=tplinkliuchang,uid=liuchang,gid=liuchang //172.31.130.130/liuchang ~/130-server/
+sudo mount -t smbfs -o rw,username=liuchang,password=tplinkliuchang,uid=liuchang,gid=liuchang //172.31.130.100/liuchang/mini ~/mini/
+### The above part is used to mount automatically
+

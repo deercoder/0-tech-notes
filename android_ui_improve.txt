@@ -1,0 +1,21 @@
+Andrido UI 优化方案总结（EOE 特刊25期）
+
+1. 当layout里面用到了LinearLayout的时候，子View使用android:layout_weight来自动进行排布，可以认为是自适应不错的选择。
+
+当LinearLayout的android:orientation为horizontal时，将layout_weight属性的子View的layout_width设置为0dp，当android:orientation为vertical的时候，将layout_weight属性的子View的layout_height设置为0dp，这样可以减少LinearLayout再onMeasure时的计算量。
+
+2. 界面适配
+(1) 布局可以使用不同的文件夹分别来表示不同的屏幕分辨率，比如layout-480x800,layout-480x320等等。
+(2) 图片配置，分别在不同的文件夹下放置对应的图片资源，比如draw-hdpi, draw-mdpi, draw-ldpi等。
+(3) 在AndroidManifest文件中，增加相关的设置，具体来说就是：
+    <supports-screens android:largeScreens="true"
+            android:normalScreens="true"
+            android:anyDensity="true"
+            android:smallScreens="true">
+    </supports-screens>
+    这样，就能够支持各种尺寸的屏幕分辨率了，并且在没有合适的屏幕分辨率下，使用其他图片资源来进行压缩或者拉伸以显示。
+
+关于图片资源，可以在不同的屏幕分辨率下面使用不同的图片，对于需要拉伸的纯色或者不需要那么复杂的制作相应的资源，而且那样图片体积较大，可以使用9patch图片制作对应的资源，这样会自动拉伸，同时节省大小。
+
+
+

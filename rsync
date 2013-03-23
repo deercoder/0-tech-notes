@@ -1,0 +1,9 @@
+Rsync 使用办法：
+
+拷贝100服务器上面的liuchang文件夹下面的bin目录下面的文件至当前目录
+rsync -avz liuchang@172.31.130.100:bin/ .
+
+拷贝100服务器上面的liuchang文件夹下面的bin目录（包括下面的文件）至当前目录
+rsync -avz liuchang@172.31.130.100:bin .
+
+

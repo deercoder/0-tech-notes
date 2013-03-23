@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Python_Set_Up_Google.md</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+body{
+    margin: 0 auto;
+    font-family: Georgia, Palatino, serif;
+    color: #444444;
+    line-height: 1;
+    max-width: 960px;
+    padding: 5px;
+}
+h1, h2, h3, h4 {
+    color: #111111;
+    font-weight: 400;
+}
+h1, h2, h3, h4, h5, p {
+    margin-bottom: 16px;
+    padding: 0;
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    font-size: 22px;
+    margin: 20px 0 6px;
+}
+h3 {
+    font-size: 21px;
+}
+h4 {
+    font-size: 18px;
+}
+h5 {
+    font-size: 16px;
+}
+a {
+    color: #0099ff;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+a:hover {
+    text-decoration: none;
+    color: #ff6600;
+}
+a:visited {
+    color: purple;
+}
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+li {
+    line-height: 24px;
+    margin-left: 44px;
+}
+li ul, li ul {
+    margin-left: 24px;
+}
+p, ul, ol {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 540px;
+}
+pre {
+    padding: 0px 24px;
+    max-width: 800px;
+    white-space: pre-wrap;
+}
+code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+}
+aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+blockquote {
+    border-left:.5em solid #eee;
+    padding: 0 2em;
+    margin-left:0;
+    max-width: 476px;
+}
+blockquote  cite {
+    font-size:14px;
+    line-height:20px;
+    color:#bfbfbf;
+}
+blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
+blockquote p {  
+    color: #666;
+    max-width: 460px;
+}
+hr {
+    width: 540px;
+    text-align: left;
+    margin: 0 auto 0 0;
+    color: #999;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+}
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+}
+/* override default chrome & firefox settings */
+input:not([type="image"]), textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+label,
+input,
+select,
+textarea {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+input[type=checkbox], input[type=radio] {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+input[type=text],
+input[type=password],
+textarea,
+select {
+  display: inline-block;
+  width: 210px;
+  padding: 4px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 18px;
+  height: 18px;
+  color: #808080;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+select, input[type=file] {
+  height: 27px;
+  line-height: 27px;
+}
+textarea {
+  height: auto;
+}
+
+/* grey out placeholders */
+:-moz-placeholder {
+  color: #bfbfbf;
+}
+::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+input[type=text],
+input[type=password],
+select,
+textarea {
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+  outline: none;
+  border-color: rgba(82, 168, 236, 0.8);
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+/* buttons */
+button {
+  display: inline-block;
+  padding: 4px 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background-color: #0064cd;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#049cdb), to(#0064cd));
+  background-image: -moz-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -ms-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #049cdb), color-stop(100%, #0064cd));
+  background-image: -webkit-linear-gradient(top, #049cdb, #0064cd);
+  background-image: -o-linear-gradient(top, #049cdb, #0064cd);
+  background-image: linear-gradient(top, #049cdb, #0064cd);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  border: 1px solid #004b9a;
+  border-bottom-color: #003f81;
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+  border-color: #0064cd #0064cd #003f81;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+button:hover {
+  color: #fff;
+  background-position: 0 -15px;
+  text-decoration: none;
+}
+button:active {
+  -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* CSS stylesheet is based on Kevin Burke's Markdown.css project (http://kevinburke.bitbucket.org/markdowncss) */
+</style>
+</head>
+<body>
+<h1>Python Set Up</h1>
+
+<p><a href="http://code.google.com/edu/">Google Code University</a> › <a href="http://code.google.com/edu/languages/">Programming Languages</a></p>
+
+<p>This page explains how to set up Python on a machine so you can run and edit Python programs, and links to the exercise code to download. You can do this before starting the class, or you can leave it until you've gotten far enough in the class that you want to write some code. The Google Python Class uses a simple, standard Python installation, although more complex strategies are possible. Python is free and open source, available for all operating systems from <a href="http://python.org">python.org</a>. In particular we want a Python install where you can do two things:</p>
+
+<ul>
+<li>Run an existing python program, such as hello.py</li>
+<li>Run the Python interpreter interactively, so you can type code right at it</li>
+</ul>
+
+<p>Both of the above are done quite a lot in the lecture videos, and it's definitely something you need to be able to do to solve the exercises.</p>
+
+<hr />
+
+<h2>Download Google Python Exercises</h2>
+
+<p>As a first step, download the <a href="http://code.google.com/edu/languages/google-python-class/google-python-exercises.zip">google-python-exercises.zip</a> file and unzip it someplace where you can work on it. The resulting google-python-exercises directory contains many different python code exercises you can work on. In particular, google-python-exercises contains a simple hello.py file you can use in the next step to check that Python is working on your machine. Below are Python instructions for Windows and all other operation systems:</p>
+
+<hr />
+
+<h3>Python on Linux, Mac OS X, etc.</h3>
+
+<p>Most operating systems other than Windows already have Python installed by default. To check that Python is installed, open a command line (typically by running the "Terminal" program), and cd to the google-python-exercises directory. Try the following to run the hello.py program (what you type is shown in bold):</p>
+
+<pre><code>    ~/google-python-exercises$ python hello.py
+    Hello World
+    ~/google-python-exercises$ python hello.py Alice
+    Hello Alice
+</code></pre>
+
+<p>If python is not installed, see the <a href="http://python.org/download">Python.org download</a> page. To run the Python interpreter interactively, just type "python" in the terminal:</p>
+
+<pre><code>    ~/google-python-exercises$ python
+    Python 2.5.2 (r252:60911, Feb 22 2008, 07:57:53) 
+    [GCC 4.0.1 (Apple Computer, Inc. build 5363)] on darwin
+    Type "help", "copyright", "credits" or "license" for more information.
+    &gt;&gt;&gt; 1 + 1
+    2
+    &gt;&gt;&gt; you can type expressions here .. use ctrl-d to exit
+</code></pre>
+
+<p>For Google's Python Class, you want a python version that is 2.4 or later, and avoiding the 3.x versions for now is probably best.</p>
+
+<h4>Execute Bit (optional)</h4>
+
+<p>The commands above are the simplest way to run python programs. If the "execute bit" is set on a .py file, it can be run by name without having to type "python" first. Set the execute bit with the "chmod" command like this:</p>
+
+<pre><code>    ~/google-python-exercises$ chmod +x hello.py
+    ~/google-python-exercises$ ./hello.py   ## now can run it as ./hello.py
+    Hello World
+</code></pre>
+
+<hr />
+
+<h3>Python on Windows</h3>
+
+<p>Doing a basic Python install on Windows is easy:</p>
+
+<ul>
+<li>Go to the python.org download page, select a version such as 2.6. Google's Python Class should work with any version 2.4 or later, and avoiding the 3.x versions for now is probably best.</li>
+<li>Run the Python installer, taking all the defaults. This will install Python in the root directory and set up some file associations.</li>
+<li><p>With Python installed, open a command prompt (Accessories > Command Prompt, or type 'cmd' into the run dialog). Cd to the google-python-exercises directory (from unzipping google-python-exercises.zip). You should be able to run the hello.py python program by typing "python" followed by "hello.py" (what you type is shown in bold):</p>
+
+<pre><code>C:\google-python-exercises&gt; python hello.py
+Hello World
+C:\google-python-exercises&gt; python hello.py Alice
+Hello Alice
+</code></pre></li>
+</ul>
+
+<p>If this works, Python is installed. Otherwise, see <a href="http://www.python.org/doc/faq/windows/">Python Windows FAQ</a> for help.</p>
+
+<p>To run the Python interpreter interactively, select the Run... command from the Start menu, and type "python" -- this will launch Python interactively in its own window. On Windows, use Ctrl-Z to exit (on all other operating systems it's Ctrl-D to exit).</p>
+
+<p>In the lecture videos, we generally run the Python programs with commands like "./hello.py". On Windows, it's simplest to use the "python hello.py" form.</p>
+
+<hr />
+
+<h2>Editing Python (all operating systems)</h2>
+
+<p>A Python program is just a text file that you edit directly. As above, you should have a command line open, where you can type "python hello.py Alice" to run whatever exercise you are working on. At the command line prompt, just hit the up-arrow key to recall previously typed commands, so it's easy to run previous commands without retyping them.</p>
+
+<p>You want a text editor with a little understanding of code and indentation. There are many good free ones:</p>
+
+<ul>
+<li>Windows -- do not use Notepad or Wordpad. Try the free and open source<br />
+Notepad++ or the free and open source JEdit</li>
+<li>Mac -- The built in TextEdit works, but not very well. Try the free TextWrangler or the free and open source JEdit</li>
+<li>Linux -- any unix text editor is fine, or try the above JEdit.</li>
+</ul>
+
+<h4>Editor Settings</h4>
+
+<p>To edit Python, we advocate the strategy that when you hit the tab key, your editor inserts spaces rather than a real tab character. All our files use 2-spaces as the indent, and 4-spaces is another popular choice. It's also handy if the editor will "auto indent" so when you hit return, the new line starts with the same indentation as the previous line. We also recommend saving your files with the unix line-ending convention, since that's how the various starter files are set up. If running hello.py gives the error "Unknown option: -", the file may have the wrong line-ending. Here are the preferences to set for common editors to treat tabs and line-endings correctly for Python:</p>
+
+<ul>
+<li>Windows Notepad++ -- Tabs: Settings > Preferences > Edit Components > Tab settings, and Settings > Preferences > MISC for auto-indent. Line endings: Format > Convert, set to Unix.</li>
+<li>JEdit (any OS) -- Line endings: Little 'U' 'W' 'M' on status bar, set it to 'U' (i.e. Unix line-endings)</li>
+<li>Windows Notepad or Wordpad -- do not use</li>
+<li>Mac TextWrangler -- Tabs: Preference button at the top of the window, check Auto Expand Tabs. Can set the default in Defaults > Auto-Expand Tabs and Auto-indent. Line endings: little control at the bottom of each window, set it to Unix</li>
+<li>Mac TextEdit -- do not use</li>
+<li>Unix pico -- Tabs: Esc-q toggles tab mode, Esc-i to turns on auto-indent mode</li>
+<li>Unix emacs -- Tabs: manually set tabs-inserts-spaces mode: M-x set-variable(return) indent-tabs-mode(return) nil</li>
+</ul>
+
+<hr />
+
+<h3>Editing Check</h3>
+
+<p>To try out your editor, edit the the hello.py program. Change the word "Hello" in the code to the word "Howdy" (you don't need to understand all the other Python code in there ... we'll explain it all in class). Save your edits and run the program to see its new output. Try adding a "print 'yay!'" just below the existing print and with the same indentation. Try running the program, to see that your edits work correctly. For class we want an edit/run workflow that allows you to switch between editing and running easily.</p>
+
+<hr />
+
+<h3>Quick Python Style</h3>
+
+<p>One of the advantages of Python is that it makes it easy to type a little code and quickly see what it does. In class, we want a work setup that matches that .. a text text editor working on the current file.py, and a separate command line window where you can just hit the up-arrow key to run file.py and see what it does. (Teaching philosophy aside: the interpreter is great for little experiments, as shown throughout the lectures. However, the exercises are structured as Python files that students edit. Since being able to write Python programs is the ultimate goal, I felt it was best to be in that mode the whole time, using the interpreter just for little experiments.)</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

@@ -1,0 +1,3335 @@
+<5>[    0.000000] Linux version 2.6.35.7+ (liuchang@dev-server) (gcc version 4.4.3 (GCC) ) #345 PREEMPT Fri Sep 7 11:08:36 CST 2012
+<4>[    0.000000] CPU: ARMv7 Processor [560f5815] revision 5 (ARMv7), cr=10c53c7f
+<4>[    0.000000] CPU: VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+<4>[    0.000000] Machine: G50
+<6>[    0.000000] parse_tag_profile: use uboot's fuse value
+<4>[    0.000000] Memory policy: ECC disabled, Data cache writeback
+<7>[    0.000000] On node 0 totalpages: 131072
+<7>[    0.000000] free_area_init_node: node 0, pgdat c0745304, node_mem_map c08de000
+<7>[    0.000000]   Normal zone: 1024 pages used for memmap
+<7>[    0.000000]   Normal zone: 0 pages reserved
+<7>[    0.000000]   Normal zone: 130048 pages, LIFO batch:31
+<4>[    0.000000] Built 1 zonelists in Zone order, mobility grouping off.  Total pages: 130048
+<5>[    0.000000] Kernel command line: rdinit=/busybox/rdinit androidboot.console=ttyS2 console=ttyS2,38400 mem=512M android mbr_offset=0x4800 reserve_dram=0x8000000
+<6>[    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+<6>[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+<6>[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+<6>[    0.000000] Memory: 512MB = 512MB total
+<5>[    0.000000] Memory: 379656k/379656k available, 144632k reserved, 0K highmem
+<5>[    0.000000] Virtual kernel memory layout:
+<5>[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+<5>[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+<5>[    0.000000]     DMA     : 0xffc00000 - 0xffe00000   (   2 MB)
+<5>[    0.000000]     vmalloc : 0xe0800000 - 0xfe000000   ( 472 MB)
+<5>[    0.000000]     lowmem  : 0xc0000000 - 0xe0000000   ( 512 MB)
+<5>[    0.000000]     modules : 0xbf000000 - 0xc0000000   (  16 MB)
+<5>[    0.000000]       .init : 0xc0008000 - 0xc0115000   (1076 kB)
+<5>[    0.000000]       .text : 0xc0115000 - 0xc06e8000   (5964 kB)
+<5>[    0.000000]       .data : 0xc0708000 - 0xc0745ae0   ( 247 kB)
+<6>[    0.000000] Hierarchical RCU implementation.
+<6>[    0.000000] 	RCU-based detection of stalled CPUs is disabled.
+<6>[    0.000000] 	Verbose stalled-CPUs detection is disabled.
+<6>[    0.000000] NR_IRQS:320 nr_irqs:368
+<7>[    0.000000]   alloc irq_desc for 16 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 17 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 18 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 19 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 20 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 21 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 22 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 23 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 24 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 25 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 26 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 27 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 28 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 29 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 30 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 31 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 32 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 33 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 34 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 35 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 36 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 37 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 38 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 39 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 40 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 41 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 42 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 43 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 44 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 45 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 46 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 47 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 48 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 49 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 50 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 51 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 52 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 53 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 54 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 55 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 56 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 57 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 58 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 59 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 60 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 61 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 62 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 63 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 64 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 65 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 66 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 67 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 68 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 69 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 70 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 71 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 72 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 73 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 74 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 75 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 76 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 77 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 78 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 79 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 80 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 81 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 82 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 83 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 84 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 85 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 86 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 87 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 88 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 89 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 90 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 91 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 92 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 93 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 94 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 95 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 96 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 97 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 98 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 99 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 100 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 101 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 102 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 103 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 104 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 105 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 106 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 107 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 108 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 109 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 110 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 111 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 112 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 113 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 114 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 115 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 116 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 117 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 118 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 119 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 120 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 121 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 122 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 123 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 124 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 125 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 126 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 127 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 128 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 129 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 130 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 131 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 132 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 133 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 134 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 135 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 136 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 137 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 138 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 139 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 140 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 141 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 142 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 143 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 144 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 145 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 146 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 147 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 148 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 149 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 150 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 151 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 152 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 153 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 154 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 155 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 156 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 157 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 158 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 159 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 160 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 161 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 162 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 163 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 164 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 165 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 166 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 167 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 168 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 169 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 170 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 171 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 172 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 173 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 174 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 175 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 176 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 177 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 178 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 179 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 180 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 181 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 182 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 183 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 184 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 185 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 186 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 187 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 188 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 189 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 190 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 191 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 192 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 193 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 194 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 195 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 196 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 197 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 198 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 199 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 200 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 201 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 202 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 203 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 204 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 205 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 206 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 207 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 208 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 209 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 210 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 211 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 212 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 213 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 214 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 215 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 216 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 217 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 218 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 219 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 220 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 221 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 222 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 223 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 224 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 225 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 226 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 227 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 228 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 229 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 230 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 231 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 232 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 233 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 234 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 235 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 236 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 237 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 238 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 239 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 240 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 241 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 242 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 243 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 244 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 245 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 246 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 247 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 248 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 249 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 250 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 251 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 252 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 253 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 254 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 255 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 256 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 257 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 258 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 259 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 260 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 261 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 262 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 263 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 264 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 265 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 266 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 267 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 268 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 269 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 270 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 271 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 272 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 273 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 274 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 275 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 276 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 277 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 278 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 279 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 280 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 281 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 282 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 283 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 284 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 285 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 286 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 287 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 288 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 289 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 290 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 291 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 292 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 293 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 294 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 295 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 296 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 297 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 298 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 299 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 300 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 301 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 302 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 303 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 304 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 305 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 306 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 307 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 308 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 309 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 310 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 311 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 312 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 313 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 314 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 315 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 316 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 317 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 318 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 319 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 320 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 321 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 322 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 323 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 324 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 325 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 326 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 327 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 328 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 329 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 330 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 331 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 332 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 333 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 334 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 335 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 336 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 337 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 338 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 339 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 340 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 341 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 342 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 343 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 344 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 345 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 346 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 347 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 348 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 349 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 350 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 351 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 352 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 353 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 354 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 355 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 356 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 357 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 358 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 359 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 360 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 361 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 362 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 363 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 364 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 365 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 366 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<7>[    0.000000]   alloc irq_desc for 367 on node 0
+<7>[    0.000000]   alloc kstat_irqs on node 0
+<4>[    0.000000] Console: colour dummy device 80x30
+<3>[    0.000000] ram_console: buffer (null), invalid size 0, datasize 4294967284
+<6>[    0.000091] Calibrating delay loop... 799.53 BogoMIPS (lpj=3997696)
+<6>[    0.230865] pid_max: default: 32768 minimum: 301
+<4>[    0.231048] Mount-cache hash table entries: 512
+<6>[    0.231323] CPU: Testing write buffer coherency: ok
+<6>[    0.234954] regulator: core version 0.5
+<6>[    0.235138] NET: Registered protocol family 16
+<6>[    0.235168] Tauros2: Disable L2 prefetch, burst8 and WCO.
+<6>[    0.235199] Tauros2: Enabling L2 cache.
+<6>[    0.235199] Tauros2: CP15 extra feature register: 0x61000000
+<6>[    0.235199] Tauros2: L2 cache support initialised in ARMv7 mode.
+<6>[    0.256713] mmp2: sspa driverwas loaded
+<6>[    0.256744] mmp2: sspa driverwas loaded
+<4>[    0.256805] wtm has been enabled by secure core!
+<6>[    0.256836] mmp2-fuse: probe mmp2 fuse device
+<4>[    0.261963] bio: create slab <bio-0> at 0
+<5>[    0.262817] SCSI subsystem initialized
+<6>[    0.262939] usbcore: registered new interface driver usbfs
+<6>[    0.263031] usbcore: registered new interface driver hub
+<6>[    0.263122] usbcore: registered new device driver usb
+<6>[    0.265686] I2C: i2c-0: PXA I2C adapter
+<6>[    0.267944] I2C: i2c-1: PXA I2C adapter
+<6>[    0.270202] I2C: i2c-3: PXA I2C adapter
+<6>[    0.272644] I2C: i2c-2: PXA I2C adapter
+<6>[    0.274902] I2C: i2c-4: PXA I2C adapter
+<6>[    0.277252] I2C: i2c-5: PXA I2C adapter
+<6>[    0.277618] Advanced Linux Sound Architecture Driver Version 1.0.23.
+<6>[    0.277954] Bluetooth: Core ver 2.15
+<6>[    0.278015] NET: Registered protocol family 31
+<6>[    0.278015] Bluetooth: HCI device and connection manager initialized
+<6>[    0.278045] Bluetooth: HCI socket layer initialized
+<6>[    0.278167] Switching to clocksource 32k
+<6>[    0.283325] NET: Registered protocol family 2
+<6>[    0.283447] IP route cache hash table entries: 4096 (order: 2, 16384 bytes)
+<6>[    0.283752] TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+<6>[    0.284118] TCP bind hash table entries: 16384 (order: 4, 65536 bytes)
+<6>[    0.284301] TCP: Hash tables configured (established 16384 bind 16384)
+<6>[    0.284301] TCP reno registered
+<6>[    0.284332] UDP hash table entries: 256 (order: 0, 4096 bytes)
+<6>[    0.284362] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+<6>[    0.284485] NET: Registered protocol family 1
+<6>[    0.284729] RPC: Registered udp transport module.
+<6>[    0.284759] RPC: Registered tcp transport module.
+<6>[    0.284759] RPC: Registered tcp NFSv4.1 backchannel transport module.
+<6>[    0.292938] Use Elpida DDR3 512M config
+<7>[    0.292938] Probing voltage/frequency change resources
+<7>[    0.292968] initializing op table for MMP2
+<7>[    0.292999] proc->nr_op: 11
+<7>[    0.293029] op_init, def_op:3, cur_op:3
+<7>[    0.293029] Current Operating Point is 3
+<6>[    0.293304] Initialize MMP2 MSPM
+<6>[    0.293365] Intel(c) Memory Management - SRAM Allocation
+<6>[    0.293396] Intel(c) Memory Management is now Enabled
+<6>[    0.296814] ashmem: initialized
+<6>[    0.297851] JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+<6>[    0.298126] fuse init (API version 7.14)
+<6>[    0.298370] msgmni has been set to 741
+<6>[    0.299621] io scheduler noop registered
+<6>[    0.299621] io scheduler deadline registered
+<6>[    0.299682] io scheduler cfq registered (default)
+<4>[    0.302063] fb0 no dsi info
+<4>[    0.317108] arm_vmregion_alloc: allocation too big (requested 0x709000)
+<4>[    0.317352] ---------FB DMA buffer phy addr : 19800000
+<6>[    0.355987] fb0: sclk_src 400000000 clk_get_rate = 398665000
+<6>[    0.558777] pxa168fb: frame buffer device was loaded to /dev/fb0 <GFX Layer>.
+<4>[    0.558868] fb1 no dsi info
+<6>[    0.558899] fb1: sclk_src 0 clk_get_rate = 0
+<6>[    0.559692] pxa168fb: frame buffer device was loaded to /dev/fb1 <GFX Layer - TV>.
+<7>[    0.560089] dma_desc_array_ch1 = 0xd8070000
+<7>[    0.560119] dma_desc_array_ch2 = 0xd9710000
+<7>[    0.560119] dma_desc_array_phys_ch1 = 0x18070000
+<7>[    0.560119] dma_desc_array_phys_ch2 = 0x19710000
+<6>[    0.560211] memcpy and memset by mdma was loaded!
+<6>[    0.560364] MMP2 system setting module was loaded
+<6>[    0.560455] pxa2xx-uart.2: ttyS2 at MMIO 0xd4018000 (irq = 24) is a STUART
+<6>[    2.034974] console [ttyS2] enabled
+<6>[    2.045563] pxa2xx-uart.3: ttyS3 at MMIO 0xd4016000 (irq = 46) is a HWUART
+<6>[    2.072236] loop: module loaded
+<6>[    2.081696] pmem: 1 1 init
+<6>[    2.093995] pmem_adsp: 0 0 init
+<6>[    2.103577] Android kernel panic handler initialized (bind=kpanic)
+<6>[    2.122986] PPP generic driver version 2.4.2
+<6>[    2.135895] PPP Deflate Compression module registered
+<6>[    2.151002] PPP BSD Compression module registered
+<6>[    2.165803] PPP MPPE Compression module registered
+<6>[    2.180268] NET: Registered protocol family 24
+<6>[    2.193726] usbcore: registered new interface driver asix
+<6>[    2.209931] usbcore: registered new interface driver cdc_ether
+<6>[    2.227448] usbcore: registered new interface driver cdc_eem
+<6>[    2.244446] usbcore: registered new interface driver smsc95xx
+<6>[    2.261689] usbcore: registered new interface driver net1080
+<6>[    2.278657] usbcore: registered new interface driver cdc_subset
+<6>[    2.296418] usbcore: registered new interface driver zaurus
+<6>[    2.313172] usbcore: registered new interface driver MOSCHIP usb-ethernet driver
+<4>[    2.337403] hdmi_probe hpd 0x0------------
+<6>[    2.349671] set_dvfm_constraint: HDMI ! dvfm_set 0
+<4>[    2.368745] u2otg regbase 0xe900a000 res->start d4208000 pxa_otg->info c070d360
+<6>[    2.390687] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+<6>[    2.410401] pxau2o-ehci pxau2o-ehci: u2oehci regbase 0xe900e000 irq 44
+<6>[    2.430115] pxau2h-ehci pxau2h-ehci: u2h regbase 0xe9012000 phybase 0xe9016800 irq 34, clk: FSICCLK
+<7>[    2.457215] g50_ulpi_pwmclk_init:enable ulpi clock
+<6>[    2.462281] mmp2_fsic_enable select PMU 60MHz clock for FSIC/SPH3 FSIC_CTRL 100
+<6>[    2.591401] pxau2h-ehci pxau2h-ehci: Marvell PXA SOC EHCI Host Controller
+<6>[    2.611787] pxau2h-ehci pxau2h-ehci: new USB bus registered, assigned bus number 1
+<6>[    2.660523] pxau2h-ehci pxau2h-ehci: irq 34, io mem 0xf0003000
+<6>[    2.690553] pxau2h-ehci pxau2h-ehci: USB 2.0 started, EHCI 1.00
+<6>[    2.708711] hub 1-0:1.0: USB hub found
+<6>[    2.719941] hub 1-0:1.0: 1 port detected
+<6>[    2.733064] usbcore: registered new interface driver cdc_acm
+<6>[    2.750031] cdc_acm: v0.26:USB Abstract Control Model driver for USB modems and ISDN adapters
+<6>[    2.775544] Initializing USB Mass Storage driver...
+<6>[    2.790254] usbcore: registered new interface driver usb-storage
+<6>[    2.808228] USB Mass Storage support registered.
+<6>[    2.822144] usbcore: registered new interface driver usbserial
+<6>[    2.839631] usbserial: USB Serial Driver core
+<6>[    2.852693] USB Serial support registered for GSM modem (1-port)
+<6>[    2.870759] usbcore: registered new interface driver option
+<6>[    2.887452] option: v0.7.2:USB Driver for GSM modems
+<4>[    2.902375] u2o regbase 0xe901a000 phybase 0xe901e000 irq 44
+<6>[    2.919496] android init
+<6>[    2.927095] android_probe pdata: c070fd20
+<7>[    2.939118] re-init phy
+<6>[    2.943696] android_bind
+<7>[    2.951264] android_bind_config
+<6>[    2.951387] android_usb gadget: android_usb ready
+<7>[    2.965455] u2otg->regbase e901a000
+<6>[    2.973695] f_adb init
+<6>[    2.980714] android_register_function adb
+<6>[    2.992677] f_mass_storage init
+<6>[    3.002137] fsg_probe pdev: c0710418, pdata: c0710df8
+<6>[    3.017274] android_register_function usb_mass_storage
+<6>[    3.032655] f_rndis init
+<6>[    3.040254] android_register_function rndis
+<6>[    3.053041] android_usb gadget: Mass Storage Function, version: 2009/09/11
+<6>[    3.073609] android_usb gadget: Number of LUNs=2
+<6>[    3.087434]  lun0: LUN: removable file: (no medium)
+<6>[    3.102021]  lun1: LUN: removable file: (no medium)
+<6>[    3.116700] rndis_function_bind_config MAC: 16:16:21:2C:37:42
+<4>[    3.133912] android_usb gadget: using random self ethernet address
+<4>[    3.152406] android_usb gadget: using random host ethernet address
+<6>[    3.171235] usb0: MAC e6:36:ec:43:8f:b2
+<6>[    3.182710] usb0: HOST MAC ea:fd:96:97:46:22
+<6>[    3.195527] adb_bind_config
+<6>[    3.204164] mice: PS/2 mouse device common for all mice
+<6>[    3.220185] input: pxa27x-keypad as /devices/platform/pxa27x-keypad/input/input0
+<6>[    3.245057] usbcore: registered new interface driver iforce
+<6>[    3.262361] usbcore: registered new interface driver xpad
+<6>[    3.278505] xpad: X-Box pad driver
+<6>[    3.289125] input: nastech-ts as /devices/platform/pxa2xx-i2c.4/i2c-4/4-005c/input/input1
+<3>[    3.315217] nastech_set_power_mode: Failed to enter Active <-> Sleep Mode
+<3>[    3.336915] nastech_set_int_mode: Failed to set INT MODE
+<3>[    3.354158] touch read version: error = 0xffffff87
+<6>[    3.368776] input: gpio_onkey as /devices/platform/gpio-onkey/input/input2
+<6>[    3.389833] usb 1-1: new high speed USB device using pxau2h-ehci and address 2
+<6>[    3.411805] using rtc device, pcf8563-rtc, for alarms
+<6>[    3.426423] pcf8563-rtc 0-0051: rtc core: registered pcf8563-rtc as rtc0
+<6>[    3.447938] mmp-rtc mmp-rtc: rtc core: registered mmp-rtc as rtc1
+<6>[    3.466249] i2c /dev entries driver
+<6>[    3.477296] IR NEC protocol handler initialized
+<6>[    3.490846] IR RC5(x) protocol handler initialized
+<6>[    3.505250] IR RC6 protocol handler initialized
+<6>[    3.518800] IR JVC protocol handler initialized
+<6>[    3.532350] IR Sony protocol handler initialized
+<6>[    3.546144] Linux video capture interface: v2.00
+<6>[    3.559999] pwc: Philips webcam module version 10.0.13 loaded.
+<6>[    3.577485] pwc: Supports Philips PCA645/646, PCVC675/680/690, PCVC720[40]/730/740/750 & PCVC830/840.
+<6>[    3.605134] pwc: Also supports the Askey VC010, various Logitech Quickcams, Samsung MPC-C10 and MPC-C30,
+<6>[    3.633516] pwc: the Creative WebCam 5 & Pro Ex, SOTEC Afina Eye and Visionite VCS-UC300 and VCS-UM100.
+<6>[    3.661714] usbcore: registered new interface driver Philips webcam
+<6>[    3.680482] gspca: main v2.9.0 registered
+<6>[    3.692476] quickcam_messenger: v0.01:Logitech Quickcam Messenger USB
+<6>[    3.711824] usbcore: registered new interface driver QCM
+<6>[    3.728120] usbcore: registered new interface driver uvcvideo
+<6>[    3.745332] USB Video Class driver (v0.1.0)
+<5>[    3.757967] camera: probe id = 0
+<6>[    3.767885] android_usb gadget: high speed config #1: android
+<6>[    3.785341] mrvl8xxx: Mrvl FM Radio card driver v1.0.
+<6>[    3.800722] unset_dvfm_constraint: HDMI ! dvfm_set 1
+<4>[    3.816957] bq27410-battery: probe of 5-0055 failed with error -121
+<3>[    3.837221] bma150_set_mode:ERROR! i2c_bma150_read_buf(WAKE_UP__REG)
+<3>[    3.856233] bma150_poweron: bma150_set_mode error!!!
+<3>[    3.872438] bma150_set_mode:ERROR! i2c_bma150_read_buf(WAKE_UP__REG)
+<3>[    3.891481] bma150_poweron: bma150_set_mode error!!!
+<3>[    3.906313] bma150 chip id error
+<4>[    3.915956] bma150: probe of 1-0038 failed with error -1
+<6>[    3.931886] mmc31xx driver: init
+<6>[    3.954439] hub 1-1:1.0: USB hub found
+<6>[    3.976045] hub 1-1:1.0: 5 ports detected
+<3>[    3.999361] mmc31xx_i2c_tx_data: retry over 3
+<6>[    4.031862] ecompass driver: init
+<6>[    4.041963] input: ecompass_acc_data as /devices/virtual/input/input3
+<6>[    4.061464] ecompass_init: input_devs 0 name: input3
+<6>[    4.076479] input: ecompass_mag_data as /devices/virtual/input/input4
+<6>[    4.095918] ecompass_init: input_devs 1 name: input4
+<6>[    4.110933] input: ecompass_ori_data as /devices/virtual/input/input5
+<6>[    4.130281] ecompass_init: input_devs 2 name: input5
+<4>[    4.145418] cwb01c01: gyroscope driver init
+<6>[    4.160799] device-mapper: ioctl: 4.17.0-ioctl (2010-03-05) initialised: dm-devel@redhat.com
+<6>[    4.186128] Bluetooth: HCI UART driver ver 2.2
+<6>[    4.199404] Bluetooth: HCI H4 protocol initialized
+<6>[    4.213716] Bluetooth: HCI BCSP protocol initialized
+<6>[    4.228578] Bluetooth: Generic Bluetooth SDIO driver ver 0.1
+<6>[    4.245577] sdhci: Secure Digital Host Controller Interface driver
+<6>[    4.264070] sdhci: Copyright(c) Pierre Ossman
+<6>[    4.277223] mmc0: no vmmc regulator found
+<6>[    4.289339] mmc0: SDHCI controller on MMC [sdhci-pxa.2] using DMA
+<6>[    4.307649] mmc1: no vmmc regulator found
+<6>[    4.319765] mmc1: SDHCI controller on MMC [sdhci-pxa.0] using DMA
+<6>[    4.338045] mmc2: no vmmc regulator found
+<6>[    4.350130] mmc2: SDHCI controller on MMC [sdhci-pxa.1] using DMA
+<6>[    4.372988] set_dvfm_constraint: HDMI ! dvfm_set 0
+<6>[    4.403597] usbcore: registered new interface driver usbhid
+<6>[    4.420290] usbhid: USB HID core driver
+<6>[    4.432070] logger: created 64K log 'log_main'
+<6>[    4.445467] logger: created 256K log 'log_events'
+<6>[    4.459627] logger: created 64K log 'log_radio'
+<6>[    4.473238] logger: created 64K log 'log_system'
+<4>[    4.487398] No device for DAI FM34
+<4>[    4.497560] No device for DAI hdmi audio HiFi
+<4>[    4.510591] No device for DAI mmp2-sspa1
+<4>[    4.522310] No device for DAI mmp2-sspa2
+<7>[    4.534182] enter fm34_probe
+<7>[    4.534182] enter fm34_add_i2c_driver
+<7>[    4.534243] enter fm34_i2c_probe
+<6>[    4.534487] mmp2_pcm_preallocate_dma_buffer: pre-alloc dma buf (va : pa) 0xffc96000 : 0x19740000
+<6>[    4.560945] mmp2_pcm_preallocate_dma_buffer: pre-alloc dma buf (va : pa) 0xffca6000 : 0x19750000
+<6>[    4.587252] asoc: FM34 <-> mmp2-sspa1 mapping ok
+<6>[    4.692659] usb 1-1.1: new high speed USB device using pxau2h-ehci and address 3
+<6>[    4.728029] mmc0: new high speed MMC card at address 0001
+<6>[    4.744600] mmcblk0: mmc0:0001 SEM02G 1.82 GiB 
+<6>[    4.758364]  mmcblk0:
+<4>[    4.770510] GPT:Primary header thinks Alt. header is not at the end of the disk.
+<4>[    4.793215] GPT:3735551 != 3821567
+<4>[    4.803408] GPT:Alternate GPT header not at the end of the disk.
+<4>[    4.821474] GPT:3735551 != 3821567
+<4>[    4.831636] GPT: Use GNU Parted to correct GPT errors.
+<4>[    4.847017]  p1(0x8c00, 0x4000) (r) p2(0xcc00, 0x7d000) (a) p3(0x89c00, 0x2b1fdf) (a) p4(0x38f7df, 0x800) (m) p5(0x33fbdf, 0x4000) (r) p6(0x343bdf, 0x400) (m) p7(0x343fdf, 0x4b000) (c) p8(0x4c00, 0x4000) (k) p9(0x33bbdf, 0x4000) (k) p10(0x38efdf, 0x800) (p)
+<7>[    4.934847] FM34_patch OK
+<4>[    4.935427] mmp2_sspa_probe: this port has been linked
+<6>[    4.950838] hdmi_audio_init :power & pll init
+<6>[    4.964113] mmp2_pcm_preallocate_dma_buffer: pre-alloc dma buf (va : pa) 0xffcb6000 : 0x18690000
+<6>[    4.990481] asoc: hdmi audio HiFi <-> mmp2-sspa1 mapping ok
+<6>[    5.007448] ALSA device list:
+<6>[    5.016329]   #0: g50 FM34-500 (FM34-500)
+<6>[    5.028322]   #1: hdmi (hdmi audio)
+<6>[    5.038790] nf_conntrack version 0.5.0 (5932 buckets, 23728 max)
+<6>[    5.057162] ip_tables: (C) 2000-2006 Netfilter Core Team
+<6>[    5.073153] TCP cubic registered
+<6>[    5.083101] NET: Registered protocol family 10
+<6>[    5.096956] IPv6 over IPv4 tunneling driver
+<6>[    5.109865] NET: Registered protocol family 17
+<6>[    5.126467] smsc95xx v1.0.4
+<6>[    5.136507] Bluetooth: L2CAP ver 2.14
+<6>[    5.147524] Bluetooth: L2CAP socket layer initialized
+<6>[    5.162661] Bluetooth: SCO (Voice Link) ver 0.6
+<6>[    5.176241] Bluetooth: SCO socket layer initialized
+<6>[    5.191195] Bluetooth: RFCOMM TTY layer initialized
+<6>[    5.205843] Bluetooth: RFCOMM socket layer initialized
+<6>[    5.221224] Bluetooth: RFCOMM ver 1.11
+<6>[    5.232424] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+<6>[    5.248324] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+<6>[    5.266238] L2TP core driver, V2.0
+<6>[    5.276430] PPPoL2TP kernel driver, V2.0
+<6>[    5.288149] ThumbEE CPU extension supported.
+<6>[    5.300936] XScale iWMMXt coprocessor detected.
+<7>[    5.315035] alloc 4K mem from sram 0xD1037000
+<6>[    5.315096] VFP support v0.3: implementor 56 architecture 2 part 20 variant 9 rev 5
+<6>[    5.339388] pxa168fb_ovly: frame buffer device was loaded to /dev/fb2 <Video Layer>.
+<6>[    5.362765] pxa168fb_ovly: frame buffer device was loaded to /dev/fb3 <Video Layer - TV>.
+<6>[    5.388888] pcf8563-rtc 0-0051: setting system clock to 2012-09-07 03:28:40 UTC (1346988520)
+<6>[    5.457400] smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-pxa-u2h-1.1, smsc95xx USB 2.0 Ethernet, 58:d5:4c:32:d6:3b
+<3>[    5.544741] gt2005 2-003c: camera: gt2005 failed to read register 0x0000!
+<3>[    5.565066] camera: GalaxyCore 2005 sensor detect failure, will retry 3 times!
+<6>[    5.586794] mmc1: new high speed SDHC card at address 8d30
+<6>[    5.603304] usb 1-1.2: new high speed USB device using pxau2h-ehci and address 4
+<6>[    5.625765] mmcblk1: mmc1:8d30 SD16G 14.9 GiB 
+<6>[    5.639742]  mmcblk1:
+<3>[    5.646792] gt2005 2-003c: camera: gt2005 failed to read register 0x0000!
+<3>[    5.667727] camera: GalaxyCore 2005 sensor detect failure, will retry 2 times!
+<4>[    5.689547]  p1(0x800, 0x1de7800)
+<3>[    5.721652] gt2005 2-003c: camera: gt2005 failed to read register 0x0000!
+<3>[    5.742037] camera: GalaxyCore 2005 sensor detect failure, will retry 1 times!
+<5>[    5.763705] camera: Abort retry, failed to detect GalaxyCore 2005 sensor!
+<6>[    5.890628] uvcvideo: Found UVC 1.00 device 10moons USB Camera (1b71:0052)
+<4>[    5.911441] ------------[ cut here ]------------
+<4>[    5.925296] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[    5.946719] Modules linked in:
+<4>[    5.955813] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[    5.983950] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[    6.012942] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[    6.039523] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c0124484>] (cam_power_set+0x7c/0xac)
+<4>[    6.064822] [<c0124484>] (cam_power_set+0x7c/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[    6.091647] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c040514c>] (hi253_probe+0x28/0x1a4)
+<4>[    6.118380] [<c040514c>] (hi253_probe+0x28/0x1a4) from [<c03e4bfc>] (i2c_device_probe+0xa4/0xd8)
+<4>[    6.144686] [<c03e4bfc>] (i2c_device_probe+0xa4/0xd8) from [<c032ced8>] (driver_probe_device+0xc8/0x184)
+<4>[    6.173068] [<c032ced8>] (driver_probe_device+0xc8/0x184) from [<c032cff4>] (__driver_attach+0x60/0x84)
+<4>[    6.201205] [<c032cff4>] (__driver_attach+0x60/0x84) from [<c032c6e4>] (bus_for_each_dev+0x48/0x84)
+<4>[    6.228457] [<c032c6e4>] (bus_for_each_dev+0x48/0x84) from [<c032c020>] (bus_add_driver+0x9c/0x218)
+<4>[    6.255557] [<c032c020>] (bus_add_driver+0x9c/0x218) from [<c032d2e0>] (driver_register+0xa8/0x138)
+<4>[    6.282657] [<c032d2e0>] (driver_register+0xa8/0x138) from [<c03e5938>] (i2c_register_driver+0x40/0x8c)
+<4>[    6.310794] [<c03e5938>] (i2c_register_driver+0x40/0x8c) from [<c01153dc>] (do_one_initcall+0x5c/0x1b8)
+<4>[    6.339084] [<c01153dc>] (do_one_initcall+0x5c/0x1b8) from [<c000840c>] (kernel_init+0xac/0x168)
+<4>[    6.365359] unwind: Unknown symbol address c000840c
+<4>[    6.379947] unwind: Index not found c000840c
+<4>[    6.392733] ---[ end trace 555f596141b362eb ]---
+<4>[    6.406527] ------------[ cut here ]------------
+<4>[    6.420352] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[    6.441836] Modules linked in:
+<4>[    6.450961] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[    6.479068] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[    6.507968] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[    6.534640] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c012448c>] (cam_power_set+0x84/0xac)
+<4>[    6.559909] [<c012448c>] (cam_power_set+0x84/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[    6.586734] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c040514c>] (hi253_probe+0x28/0x1a4)
+<4>[    6.613284] [<c040514c>] (hi253_probe+0x28/0x1a4) from [<c03e4bfc>] (i2c_device_probe+0xa4/0xd8)
+<4>[    6.639743] [<c03e4bfc>] (i2c_device_probe+0xa4/0xd8) from [<c032ced8>] (driver_probe_device+0xc8/0x184)
+<4>[    6.668124] [<c032ced8>] (driver_probe_device+0xc8/0x184) from [<c032cff4>] (__driver_attach+0x60/0x84)
+<4>[    6.696261] [<c032cff4>] (__driver_attach+0x60/0x84) from [<c032c6e4>] (bus_for_each_dev+0x48/0x84)
+<4>[    6.723331] [<c032c6e4>] (bus_for_each_dev+0x48/0x84) from [<c032c020>] (bus_add_driver+0x9c/0x218)
+<4>[    6.750552] [<c032c020>] (bus_add_driver+0x9c/0x218) from [<c032d2e0>] (driver_register+0xa8/0x138)
+<4>[    6.777652] [<c032d2e0>] (driver_register+0xa8/0x138) from [<c03e5938>] (i2c_register_driver+0x40/0x8c)
+<4>[    6.805789] [<c03e5938>] (i2c_register_driver+0x40/0x8c) from [<c01153dc>] (do_one_initcall+0x5c/0x1b8)
+<4>[    6.833926] [<c01153dc>] (do_one_initcall+0x5c/0x1b8) from [<c000840c>] (kernel_init+0xac/0x168)
+<4>[    6.860355] unwind: Unknown symbol address c000840c
+<4>[    6.874942] unwind: Index not found c000840c
+<4>[    6.887698] ---[ end trace 555f596141b362ec ]---
+<6>[    6.905704] input: 10moons USB Camera as /devices/platform/pxau2h-ehci/usb1/1-1/1-1.2/1-1.2:1.0/input/input6
+<6>[    6.942325] input: Sonix Technology Co., Ltd. 10moons USB Camera as /devices/platform/pxau2h-ehci/usb1/1-1/1-1.2/1-1.2:1.4/input/input7
+<6>[    6.979037] generic-usb 0003:1B71:0052.0001: input: USB HID v1.11 Keyboard [Sonix Technology Co., Ltd. 10moons USB Camera] on usb-pxa-u2h-1.2/input4
+<6>[    7.095004] usb 1-1.4: new low speed USB device using pxau2h-ehci and address 5
+<4>[    7.185367] camera: hi253 Model_ID = 0x0092
+<5>[    7.197879] camera: Hynix hi253 sensor detected!
+<3>[    7.211795] VIDIOC_DBG_G_CHIP_IDENT -1070836143
+<5>[    7.225345] camera: hi253 attached
+<4>[    7.235507] ------------[ cut here ]------------
+<4>[    7.249332] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[    7.270694] Modules linked in:
+<4>[    7.279819] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[    7.308139] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[    7.337039] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[    7.363620] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c0124484>] (cam_power_set+0x7c/0xac)
+<4>[    7.388919] [<c0124484>] (cam_power_set+0x7c/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[    7.415927] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c04052a0>] (hi253_probe+0x17c/0x1a4)
+<4>[    7.442752] [<c04052a0>] (hi253_probe+0x17c/0x1a4) from [<c03e4bfc>] (i2c_device_probe+0xa4/0xd8)
+<4>[    7.469333] [<c03e4bfc>] (i2c_device_probe+0xa4/0xd8) from [<c032ced8>] (driver_probe_device+0xc8/0x184)
+<4>[    7.497715] [<c032ced8>] (driver_probe_device+0xc8/0x184) from [<c032cff4>] (__driver_attach+0x60/0x84)
+<4>[    7.526065] [<c032cff4>] (__driver_attach+0x60/0x84) from [<c032c6e4>] (bus_for_each_dev+0x48/0x84)
+<4>[    7.553226] [<c032c6e4>] (bus_for_each_dev+0x48/0x84) from [<c032c020>] (bus_add_driver+0x9c/0x218)
+<4>[    7.580295] [<c032c020>] (bus_add_driver+0x9c/0x218) from [<c032d2e0>] (driver_register+0xa8/0x138)
+<4>[    7.607425] [<c032d2e0>] (driver_register+0xa8/0x138) from [<c03e5938>] (i2c_register_driver+0x40/0x8c)
+<4>[    7.635562] [<c03e5938>] (i2c_register_driver+0x40/0x8c) from [<c01153dc>] (do_one_initcall+0x5c/0x1b8)
+<4>[    7.663913] [<c01153dc>] (do_one_initcall+0x5c/0x1b8) from [<c000840c>] (kernel_init+0xac/0x168)
+<4>[    7.690189] unwind: Unknown symbol address c000840c
+<4>[    7.704776] unwind: Index not found c000840c
+<4>[    7.717563] ---[ end trace 555f596141b362ed ]---
+<4>[    7.731357] ------------[ cut here ]------------
+<4>[    7.745182] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[    7.766697] Modules linked in:
+<4>[    7.775852] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[    7.804050] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[    7.832950] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[    7.859531] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c012448c>] (cam_power_set+0x84/0xac)
+<4>[    7.884800] [<c012448c>] (cam_power_set+0x84/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[    7.911808] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c04052a0>] (hi253_probe+0x17c/0x1a4)
+<4>[    7.938633] [<c04052a0>] (hi253_probe+0x17c/0x1a4) from [<c03e4bfc>] (i2c_device_probe+0xa4/0xd8)
+<4>[    7.965214] [<c03e4bfc>] (i2c_device_probe+0xa4/0xd8) from [<c032ced8>] (driver_probe_device+0xc8/0x184)
+<4>[    7.993625] [<c032ced8>] (driver_probe_device+0xc8/0x184) from [<c032cff4>] (__driver_attach+0x60/0x84)
+<4>[    8.021946] [<c032cff4>] (__driver_attach+0x60/0x84) from [<c032c6e4>] (bus_for_each_dev+0x48/0x84)
+<4>[    8.049045] [<c032c6e4>] (bus_for_each_dev+0x48/0x84) from [<c032c020>] (bus_add_driver+0x9c/0x218)
+<4>[    8.076237] [<c032c020>] (bus_add_driver+0x9c/0x218) from [<c032d2e0>] (driver_register+0xa8/0x138)
+<4>[    8.103306] [<c032d2e0>] (driver_register+0xa8/0x138) from [<c03e5938>] (i2c_register_driver+0x40/0x8c)
+<4>[    8.131443] [<c03e5938>] (i2c_register_driver+0x40/0x8c) from [<c01153dc>] (do_one_initcall+0x5c/0x1b8)
+<4>[    8.159580] [<c01153dc>] (do_one_initcall+0x5c/0x1b8) from [<c000840c>] (kernel_init+0xac/0x168)
+<4>[    8.186069] unwind: Unknown symbol address c000840c
+<4>[    8.200657] unwind: Index not found c000840c
+<4>[    8.213444] ---[ end trace 555f596141b362ee ]---
+<6>[    8.269504] input: USB Optical Mouse as /devices/platform/pxau2h-ehci/usb1/1-1/1-1.4/1-1.4:1.0/input/input8
+<6>[    8.298984] generic-usb 0003:1BCF:0005.0002: input: USB HID v1.10 Mouse [USB Optical Mouse] on usb-pxa-u2h-1.4/input0
+<3>[    8.467533] gc2015 2-0030: camera: gc2015 failed to read register 0x00!
+<3>[    8.487339] camera: GalaxyCore 2015 sensor detect failure, will retry 3 times!
+<3>[    8.510502] gc2015 2-0030: camera: gc2015 failed to read register 0x00!
+<3>[    8.530308] camera: GalaxyCore 2015 sensor detect failure, will retry 2 times!
+<3>[    8.553257] gc2015 2-0030: camera: gc2015 failed to read register 0x00!
+<3>[    8.573063] camera: GalaxyCore 2015 sensor detect failure, will retry 1 times!
+<5>[    8.594669] camera: Abort retry, failed to detect GalaxyCore 2015 sensor!
+<4>[    8.615177] ------------[ cut here ]------------
+<4>[    8.628971] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[    8.650334] Modules linked in:
+<4>[    8.659458] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[    8.687596] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[    8.716709] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[    8.743290] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c0124484>] (cam_power_set+0x7c/0xac)
+<4>[    8.768559] [<c0124484>] (cam_power_set+0x7c/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[    8.795384] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c0405fcc>] (gc2015_probe+0x164/0x190)
+<4>[    8.822666] [<c0405fcc>] (gc2015_probe+0x164/0x190) from [<c03e4bfc>] (i2c_device_probe+0xa4/0xd8)
+<4>[    8.849491] [<c03e4bfc>] (i2c_device_probe+0xa4/0xd8) from [<c032ced8>] (driver_probe_device+0xc8/0x184)
+<4>[    8.877903] [<c032ced8>] (driver_probe_device+0xc8/0x184) from [<c032cff4>] (__driver_attach+0x60/0x84)
+<4>[    8.906040] [<c032cff4>] (__driver_attach+0x60/0x84) from [<c032c6e4>] (bus_for_each_dev+0x48/0x84)
+<4>[    8.933354] [<c032c6e4>] (bus_for_each_dev+0x48/0x84) from [<c032c020>] (bus_add_driver+0x9c/0x218)
+<4>[    8.960423] [<c032c020>] (bus_add_driver+0x9c/0x218) from [<c032d2e0>] (driver_register+0xa8/0x138)
+<4>[    8.987522] [<c032d2e0>] (driver_register+0xa8/0x138) from [<c03e5938>] (i2c_register_driver+0x40/0x8c)
+<4>[    9.015660] [<c03e5938>] (i2c_register_driver+0x40/0x8c) from [<c01153dc>] (do_one_initcall+0x5c/0x1b8)
+<4>[    9.044010] [<c01153dc>] (do_one_initcall+0x5c/0x1b8) from [<c000840c>] (kernel_init+0xac/0x168)
+<4>[    9.070286] unwind: Unknown symbol address c000840c
+<4>[    9.084874] unwind: Index not found c000840c
+<4>[    9.097660] ---[ end trace 555f596141b362ef ]---
+<4>[    9.111454] ------------[ cut here ]------------
+<4>[    9.125279] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[    9.146824] Modules linked in:
+<4>[    9.155918] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[    9.184056] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[    9.212986] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[    9.239689] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c012448c>] (cam_power_set+0x84/0xac)
+<4>[    9.264958] [<c012448c>] (cam_power_set+0x84/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[    9.291813] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c0405fcc>] (gc2015_probe+0x164/0x190)
+<4>[    9.318882] [<c0405fcc>] (gc2015_probe+0x164/0x190) from [<c03e4bfc>] (i2c_device_probe+0xa4/0xd8)
+<4>[    9.345921] [<c03e4bfc>] (i2c_device_probe+0xa4/0xd8) from [<c032ced8>] (driver_probe_device+0xc8/0x184)
+<4>[    9.374302] [<c032ced8>] (driver_probe_device+0xc8/0x184) from [<c032cff4>] (__driver_attach+0x60/0x84)
+<4>[    9.402440] [<c032cff4>] (__driver_attach+0x60/0x84) from [<c032c6e4>] (bus_for_each_dev+0x48/0x84)
+<4>[    9.429509] [<c032c6e4>] (bus_for_each_dev+0x48/0x84) from [<c032c020>] (bus_add_driver+0x9c/0x218)
+<4>[    9.456791] [<c032c020>] (bus_add_driver+0x9c/0x218) from [<c032d2e0>] (driver_register+0xa8/0x138)
+<4>[    9.483891] [<c032d2e0>] (driver_register+0xa8/0x138) from [<c03e5938>] (i2c_register_driver+0x40/0x8c)
+<4>[    9.512028] [<c03e5938>] (i2c_register_driver+0x40/0x8c) from [<c01153dc>] (do_one_initcall+0x5c/0x1b8)
+<4>[    9.540166] [<c01153dc>] (do_one_initcall+0x5c/0x1b8) from [<c000840c>] (kernel_init+0xac/0x168)
+<4>[    9.566624] unwind: Unknown symbol address c000840c
+<4>[    9.581212] unwind: Index not found c000840c
+<4>[    9.593999] ---[ end trace 555f596141b362f0 ]---
+<4>[    9.718816] Warning: unable to open an initial console.
+<6>[    9.734654] Freeing init memory: 1076K
+<6>[   11.280523] unset_dvfm_constraint: HDMI ! dvfm_set 1
+<6>[   12.008795] set_dvfm_constraint: HDMI ! dvfm_set 0
+<4>[   12.074652] Enter pxa168fb_open, fbi 0 ---------------
+<4>[   12.161688] Enter pxa168fb_release, fbi 0 ---------------
+<6>[   12.246161] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+<6>[   12.523443] EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+<6>[   12.775366] EXT4-fs (mmcblk0p3): recovery complete
+<6>[   12.827216] EXT4-fs (mmcblk0p3): mounted filesystem with ordered data mode. Opts: (null)
+<6>[   12.948737] EXT4-fs (mmcblk0p7): recovery complete
+<6>[   12.976111] EXT4-fs (mmcblk0p7): mounted filesystem with ordered data mode. Opts: (null)
+<4>[   13.128180] INFO - WTPsp prim version is 3.2.2
+<4>[   13.169348] INFO - WTPsp drv version is 3.2.2
+<4>[   13.169959] INFO - WTM reg addr = 0xe9126000
+<4>[   13.169989] INFO - WTM irq hooked
+<4>[   13.171027] INFO - init wtm driver (major_nr = 252)
+<6>[   13.176886] BMM init with size=0MB
+<4>[   13.195197] 
+<4>[   13.195227] [galcore] clk input = 312M Hz; running on 156M Hz
+<7>[   13.195227] Bus Clock: USB PLL 480MHz
+<7>[   13.195258] GC Controller Clock: USB PLL 480MHz
+<4>[   13.195624] 
+<4>[   13.195624] [galcore] registerBase =0xd420d000, registerMemSize = 0x00040000, contiguousBase= 0x00000000, contiguousSize = 0x04000000
+<4>[   13.195715] [galcore] streamCount = 1
+<4>[   13.195715] [galcore] registerMax = 64
+<4>[   13.195715] [galcore] threadCount = 256
+<4>[   13.195746] [galcore] shaderCoreCount = 1
+<4>[   13.195746] [galcore] vertexCacheSize = 8
+<4>[   13.195746] [galcore] vertexOutputBufferSize = 512
+<4>[   13.289374] 
+<4>[   13.289404] [galcore] real contiguouSize = 0x04000000 
+<4>[   13.289404] 
+<4>[   13.289404] [galcore] real externalSize = 0x00000000 
+<4>[   13.289435] 
+<4>[   13.289435] [galcore] chipModel=0x860,chipRevision=0x4603,chipFeatures=0xe02c6eed,chipMinorFeatures=0xcbf99fff
+<3>[   13.297919] init: cannot find '/system/etc/install-recovery.sh', disabling 'flash_recovery'
+<3>[   13.335852] init: cannot find '/system/bin/FMRadioServer', disabling 'FMRadiod'
+<6>[   13.364051] enabling adb
+<6>[   13.383582] adb_open
+<3>[   13.418036] init: untracked pid 142 exited
+<6>[   13.496344] warning: `MarvellWireless' uses 32-bit capabilities (legacy support in use)
+<4>[   13.549231] Enter pxa168fb_open, fbi 0 ---------------
+<4>[   13.549262] Enter pxa168fb_release, fbi 0 ---------------
+<4>[   13.563971] Enter pxa168fb_open, fbi 1 ---------------
+<7>[   13.668433] pxa688fb_vdma_release fbi 0 squln_ctrl d102000a
+<6>[   13.995337] android_usb gadget: high speed config #1: android
+<4>[   14.432166] camera: init sensor with global settings!
+<3>[   14.432197] VIDIOC_INT_RESET 1074029670
+<3>[   14.772407] VIDIOC_S_INPUT -1073457625
+<3>[   14.784278] VIDIOC_QUERYCAP -2140645888
+<4>[   14.796577] ------------[ cut here ]------------
+<4>[   14.796607] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[   14.796638] Modules linked in: galcore bmm mv_wtm_drv mv_wtm_prim
+<4>[   14.796668] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[   14.796699] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[   14.796729] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[   14.796760] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c0124484>] (cam_power_set+0x7c/0xac)
+<4>[   14.796791] [<c0124484>] (cam_power_set+0x7c/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[   14.796821] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c0420024>] (ccic_v4l_release+0xd4/0x134)
+<4>[   14.796852] [<c0420024>] (ccic_v4l_release+0xd4/0x134) from [<c03f8488>] (v4l2_release+0x38/0x4c)
+<4>[   14.796882] [<c03f8488>] (v4l2_release+0x38/0x4c) from [<c01979dc>] (fput+0x124/0x21c)
+<4>[   14.796913] [<c01979dc>] (fput+0x124/0x21c) from [<c0194cc4>] (filp_close+0x60/0x6c)
+<4>[   14.796943] [<c0194cc4>] (filp_close+0x60/0x6c) from [<c0194d94>] (sys_close+0xc4/0x124)
+<4>[   14.796974] [<c0194d94>] (sys_close+0xc4/0x124) from [<c0115ee0>] (ret_fast_syscall+0x0/0x30)
+<4>[   14.796974] ---[ end trace 555f596141b362f1 ]---
+<4>[   14.796974] ------------[ cut here ]------------
+<4>[   14.797004] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[   14.797004] Modules linked in: galcore bmm mv_wtm_drv mv_wtm_prim
+<4>[   14.797035] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[   14.797065] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[   14.797096] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[   14.797126] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c012448c>] (cam_power_set+0x84/0xac)
+<4>[   14.797157] [<c012448c>] (cam_power_set+0x84/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[   14.797157] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c0420024>] (ccic_v4l_release+0xd4/0x134)
+<4>[   14.797187] [<c0420024>] (ccic_v4l_release+0xd4/0x134) from [<c03f8488>] (v4l2_release+0x38/0x4c)
+<4>[   14.797218] [<c03f8488>] (v4l2_release+0x38/0x4c) from [<c01979dc>] (fput+0x124/0x21c)
+<4>[   14.797248] [<c01979dc>] (fput+0x124/0x21c) from [<c0194cc4>] (filp_close+0x60/0x6c)
+<4>[   14.797279] [<c0194cc4>] (filp_close+0x60/0x6c) from [<c0194d94>] (sys_close+0xc4/0x124)
+<4>[   14.797309] [<c0194d94>] (sys_close+0xc4/0x124) from [<c0115ee0>] (ret_fast_syscall+0x0/0x30)
+<4>[   14.797309] ---[ end trace 555f596141b362f2 ]---
+<4>[   15.012794] camera: init sensor with global settings!
+<3>[   15.012794] VIDIOC_INT_RESET 1074029670
+<3>[   15.334449] VIDIOC_S_INPUT -1073457625
+<3>[   15.346290] VIDIOC_QUERYCAP -2140645888
+<4>[   15.363258] ------------[ cut here ]------------
+<4>[   15.363289] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[   15.363319] Modules linked in: galcore bmm mv_wtm_drv mv_wtm_prim
+<4>[   15.363350] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[   15.363380] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[   15.363411] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[   15.363441] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c0124484>] (cam_power_set+0x7c/0xac)
+<4>[   15.363472] [<c0124484>] (cam_power_set+0x7c/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[   15.363502] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c0420024>] (ccic_v4l_release+0xd4/0x134)
+<4>[   15.363533] [<c0420024>] (ccic_v4l_release+0xd4/0x134) from [<c03f8488>] (v4l2_release+0x38/0x4c)
+<4>[   15.363563] [<c03f8488>] (v4l2_release+0x38/0x4c) from [<c01979dc>] (fput+0x124/0x21c)
+<4>[   15.363594] [<c01979dc>] (fput+0x124/0x21c) from [<c0194cc4>] (filp_close+0x60/0x6c)
+<4>[   15.363624] [<c0194cc4>] (filp_close+0x60/0x6c) from [<c0194d94>] (sys_close+0xc4/0x124)
+<4>[   15.363655] [<c0194d94>] (sys_close+0xc4/0x124) from [<c0115ee0>] (ret_fast_syscall+0x0/0x30)
+<4>[   15.363655] ---[ end trace 555f596141b362f3 ]---
+<4>[   15.363685] ------------[ cut here ]------------
+<4>[   15.363685] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[   15.363716] Modules linked in: galcore bmm mv_wtm_drv mv_wtm_prim
+<4>[   15.363746] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[   15.363746] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[   15.363807] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[   15.363807] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c012448c>] (cam_power_set+0x84/0xac)
+<4>[   15.363838] [<c012448c>] (cam_power_set+0x84/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[   15.363868] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c0420024>] (ccic_v4l_release+0xd4/0x134)
+<4>[   15.363899] [<c0420024>] (ccic_v4l_release+0xd4/0x134) from [<c03f8488>] (v4l2_release+0x38/0x4c)
+<4>[   15.363929] [<c03f8488>] (v4l2_release+0x38/0x4c) from [<c01979dc>] (fput+0x124/0x21c)
+<4>[   15.363960] [<c01979dc>] (fput+0x124/0x21c) from [<c0194cc4>] (filp_close+0x60/0x6c)
+<4>[   15.363960] [<c0194cc4>] (filp_close+0x60/0x6c) from [<c0194d94>] (sys_close+0xc4/0x124)
+<4>[   15.363991] [<c0194d94>] (sys_close+0xc4/0x124) from [<c0115ee0>] (ret_fast_syscall+0x0/0x30)
+<4>[   15.364021] ---[ end trace 555f596141b362f4 ]---
+<4>[   15.583259] camera: init sensor with global settings!
+<3>[   15.583290] VIDIOC_INT_RESET 1074029670
+<3>[   15.892250] VIDIOC_S_INPUT -1073457625
+<3>[   15.912849] VIDIOC_QUERYCAP -2140645888
+<4>[   15.926033] ------------[ cut here ]------------
+<4>[   15.926094] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[   15.926094] Modules linked in: galcore bmm mv_wtm_drv mv_wtm_prim
+<4>[   15.926155] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[   15.926155] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[   15.926186] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[   15.926216] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c0124484>] (cam_power_set+0x7c/0xac)
+<4>[   15.926247] [<c0124484>] (cam_power_set+0x7c/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[   15.926277] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c0420024>] (ccic_v4l_release+0xd4/0x134)
+<4>[   15.926308] [<c0420024>] (ccic_v4l_release+0xd4/0x134) from [<c03f8488>] (v4l2_release+0x38/0x4c)
+<4>[   15.926338] [<c03f8488>] (v4l2_release+0x38/0x4c) from [<c01979dc>] (fput+0x124/0x21c)
+<4>[   15.926369] [<c01979dc>] (fput+0x124/0x21c) from [<c0194cc4>] (filp_close+0x60/0x6c)
+<4>[   15.926399] [<c0194cc4>] (filp_close+0x60/0x6c) from [<c0194d94>] (sys_close+0xc4/0x124)
+<4>[   15.926430] [<c0194d94>] (sys_close+0xc4/0x124) from [<c0115ee0>] (ret_fast_syscall+0x0/0x30)
+<4>[   15.926430] ---[ end trace 555f596141b362f5 ]---
+<4>[   15.926460] ------------[ cut here ]------------
+<4>[   15.926460] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[   15.926918] Modules linked in: galcore bmm mv_wtm_drv mv_wtm_prim
+<4>[   15.926949] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[   15.926979] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[   15.927010] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[   15.927010] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c012448c>] (cam_power_set+0x84/0xac)
+<4>[   15.927040] [<c012448c>] (cam_power_set+0x84/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[   15.927071] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c0420024>] (ccic_v4l_release+0xd4/0x134)
+<4>[   15.927101] [<c0420024>] (ccic_v4l_release+0xd4/0x134) from [<c03f8488>] (v4l2_release+0x38/0x4c)
+<4>[   15.927132] [<c03f8488>] (v4l2_release+0x38/0x4c) from [<c01979dc>] (fput+0x124/0x21c)
+<4>[   15.927162] [<c01979dc>] (fput+0x124/0x21c) from [<c0194cc4>] (filp_close+0x60/0x6c)
+<4>[   15.927193] [<c0194cc4>] (filp_close+0x60/0x6c) from [<c0194d94>] (sys_close+0xc4/0x124)
+<4>[   15.927223] [<c0194d94>] (sys_close+0xc4/0x124) from [<c0115ee0>] (ret_fast_syscall+0x0/0x30)
+<4>[   15.927223] ---[ end trace 555f596141b362f6 ]---
+<4>[   16.143776] camera: init sensor with global settings!
+<3>[   16.143807] VIDIOC_INT_RESET 1074029670
+<3>[   16.461800] VIDIOC_S_INPUT -1073457625
+<3>[   16.484108] VIDIOC_QUERYCAP -2140645888
+<3>[   16.504158] VIDIOC_ENUM_FMT -1069525502
+<3>[   16.534157] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.554146] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.584267] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.604103] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.624245] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.654274] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.684304] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.704293] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.734353] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.751046] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.764931] VIDIOC_ENUM_FMT -1069525502
+<3>[   16.777443] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.804421] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.824410] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.854348] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.884530] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.904458] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.934517] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.964730] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   16.994576] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   17.014596] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   17.044625] VIDIOC_ENUM_FMT -1069525502
+<3>[   17.064828] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   17.094674] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   17.114693] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   17.144723] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   17.174752] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   17.194771] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   17.224831] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   17.254830] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   17.284890] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   17.304909] VIDIOC_ENUM_FRAMESIZES -1070836150
+<3>[   17.334908] VIDIOC_ENUM_FMT -1069525502
+<4>[   17.354989] ------------[ cut here ]------------
+<4>[   17.355019] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[   17.355050] Modules linked in: galcore bmm mv_wtm_drv mv_wtm_prim
+<4>[   17.355080] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[   17.355111] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[   17.355141] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[   17.355172] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c0124484>] (cam_power_set+0x7c/0xac)
+<4>[   17.355172] [<c0124484>] (cam_power_set+0x7c/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[   17.355233] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c0420024>] (ccic_v4l_release+0xd4/0x134)
+<4>[   17.355264] [<c0420024>] (ccic_v4l_release+0xd4/0x134) from [<c03f8488>] (v4l2_release+0x38/0x4c)
+<4>[   17.355294] [<c03f8488>] (v4l2_release+0x38/0x4c) from [<c01979dc>] (fput+0x124/0x21c)
+<4>[   17.355325] [<c01979dc>] (fput+0x124/0x21c) from [<c0194cc4>] (filp_close+0x60/0x6c)
+<4>[   17.355355] [<c0194cc4>] (filp_close+0x60/0x6c) from [<c0194d94>] (sys_close+0xc4/0x124)
+<4>[   17.355386] [<c0194d94>] (sys_close+0xc4/0x124) from [<c0115ee0>] (ret_fast_syscall+0x0/0x30)
+<4>[   17.355386] ---[ end trace 555f596141b362f7 ]---
+<4>[   17.355386] ------------[ cut here ]------------
+<4>[   17.355416] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[   17.355416] Modules linked in: galcore bmm mv_wtm_drv mv_wtm_prim
+<4>[   17.355447] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[   17.355477] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[   17.355508] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[   17.355538] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c012448c>] (cam_power_set+0x84/0xac)
+<4>[   17.355569] [<c012448c>] (cam_power_set+0x84/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[   17.355569] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c0420024>] (ccic_v4l_release+0xd4/0x134)
+<4>[   17.355599] [<c0420024>] (ccic_v4l_release+0xd4/0x134) from [<c03f8488>] (v4l2_release+0x38/0x4c)
+<4>[   17.355630] [<c03f8488>] (v4l2_release+0x38/0x4c) from [<c01979dc>] (fput+0x124/0x21c)
+<4>[   17.355660] [<c01979dc>] (fput+0x124/0x21c) from [<c0194cc4>] (filp_close+0x60/0x6c)
+<4>[   17.355691] [<c0194cc4>] (filp_close+0x60/0x6c) from [<c0194d94>] (sys_close+0xc4/0x124)
+<4>[   17.355721] [<c0194d94>] (sys_close+0xc4/0x124) from [<c0115ee0>] (ret_fast_syscall+0x0/0x30)
+<4>[   17.355721] ---[ end trace 555f596141b362f8 ]---
+<4>[   17.575234] ------------[ cut here ]------------
+<4>[   17.575295] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[   17.575295] Modules linked in: galcore bmm mv_wtm_drv mv_wtm_prim
+<4>[   17.575356] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[   17.575387] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[   17.575387] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[   17.575417] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c0124484>] (cam_power_set+0x7c/0xac)
+<4>[   17.575448] [<c0124484>] (cam_power_set+0x7c/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[   17.575478] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c0420024>] (ccic_v4l_release+0xd4/0x134)
+<4>[   17.575509] [<c0420024>] (ccic_v4l_release+0xd4/0x134) from [<c03f8488>] (v4l2_release+0x38/0x4c)
+<4>[   17.575570] [<c03f8488>] (v4l2_release+0x38/0x4c) from [<c01979dc>] (fput+0x124/0x21c)
+<4>[   17.575570] [<c01979dc>] (fput+0x124/0x21c) from [<c0194cc4>] (filp_close+0x60/0x6c)
+<4>[   17.575601] [<c0194cc4>] (filp_close+0x60/0x6c) from [<c0194d94>] (sys_close+0xc4/0x124)
+<4>[   17.575631] [<c0194d94>] (sys_close+0xc4/0x124) from [<c0115ee0>] (ret_fast_syscall+0x0/0x30)
+<4>[   17.575662] ---[ end trace 555f596141b362f9 ]---
+<4>[   17.575662] ------------[ cut here ]------------
+<4>[   17.575692] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[   17.575692] Modules linked in: galcore bmm mv_wtm_drv mv_wtm_prim
+<4>[   17.575723] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[   17.575753] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[   17.575784] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[   17.575784] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c012448c>] (cam_power_set+0x84/0xac)
+<4>[   17.575814] [<c012448c>] (cam_power_set+0x84/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[   17.575845] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c0420024>] (ccic_v4l_release+0xd4/0x134)
+<4>[   17.575875] [<c0420024>] (ccic_v4l_release+0xd4/0x134) from [<c03f8488>] (v4l2_release+0x38/0x4c)
+<4>[   17.575906] [<c03f8488>] (v4l2_release+0x38/0x4c) from [<c01979dc>] (fput+0x124/0x21c)
+<4>[   17.575936] [<c01979dc>] (fput+0x124/0x21c) from [<c0194cc4>] (filp_close+0x60/0x6c)
+<4>[   17.575936] [<c0194cc4>] (filp_close+0x60/0x6c) from [<c0194d94>] (sys_close+0xc4/0x124)
+<4>[   17.575967] [<c0194d94>] (sys_close+0xc4/0x124) from [<c0115ee0>] (ret_fast_syscall+0x0/0x30)
+<4>[   17.575997] ---[ end trace 555f596141b362fa ]---
+<4>[   20.296000] Enter pxa168fb_open, fbi 0 ---------------
+<6>[   24.980267] request_suspend_state: wakeup (3->0) at 24947976843 (2012-09-07 03:29:00.065182927 UTC)
+<4>[   29.005630] ERROR: _indent=0
+<4>[   29.005630] --->PID=176 , name=BootAnimation exits
+<4>[   29.005660] GC memory usage profile:
+<4>[   29.005660] Total reserved video memory: 65536 KB
+<4>[   29.005660] Used video mem: 10800 KB	contiguous: 1584 KB	virtual: 0 KB
+<7>[   34.621752] eth0: no IPv6 routers present
+<4>[   41.048055] camera: init sensor with global settings!
+<3>[   41.048086] VIDIOC_INT_RESET 1074029670
+<3>[   41.358602] VIDIOC_S_INPUT -1073457625
+<3>[   41.369894] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.383413] VIDIOC_DBG_S_REGISTER 1077433935
+<3>[   41.396505] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.409963] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.423422] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.438650] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.453542] VIDIOC_DBG_S_REGISTER 1077433935
+<3>[   41.468282] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.483389] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.499227] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.514059] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.527578] VIDIOC_DBG_S_REGISTER 1077433935
+<3>[   41.540731] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.555654] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.569204] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.582693] VIDIOC_DBG_S_REGISTER 1077433935
+<3>[   41.595846] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.609335] VIDIOC_DBG_S_REGISTER 1077433935
+<3>[   41.622457] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.635946] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.649740] VIDIOC_DBG_S_REGISTER 1077433935
+<3>[   41.662863] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.676351] VIDIOC_DBG_S_REGISTER 1077433935
+<3>[   41.691427] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.706961] VIDIOC_DBG_S_REGISTER 1077433935
+<3>[   41.722433] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.737112] VIDIOC_DBG_S_REGISTER 1077433935
+<3>[   41.750326] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.765829] VIDIOC_DBG_S_REGISTER 1077433935
+<3>[   41.779043] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.794760] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.809530] VIDIOC_DBG_S_REGISTER 1077433935
+<3>[   41.822744] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.836264] VIDIOC_DBG_G_REGISTER -1070049712
+<3>[   41.851278] VIDIOC_DBG_S_REGISTER 1077433935
+<3>[   42.040823] VIDIOC_S_PARM -1060350442
+<3>[   42.051870] VIDIOC_TRY_FMT -1060350400
+<3>[   42.063406] VIDIOC_S_FMT -1060350459
+<3>[   42.074423] hi253_s_fmt width 800, height 600
+<3>[   42.139242] VIDIOC_STREAMON 1074026002
+<4>[   42.217825] Enter pxa168fb_open, fbi 0 ---------------
+<4>[   42.217886] Enter pxa168fb_release, fbi 0 ---------------
+<4>[   42.217978] Enter pxa168fb_open, fbi 0 opened 0 times -----------
+<6>[   42.230002] SWITCH_VID_OVLY fbi 0 dma_on 0, val 0, waitlist (null) buf_current (null), ret 0
+<6>[   42.230002] SWITCH_VID_OVLY fbi 1 dma_on 0, val 0, waitlist (null) buf_current (null), ret 0
+<6>[   42.387686] SWITCH_VID_OVLY fbi 0 dma_on 1, val 0, waitlist (null) buf_current (null), ret 0
+<6>[   42.387717] SWITCH_VID_OVLY fbi 1 dma_on 1, val 1, waitlist (null) buf_current (null), ret 0
+<3>[   44.186912] VIDIOC_STREAMOFF 1074026003
+<4>[   44.234519] --->PID=130 , name=mediaserver exits
+<4>[   44.234519] GC memory usage profile:
+<4>[   44.234550] Total reserved video memory: 65536 KB
+<4>[   44.234550] Used video mem: 17614 KB	contiguous: 2376 KB	virtual: 0 KB
+<6>[   44.235007] SWITCH_VID_OVLY fbi 0 dma_on 0, val 0, waitlist (null) buf_current d82e1140, ret 0
+<6>[   44.235007] SWITCH_VID_OVLY fbi 1 dma_on 0, val 0, waitlist (null) buf_current (null), ret 0
+<6>[   44.235252] SWITCH_VID_OVLY fbi 0 dma_on 0, val 0, waitlist (null) buf_current d82e1140, ret 0
+<6>[   44.235282] SWITCH_VID_OVLY fbi 1 dma_on 0, val 0, waitlist (null) buf_current (null), ret 0
+<4>[   44.235587] ------------[ cut here ]------------
+<4>[   44.235618] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[   44.235618] Modules linked in: galcore bmm mv_wtm_drv mv_wtm_prim
+<4>[   44.235679] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[   44.235679] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[   44.235709] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[   44.235740] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c0124484>] (cam_power_set+0x7c/0xac)
+<4>[   44.235770] [<c0124484>] (cam_power_set+0x7c/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[   44.235801] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c0420024>] (ccic_v4l_release+0xd4/0x134)
+<4>[   44.235831] [<c0420024>] (ccic_v4l_release+0xd4/0x134) from [<c03f8488>] (v4l2_release+0x38/0x4c)
+<4>[   44.235862] [<c03f8488>] (v4l2_release+0x38/0x4c) from [<c01979dc>] (fput+0x124/0x21c)
+<4>[   44.235893] [<c01979dc>] (fput+0x124/0x21c) from [<c0194cc4>] (filp_close+0x60/0x6c)
+<4>[   44.235923] [<c0194cc4>] (filp_close+0x60/0x6c) from [<c0194d94>] (sys_close+0xc4/0x124)
+<4>[   44.235954] [<c0194d94>] (sys_close+0xc4/0x124) from [<c0115ee0>] (ret_fast_syscall+0x0/0x30)
+<4>[   44.235984] ---[ end trace 555f596141b362fb ]---
+<4>[   44.235984] ------------[ cut here ]------------
+<4>[   44.235984] WARNING: at arch/arm/mach-mmp/clock.c:104 clk_disable+0x20/0xa8()
+<4>[   44.236015] Modules linked in: galcore bmm mv_wtm_drv mv_wtm_prim
+<4>[   44.236045] [<c011be74>] (unwind_backtrace+0x0/0xf0) from [<c013ab58>] (warn_slowpath_common+0x4c/0x64)
+<4>[   44.236076] [<c013ab58>] (warn_slowpath_common+0x4c/0x64) from [<c013ab88>] (warn_slowpath_null+0x18/0x1c)
+<4>[   44.236076] [<c013ab88>] (warn_slowpath_null+0x18/0x1c) from [<c01206d0>] (clk_disable+0x20/0xa8)
+<4>[   44.236106] [<c01206d0>] (clk_disable+0x20/0xa8) from [<c012448c>] (cam_power_set+0x84/0xac)
+<4>[   44.236137] [<c012448c>] (cam_power_set+0x84/0xac) from [<c01244dc>] (sensor_power_set+0x28/0x130)
+<4>[   44.236167] [<c01244dc>] (sensor_power_set+0x28/0x130) from [<c0420024>] (ccic_v4l_release+0xd4/0x134)
+<4>[   44.236198] [<c0420024>] (ccic_v4l_release+0xd4/0x134) from [<c03f8488>] (v4l2_release+0x38/0x4c)
+<4>[   44.236228] [<c03f8488>] (v4l2_release+0x38/0x4c) from [<c01979dc>] (fput+0x124/0x21c)
+<4>[   44.236228] [<c01979dc>] (fput+0x124/0x21c) from [<c0194cc4>] (filp_close+0x60/0x6c)
+<4>[   44.236259] [<c0194cc4>] (filp_close+0x60/0x6c) from [<c0194d94>] (sys_close+0xc4/0x124)
+<4>[   44.236289] [<c0194d94>] (sys_close+0xc4/0x124) from [<c0115ee0>] (ret_fast_syscall+0x0/0x30)
+<4>[   44.236289] ---[ end trace 555f596141b362fc ]---
+<4>[   44.342735] Enter pxa168fb_release, fbi 0 opened 1 times -----------
+<4>[   44.613700] Enter pxa168fb_open, fbi 0 ---------------
+<4>[   44.613761] Enter pxa168fb_release, fbi 0 ---------------
+<4>[   44.613853] Enter pxa168fb_open, fbi 0 opened 0 times -----------
+<6>[   44.623496] SWITCH_VID_OVLY fbi 0 dma_on 0, val 0, waitlist (null) buf_current (null), ret 0
+<6>[   44.623527] SWITCH_VID_OVLY fbi 1 dma_on 0, val 0, waitlist (null) buf_current (null), ret 0
+<3>[   44.783836] uvcvideo: xx temp bufsize releaseLLLL: time = 0
+<4>[   45.918968] LLLL: time = 0
+<4>[   45.986809] LLLL: time = 0
+<6>[   45.989342] SWITCH_VID_OVLY fbi 0 dma_on 1, val 0, waitlist (null) buf_current (null), ret 0
+<6>[   45.989342] SWITCH_VID_OVLY fbi 1 dma_on 1, val 1, waitlist (null) buf_current (null), ret 0
+<4>[   46.051781] LLLL: time = 0
+<4>[   46.119683] LLLL: time = 0
+<4>[   46.187523] LLLL: time = 0
+<4>[   46.255486] LLLL: time = 0
+<4>[   46.323510] LLLL: time = 0
+<4>[   46.387841] LLLL: time = 0
+<4>[   46.455803] LLLL: time = 0
+<4>[   46.523827] LLLL: time = 0
+<4>[   46.591698] LLLL: time = 0
+<4>[   46.659569] LLLL: time = 0
+<4>[   46.727440] LLLL: time = 0
+<4>[   46.792016] LLLL: time = 0
+<4>[   46.864037] LLLL: time = 0
+<4>[   46.939965] LLLL: time = 1
+<4>[   47.127770] LLLL: time = 0
+<4>[   47.195367] LLLL: time = 0
+<4>[   47.263360] LLLL: time = 0
+<4>[   47.331262] LLLL: time = 0
+<4>[   47.399133] LLLL: time = 0
+<4>[   47.466882] LLLL: time = 0
+<4>[   47.531487] LLLL: time = 0
+<4>[   47.599359] LLLL: time = 0
+<4>[   47.667260] LLLL: time = 0
+<4>[   47.735192] LLLL: time = 0
+<4>[   47.802972] LLLL: time = 0
+<4>[   47.870904] LLLL: time = 0
+<4>[   47.935418] LLLL: time = 0
+<4>[   48.003289] LLLL: time = 0
+<4>[   48.071161] LLLL: time = 0
+<4>[   48.139215] LLLL: time = 0
+<4>[   48.207086] LLLL: time = 0
+<4>[   48.271448] LLLL: time = 0
+<4>[   48.339502] LLLL: time = 0
+<4>[   48.407403] LLLL: time = 0
+<4>[   48.475336] LLLL: time = 0
+<4>[   48.543176] LLLL: time = 0
+<4>[   48.610986] LLLL: time = 0
+<4>[   48.675562] LLLL: time = 0
+<4>[   48.743463] LLLL: time = 0
+<4>[   48.811243] LLLL: time = 0
+<4>[   48.878992] LLLL: time = 0
+<4>[   48.946863] LLLL: time = 1
+<4>[   49.011530] LLLL: time = 0
+<4>[   49.079279] LLLL: time = 0
+<4>[   49.147180] LLLL: time = 0
+<4>[   49.215052] LLLL: time = 0
+<4>[   49.282923] LLLL: time = 0
+<4>[   49.350733] LLLL: time = 0
+<4>[   49.415339] LLLL: time = 0
+<4>[   49.483240] LLLL: time = 0
+<4>[   49.551111] LLLL: time = 0
+<4>[   49.618952] LLLL: time = 0
+<4>[   49.686854] LLLL: time = 0
+<4>[   49.751337] LLLL: time = 0
+<4>[   49.819147] LLLL: time = 0
+<4>[   49.887079] LLLL: time = 0
+<4>[   49.955012] LLLL: time = 0
+<4>[   50.023035] LLLL: time = 0
+<4>[   50.090998] LLLL: time = 0
+<4>[   50.155329] LLLL: time = 0
+<4>[   50.223353] LLLL: time = 0
+<4>[   50.291285] LLLL: time = 0
+<4>[   50.359126] LLLL: time = 0
+<4>[   50.426997] LLLL: time = 0
+<4>[   50.491541] LLLL: time = 0
+<4>[   50.559413] LLLL: time = 0
+<4>[   50.627253] LLLL: time = 0
+<4>[   50.695033] LLLL: time = 0
+<4>[   50.762843] LLLL: time = 0
+<4>[   50.830683] LLLL: time = 0
+<4>[   50.895259] LLLL: time = 0
+<4>[   50.963069] LLLL: time = 0
+<4>[   51.031001] LLLL: time = 0
+<4>[   51.098872] LLLL: time = 0
+<4>[   51.166774] LLLL: time = 0
+<4>[   51.231196] LLLL: time = 0
+<4>[   51.299129] LLLL: time = 0
+<4>[   51.367030] LLLL: time = 0
+<4>[   51.434840] LLLL: time = 0
+<4>[   51.502803] LLLL: time = 0
+<4>[   51.570674] LLLL: time = 0
+<4>[   51.635158] LLLL: time = 0
+<4>[   51.703029] LLLL: time = 0
+<4>[   51.770931] LLLL: time = 0
+<4>[   51.838893] LLLL: time = 0
+<4>[   51.906856] LLLL: time = 0
+<4>[   51.971218] LLLL: time = 0
+<4>[   52.039150] LLLL: time = 0
+<4>[   52.107204] LLLL: time = 0
+<4>[   52.175106] LLLL: time = 0
+<4>[   52.242946] LLLL: time = 0
+<4>[   52.310848] LLLL: time = 0
+<4>[   52.375362] LLLL: time = 0
+<4>[   52.443264] LLLL: time = 0
+<4>[   52.511104] LLLL: time = 0
+<4>[   52.578731] LLLL: time = 0
+<4>[   52.646602] LLLL: time = 0
+<4>[   52.714504] LLLL: time = 0
+<4>[   52.779049] LLLL: time = 0
+<4>[   52.846950] LLLL: time = 0
+<4>[   52.914822] LLLL: time = 0
+<4>[   52.982693] LLLL: time = 0
+<4>[   53.050533] LLLL: time = 0
+<4>[   53.115047] LLLL: time = 0
+<4>[   53.183010] LLLL: time = 0
+<4>[   53.250820] LLLL: time = 0
+<4>[   53.318752] LLLL: time = 0
+<4>[   53.386562] LLLL: time = 0
+<4>[   53.454495] LLLL: time = 0
+<4>[   53.518978] LLLL: time = 0
+<4>[   53.586941] LLLL: time = 0
+<4>[   53.654690] LLLL: time = 0
+<4>[   53.722836] LLLL: time = 0
+<4>[   53.790799] LLLL: time = 0
+<4>[   53.855099] LLLL: time = 0
+<4>[   53.923031] LLLL: time = 0
+<4>[   53.990994] LLLL: time = 0
+<4>[   54.058896] LLLL: time = 0
+<4>[   54.126797] LLLL: time = 0
+<4>[   54.194607] LLLL: time = 0
+<4>[   54.259152] LLLL: time = 0
+<4>[   54.327023] LLLL: time = 0
+<4>[   54.394803] LLLL: time = 0
+<4>[   54.462613] LLLL: time = 0
+<4>[   54.530453] LLLL: time = 0
+<4>[   54.595059] LLLL: time = 0
+<4>[   54.662869] LLLL: time = 0
+<4>[   54.730801] LLLL: time = 0
+<4>[   54.798642] LLLL: time = 0
+<4>[   54.866452] LLLL: time = 0
+<4>[   54.934384] LLLL: time = 0
+<4>[   54.998868] LLLL: time = 0
+<4>[   55.066770] LLLL: time = 0
+<4>[   55.134702] LLLL: time = 0
+<4>[   55.202542] LLLL: time = 0
+<4>[   55.270414] LLLL: time = 0
+<4>[   55.334928] LLLL: time = 0
+<4>[   55.402829] LLLL: time = 0
+<4>[   55.470639] LLLL: time = 0
+<4>[   55.538602] LLLL: time = 0
+<4>[   55.606717] LLLL: time = 0
+<4>[   55.674558] LLLL: time = 0
+<4>[   55.738645] LLLL: time = 0
+<4>[   55.806486] LLLL: time = 0
+<4>[   55.874265] LLLL: time = 0
+<4>[   55.942228] LLLL: time = 0
+<4>[   56.010099] LLLL: time = 0
+<4>[   56.074613] LLLL: time = 0
+<4>[   56.142515] LLLL: time = 0
+<4>[   56.210416] LLLL: time = 0
+<4>[   56.278166] LLLL: time = 0
+<4>[   56.345976] LLLL: time = 0
+<4>[   56.413847] LLLL: time = 0
+<4>[   56.478300] LLLL: time = 0
+<4>[   56.546263] LLLL: time = 0
+<4>[   56.614103] LLLL: time = 0
+<4>[   56.681944] LLLL: time = 0
+<4>[   56.749906] LLLL: time = 0
+<4>[   56.814390] LLLL: time = 0
+<4>[   56.882200] LLLL: time = 0
+<4>[   56.950102] LLLL: time = 1
+<4>[   57.018004] LLLL: time = 0
+<4>[   57.085936] LLLL: time = 0
+<4>[   57.153776] LLLL: time = 0
+<4>[   57.218291] LLLL: time = 0
+<4>[   57.286131] LLLL: time = 0
+<4>[   57.354063] LLLL: time = 0
+<4>[   57.422026] LLLL: time = 0
+<4>[   57.490080] LLLL: time = 0
+<4>[   57.557860] LLLL: time = 0
+<4>[   57.622252] LLLL: time = 0
+<4>[   57.690276] LLLL: time = 0
+<4>[   57.758177] LLLL: time = 0
+<4>[   57.826048] LLLL: time = 0
+<4>[   57.893889] LLLL: time = 0
+<4>[   57.958434] LLLL: time = 0
+<4>[   58.026366] LLLL: time = 0
+<4>[   58.094237] LLLL: time = 0
+<4>[   58.162017] LLLL: time = 0
+<4>[   58.229796] LLLL: time = 0
+<4>[   58.297637] LLLL: time = 0
+<4>[   58.362151] LLLL: time = 0
+<4>[   58.430022] LLLL: time = 0
+<4>[   58.497924] LLLL: time = 0
+<4>[   58.565825] LLLL: time = 0
+<4>[   58.633727] LLLL: time = 0
+<4>[   58.698180] LLLL: time = 0
+<4>[   58.766112] LLLL: time = 0
+<4>[   58.833983] LLLL: time = 0
+<4>[   58.901794] LLLL: time = 0
+<4>[   58.969787] LLLL: time = 0
+<4>[   59.037627] LLLL: time = 0
+<4>[   59.102081] LLLL: time = 0
+<4>[   59.170013] LLLL: time = 0
+<4>[   59.237884] LLLL: time = 0
+<4>[   59.305908] LLLL: time = 0
+<4>[   59.373870] LLLL: time = 0
+<4>[   59.438171] LLLL: time = 0
+<4>[   59.506225] LLLL: time = 0
+<4>[   59.574188] LLLL: time = 0
+<4>[   59.642059] LLLL: time = 0
+<4>[   59.709899] LLLL: time = 0
+<4>[   59.777771] LLLL: time = 0
+<4>[   59.842315] LLLL: time = 0
+<4>[   59.910217] LLLL: time = 0
+<4>[   59.978058] LLLL: time = 0
+<4>[   60.045746] LLLL: time = 0
+<4>[   60.113617] LLLL: time = 0
+<4>[   60.178253] LLLL: time = 0
+<4>[   60.246002] LLLL: time = 0
+<4>[   60.313843] LLLL: time = 0
+<4>[   60.381805] LLLL: time = 0
+<4>[   60.449646] LLLL: time = 0
+<4>[   60.517487] LLLL: time = 0
+<4>[   60.582031] LLLL: time = 0
+<4>[   60.649902] LLLL: time = 0
+<4>[   60.717743] LLLL: time = 0
+<4>[   60.785706] LLLL: time = 0
+<4>[   60.853607] LLLL: time = 0
+<4>[   60.918091] LLLL: time = 0
+<4>[   60.985993] LLLL: time = 0
+<4>[   61.053803] LLLL: time = 0
+<4>[   61.121735] LLLL: time = 0
+<4>[   61.189789] LLLL: time = 0
+<4>[   61.257691] LLLL: time = 0
+<4>[   61.322052] LLLL: time = 0
+<4>[   61.390107] LLLL: time = 0
+<4>[   61.457917] LLLL: time = 0
+<4>[   61.525879] LLLL: time = 0
+<4>[   61.593720] LLLL: time = 0
+<4>[   61.658204] LLLL: time = 0
+<4>[   61.726105] LLLL: time = 0
+<4>[   61.794007] LLLL: time = 0
+<4>[   61.861756] LLLL: time = 0
+<4>[   61.929536] LLLL: time = 0
+<4>[   61.997468] LLLL: time = 0
+<4>[   62.062043] LLLL: time = 0
+<4>[   62.129823] LLLL: time = 0
+<4>[   62.197694] LLLL: time = 0
+<4>[   62.265656] LLLL: time = 0
+<4>[   62.333436] LLLL: time = 0
+<4>[   62.398011] LLLL: time = 0
+<4>[   62.465852] LLLL: time = 0
+<4>[   62.533723] LLLL: time = 0
+<4>[   62.601625] LLLL: time = 0
+<4>[   62.669496] LLLL: time = 0
+<4>[   62.737397] LLLL: time = 0
+<4>[   62.801912] LLLL: time = 0
+<4>[   62.869783] LLLL: time = 0
+<4>[   62.937654] LLLL: time = 0
+<4>[   63.005647] LLLL: time = 0
+<4>[   63.073640] LLLL: time = 0
+<4>[   63.141511] LLLL: time = 0
+<4>[   63.205934] LLLL: time = 0
+<4>[   63.273927] LLLL: time = 0
+<4>[   63.341798] LLLL: time = 0
+<4>[   63.409700] LLLL: time = 0
+<4>[   63.477541] LLLL: time = 0
+<4>[   63.542055] LLLL: time = 0
+<4>[   63.609926] LLLL: time = 0
+<4>[   63.677828] LLLL: time = 0
+<4>[   63.745577] LLLL: time = 0
+<4>[   63.813417] LLLL: time = 0
+<4>[   63.881258] LLLL: time = 0
+<4>[   63.945772] LLLL: time = 0
+<4>[   64.013643] LLLL: time = 0
+<4>[   64.081514] LLLL: time = 0
+<4>[   64.149416] LLLL: time = 0
+<4>[   64.217287] LLLL: time = 0
+<4>[   64.281832] LLLL: time = 0
+<4>[   64.349672] LLLL: time = 0
+<4>[   64.417574] LLLL: time = 0
+<4>[   64.485445] LLLL: time = 0
+<4>[   64.553286] LLLL: time = 0
+<4>[   64.621218] LLLL: time = 0
+<4>[   64.685763] LLLL: time = 0
+<4>[   64.753573] LLLL: time = 0
+<4>[   64.821505] LLLL: time = 0
+<4>[   64.889529] LLLL: time = 0
+<4>[   64.957491] LLLL: time = 1
+<4>[   65.021761] LLLL: time = 0
+<4>[   65.089846] LLLL: time = 0
+<4>[   65.157748] LLLL: time = 0
+<4>[   65.225619] LLLL: time = 0
+<4>[   65.293520] LLLL: time = 0
+<4>[   65.361422] LLLL: time = 0
+<4>[   65.425875] LLLL: time = 0
+<4>[   65.493777] LLLL: time = 0
+<4>[   65.561618] LLLL: time = 0
+<4>[   65.629306] LLLL: time = 0
+<4>[   65.697207] LLLL: time = 0
+<4>[   65.761782] LLLL: time = 0
+<4>[   65.829562] LLLL: time = 0
+<4>[   65.897494] LLLL: time = 0
+<4>[   65.965335] LLLL: time = 1
+<4>[   66.033267] LLLL: time = 0
+<4>[   66.101077] LLLL: time = 0
+<4>[   66.165652] LLLL: time = 0
+<4>[   66.233493] LLLL: time = 0
+<4>[   66.301395] LLLL: time = 0
+<4>[   66.369266] LLLL: time = 0
+<4>[   66.437167] LLLL: time = 0
+<4>[   66.501681] LLLL: time = 0
+<4>[   66.569553] LLLL: time = 0
+<4>[   66.637424] LLLL: time = 0
+<4>[   66.705325] LLLL: time = 0
+<4>[   66.773410] LLLL: time = 0
+<4>[   66.841281] LLLL: time = 0
+<4>[   66.905673] LLLL: time = 0
+<4>[   66.973667] LLLL: time = 0
+<4>[   67.041538] LLLL: time = 0
+<4>[   67.109470] LLLL: time = 0
+<4>[   67.177341] LLLL: time = 0
+<4>[   67.241794] LLLL: time = 0
+<4>[   67.309726] LLLL: time = 0
+<4>[   67.377597] LLLL: time = 0
+<4>[   67.445316] LLLL: time = 0
+<4>[   67.513126] LLLL: time = 0
+<4>[   67.580997] LLLL: time = 0
+<4>[   67.645603] LLLL: time = 0
+<4>[   67.713413] LLLL: time = 0
+<4>[   67.781315] LLLL: time = 0
+<4>[   67.849155] LLLL: time = 0
+<4>[   67.917057] LLLL: time = 0
+<4>[   67.984959] LLLL: time = 0
+<4>[   68.049442] LLLL: time = 0
+<4>[   68.117313] LLLL: time = 0
+<4>[   68.185246] LLLL: time = 0
+<4>[   68.253117] LLLL: time = 0
+<4>[   68.320988] LLLL: time = 0
+<4>[   68.385472] LLLL: time = 0
+<4>[   68.453343] LLLL: time = 0
+<4>[   68.521244] LLLL: time = 0
+<4>[   68.589237] LLLL: time = 0
+<4>[   68.657231] LLLL: time = 0
+<4>[   68.725163] LLLL: time = 0
+<4>[   68.789463] LLLL: time = 0
+<4>[   68.857487] LLLL: time = 0
+<4>[   68.925419] LLLL: time = 0
+<4>[   68.993229] LLLL: time = 0
+<4>[   69.061192] LLLL: time = 0
+<4>[   69.125615] LLLL: time = 0
+<4>[   69.193577] LLLL: time = 0
+<4>[   69.261418] LLLL: time = 0
+<4>[   69.329137] LLLL: time = 0
+<4>[   69.396977] LLLL: time = 0
+<4>[   69.464818] LLLL: time = 0
+<4>[   69.529362] LLLL: time = 0
+<4>[   69.597264] LLLL: time = 0
+<4>[   69.665135] LLLL: time = 0
+<4>[   69.733037] LLLL: time = 0
+<4>[   69.800878] LLLL: time = 0
+<4>[   69.865392] LLLL: time = 0
+<4>[   69.933263] LLLL: time = 0
+<4>[   70.001195] LLLL: time = 0
+<4>[   70.069066] LLLL: time = 0
+<4>[   70.136968] LLLL: time = 0
+<4>[   70.204778] LLLL: time = 0
+<4>[   70.269262] LLLL: time = 0
+<4>[   70.337224] LLLL: time = 0
+<4>[   70.405065] LLLL: time = 0
+<4>[   70.473180] LLLL: time = 0
+<4>[   70.541051] LLLL: time = 0
+<4>[   70.605321] LLLL: time = 0
+<4>[   70.673406] LLLL: time = 0
+<4>[   70.741338] LLLL: time = 0
+<4>[   70.809209] LLLL: time = 0
+<4>[   70.877050] LLLL: time = 0
+<4>[   70.944952] LLLL: time = 0
+<4>[   71.009496] LLLL: time = 0
+<4>[   71.077367] LLLL: time = 0
+<4>[   71.145208] LLLL: time = 0
+<4>[   71.212896] LLLL: time = 0
+<4>[   71.280798] LLLL: time = 0
+<4>[   71.345403] LLLL: time = 0
+<4>[   71.413183] LLLL: time = 0
+<4>[   71.481085] LLLL: time = 0
+<4>[   71.548925] LLLL: time = 0
+<4>[   71.616857] LLLL: time = 0
+<4>[   71.684698] LLLL: time = 0
+<4>[   71.749182] LLLL: time = 0
+<4>[   71.817083] LLLL: time = 0
+<4>[   71.885016] LLLL: time = 0
+<4>[   71.952856] LLLL: time = 0
+<4>[   72.020788] LLLL: time = 0
+<4>[   72.085272] LLLL: time = 0
+<4>[   72.153113] LLLL: time = 0
+<4>[   72.221014] LLLL: time = 0
+<4>[   72.288916] LLLL: time = 0
+<4>[   72.357001] LLLL: time = 0
+<4>[   72.424872] LLLL: time = 0
+<4>[   72.489264] LLLL: time = 0
+<4>[   72.557318] LLLL: time = 0
+<4>[   72.625128] LLLL: time = 0
+<4>[   72.693030] LLLL: time = 0
+<4>[   72.760932] LLLL: time = 0
+<4>[   72.825385] LLLL: time = 0
+<4>[   72.893286] LLLL: time = 0
+<4>[   72.961218] LLLL: time = 0
+<4>[   73.028937] LLLL: time = 0
+<4>[   73.096778] LLLL: time = 0
+<4>[   73.164649] LLLL: time = 0
+<4>[   73.229163] LLLL: time = 0
+<4>[   73.297004] LLLL: time = 0
+<4>[   73.364905] LLLL: time = 0
+<4>[   73.432776] LLLL: time = 0
+<4>[   73.500678] LLLL: time = 0
+<4>[   73.568549] LLLL: time = 0
+<4>[   73.633063] LLLL: time = 0
+<4>[   73.700904] LLLL: time = 0
+<4>[   73.768775] LLLL: time = 0
+<4>[   73.836738] LLLL: time = 0
+<4>[   73.904578] LLLL: time = 0
+<4>[   73.969093] LLLL: time = 1
+<4>[   74.036964] LLLL: time = 0
+<4>[   74.104835] LLLL: time = 0
+<4>[   74.172828] LLLL: time = 0
+<4>[   74.240821] LLLL: time = 0
+<4>[   74.308692] LLLL: time = 0
+<4>[   74.373145] LLLL: time = 0
+<4>[   74.441047] LLLL: time = 0
+<4>[   74.508979] LLLL: time = 0
+<4>[   74.576881] LLLL: time = 0
+<4>[   74.644752] LLLL: time = 0
+<4>[   74.709266] LLLL: time = 0
+<4>[   74.777137] LLLL: time = 0
+<4>[   74.845009] LLLL: time = 0
+<4>[   74.912697] LLLL: time = 0
+<4>[   74.980568] LLLL: time = 0
+<4>[   75.048439] LLLL: time = 0
+<4>[   75.112922] LLLL: time = 0
+<4>[   75.180855] LLLL: time = 0
+<4>[   75.248665] LLLL: time = 0
+<4>[   75.316627] LLLL: time = 0
+<4>[   75.384499] LLLL: time = 0
+<4>[   75.448982] LLLL: time = 0
+<4>[   75.516853] LLLL: time = 0
+<4>[   75.584755] LLLL: time = 0
+<4>[   75.652626] LLLL: time = 0
+<4>[   75.720497] LLLL: time = 0
+<4>[   75.788368] LLLL: time = 0
+<4>[   75.852944] LLLL: time = 0
+<4>[   75.920784] LLLL: time = 0
+<4>[   75.988686] LLLL: time = 0
+<4>[   76.056771] LLLL: time = 0
+<4>[   76.124672] LLLL: time = 0
+<4>[   76.188942] LLLL: time = 0
+<4>[   76.256997] LLLL: time = 0
+<4>[   76.324898] LLLL: time = 0
+<4>[   76.392830] LLLL: time = 0
+<4>[   76.460701] LLLL: time = 0
+<4>[   76.528573] LLLL: time = 0
+<4>[   76.593087] LLLL: time = 0
+<4>[   76.660927] LLLL: time = 0
+<4>[   76.728738] LLLL: time = 0
+<4>[   76.796517] LLLL: time = 0
+<4>[   76.864419] LLLL: time = 0
+<4>[   76.928994] LLLL: time = 0
+<4>[   76.996804] LLLL: time = 0
+<4>[   77.064645] LLLL: time = 0
+<4>[   77.132516] LLLL: time = 0
+<4>[   77.200417] LLLL: time = 0
+<4>[   77.268350] LLLL: time = 0
+<4>[   77.332803] LLLL: time = 0
+<4>[   77.400735] LLLL: time = 0
+<4>[   77.468576] LLLL: time = 0
+<4>[   77.536447] LLLL: time = 0
+<4>[   77.604348] LLLL: time = 0
+<4>[   77.668832] LLLL: time = 0
+<4>[   77.736734] LLLL: time = 0
+<4>[   77.804635] LLLL: time = 0
+<4>[   77.872506] LLLL: time = 0
+<4>[   77.940622] LLLL: time = 0
+<4>[   78.008493] LLLL: time = 0
+<4>[   78.072854] LLLL: time = 0
+<4>[   78.140848] LLLL: time = 0
+<4>[   78.208749] LLLL: time = 0
+<4>[   78.276620] LLLL: time = 0
+<4>[   78.344492] LLLL: time = 0
+<4>[   78.412271] LLLL: time = 0
+<4>[   78.476907] LLLL: time = 0
+<4>[   78.544778] LLLL: time = 0
+<4>[   78.612558] LLLL: time = 0
+<4>[   78.680338] LLLL: time = 0
+<4>[   78.748209] LLLL: time = 0
+<4>[   78.812753] LLLL: time = 0
+<4>[   78.880594] LLLL: time = 0
+<4>[   78.948496] LLLL: time = 0
+<4>[   79.016367] LLLL: time = 0
+<4>[   79.084207] LLLL: time = 0
+<4>[   79.152079] LLLL: time = 0
+<4>[   79.216654] LLLL: time = 0
+<4>[   79.284525] LLLL: time = 0
+<4>[   79.352427] LLLL: time = 0
+<4>[   79.420298] LLLL: time = 0
+<4>[   79.488108] LLLL: time = 0
+<4>[   79.552653] LLLL: time = 0
+<4>[   79.620554] LLLL: time = 0
+<4>[   79.688456] LLLL: time = 0
+<4>[   79.756419] LLLL: time = 0
+<4>[   79.824412] LLLL: time = 0
+<4>[   79.892313] LLLL: time = 0
+<4>[   79.956736] LLLL: time = 0
+<4>[   80.024668] LLLL: time = 0
+<4>[   80.092570] LLLL: time = 0
+<4>[   80.160471] LLLL: time = 0
+<4>[   80.228373] LLLL: time = 0
+<4>[   80.292857] LLLL: time = 0
+<4>[   80.360728] LLLL: time = 0
+<4>[   80.428630] LLLL: time = 0
+<4>[   80.496318] LLLL: time = 0
+<4>[   80.564158] LLLL: time = 0
+<4>[   80.632029] LLLL: time = 0
+<4>[   80.696544] LLLL: time = 0
+<4>[   80.764415] LLLL: time = 0
+<4>[   80.832316] LLLL: time = 0
+<4>[   80.900187] LLLL: time = 0
+<4>[   80.968089] LLLL: time = 0
+<4>[   81.032542] LLLL: time = 0
+<4>[   81.100444] LLLL: time = 0
+<4>[   81.168376] LLLL: time = 0
+<4>[   81.236217] LLLL: time = 0
+<4>[   81.304118] LLLL: time = 0
+<4>[   81.371989] LLLL: time = 0
+<4>[   81.436473] LLLL: time = 0
+<4>[   81.504375] LLLL: time = 0
+<4>[   81.572276] LLLL: time = 0
+<4>[   81.640361] LLLL: time = 0
+<4>[   81.708232] LLLL: time = 0
+<4>[   81.772563] LLLL: time = 0
+<4>[   81.840648] LLLL: time = 0
+<4>[   81.908489] LLLL: time = 0
+<4>[   81.976390] LLLL: time = 1
+<4>[   82.044261] LLLL: time = 0
+<4>[   82.112133] LLLL: time = 0
+<4>[   82.176677] LLLL: time = 0
+<4>[   82.244548] LLLL: time = 0
+<4>[   82.312359] LLLL: time = 0
+<4>[   82.380138] LLLL: time = 0
+<4>[   82.447979] LLLL: time = 0
+<4>[   82.512554] LLLL: time = 0
+<4>[   82.580364] LLLL: time = 0
+<4>[   82.648266] LLLL: time = 0
+<4>[   82.716167] LLLL: time = 0
+<4>[   82.784008] LLLL: time = 0
+<4>[   82.851910] LLLL: time = 0
+<4>[   82.916363] LLLL: time = 0
+<4>[   82.984234] LLLL: time = 0
+<4>[   83.052197] LLLL: time = 0
+<4>[   83.120068] LLLL: time = 0
+<4>[   83.187969] LLLL: time = 0
+<4>[   83.252422] LLLL: time = 0
+<4>[   83.320324] LLLL: time = 0
+<4>[   83.388195] LLLL: time = 0
+<4>[   83.456158] LLLL: time = 0
+<4>[   83.524151] LLLL: time = 0
+<4>[   83.592114] LLLL: time = 0
+<4>[   83.656445] LLLL: time = 0
+<4>[   83.724469] LLLL: time = 0
+<4>[   83.792340] LLLL: time = 0
+<4>[   83.860211] LLLL: time = 0
+<4>[   83.928113] LLLL: time = 0
+<4>[   83.995831] LLLL: time = 0
+<4>[   84.060467] LLLL: time = 0
+<4>[   84.128400] LLLL: time = 0
+<4>[   84.196149] LLLL: time = 0
+<4>[   84.263898] LLLL: time = 0
+<4>[   84.331830] LLLL: time = 0
+<4>[   84.396313] LLLL: time = 0
+<4>[   84.464185] LLLL: time = 0
+<4>[   84.532056] LLLL: time = 0
+<4>[   84.599988] LLLL: time = 0
+<4>[   84.667828] LLLL: time = 0
+<4>[   84.735730] LLLL: time = 0
+<4>[   84.800214] LLLL: time = 0
+<4>[   84.868115] LLLL: time = 0
+<4>[   84.935987] LLLL: time = 0
+<4>[   85.003919] LLLL: time = 0
+<4>[   85.071820] LLLL: time = 0
+<4>[   85.136274] LLLL: time = 0
+<4>[   85.204145] LLLL: time = 0
+<4>[   85.272016] LLLL: time = 0
+<4>[   85.340040] LLLL: time = 0
+<4>[   85.408002] LLLL: time = 0
+<4>[   85.475873] LLLL: time = 0
+<4>[   85.540357] LLLL: time = 0
+<4>[   85.608289] LLLL: time = 0
+<4>[   85.676191] LLLL: time = 0
+<4>[   85.744062] LLLL: time = 0
+<4>[   85.811903] LLLL: time = 0
+<4>[   85.876417] LLLL: time = 0
+<4>[   85.944288] LLLL: time = 0
+<4>[   86.012190] LLLL: time = 0
+<4>[   86.079878] LLLL: time = 0
+<4>[   86.147810] LLLL: time = 0
+<4>[   86.215650] LLLL: time = 0
+<4>[   86.280134] LLLL: time = 0
+<4>[   86.348066] LLLL: time = 0
+<4>[   86.415876] LLLL: time = 0
+<4>[   86.483808] LLLL: time = 0
+<4>[   86.551710] LLLL: time = 0
+<4>[   86.616163] LLLL: time = 0
+<4>[   86.684034] LLLL: time = 0
+<4>[   86.751936] LLLL: time = 0
+<4>[   86.819807] LLLL: time = 0
+<4>[   86.887709] LLLL: time = 0
+<4>[   86.955610] LLLL: time = 0
+<4>[   87.020094] LLLL: time = 0
+<4>[   87.087996] LLLL: time = 0
+<4>[   87.155897] LLLL: time = 0
+<4>[   87.223952] LLLL: time = 0
+<4>[   87.291853] LLLL: time = 0
+<4>[   87.356154] LLLL: time = 0
+<4>[   87.424208] LLLL: time = 0
+<4>[   87.492110] LLLL: time = 0
+<4>[   87.560011] LLLL: time = 0
+<4>[   87.627883] LLLL: time = 0
+<4>[   87.695723] LLLL: time = 0
+<4>[   87.760268] LLLL: time = 0
+<4>[   87.828108] LLLL: time = 0
+<4>[   87.895888] LLLL: time = 0
+<4>[   87.963698] LLLL: time = 0
+<4>[   88.031539] LLLL: time = 0
+<4>[   88.096205] LLLL: time = 0
+<4>[   88.163985] LLLL: time = 0
+<4>[   88.231795] LLLL: time = 0
+<4>[   88.299727] LLLL: time = 0
+<4>[   88.367598] LLLL: time = 0
+<4>[   88.435470] LLLL: time = 0
+<4>[   88.500014] LLLL: time = 0
+<4>[   88.567885] LLLL: time = 0
+<4>[   88.635787] LLLL: time = 0
+<4>[   88.703628] LLLL: time = 0
+<4>[   88.771499] LLLL: time = 0
+<4>[   88.839400] LLLL: time = 0
+<4>[   88.903945] LLLL: time = 0
+<4>[   88.971816] LLLL: time = 0
+<4>[   89.039748] LLLL: time = 0
+<4>[   89.107803] LLLL: time = 0
+<4>[   89.175674] LLLL: time = 0
+<4>[   89.239974] LLLL: time = 0
+<4>[   89.308029] LLLL: time = 0
+<4>[   89.375961] LLLL: time = 0
+<4>[   89.443771] LLLL: time = 0
+<4>[   89.511703] LLLL: time = 0
+<4>[   89.579452] LLLL: time = 0
+<4>[   89.644088] LLLL: time = 0
+<4>[   89.711959] LLLL: time = 0
+<4>[   89.779709] LLLL: time = 0
+<4>[   89.847549] LLLL: time = 0
+<4>[   89.915390] LLLL: time = 0
+<4>[   89.979904] LLLL: time = 1
+<4>[   90.047836] LLLL: time = 0
+<4>[   90.115677] LLLL: time = 0
+<4>[   90.183548] LLLL: time = 0
+<4>[   90.251388] LLLL: time = 0
+<4>[   90.319290] LLLL: time = 0
+<4>[   90.383804] LLLL: time = 0
+<4>[   90.451736] LLLL: time = 0
+<4>[   90.519608] LLLL: time = 0
+<4>[   90.587479] LLLL: time = 0
+<4>[   90.655380] LLLL: time = 0
+<4>[   90.719864] LLLL: time = 0
+<4>[   90.787735] LLLL: time = 0
+<4>[   90.855637] LLLL: time = 0
+<4>[   90.923600] LLLL: time = 0
+<4>[   90.991623] LLLL: time = 0
+<4>[   91.059525] LLLL: time = 0
+<4>[   91.123978] LLLL: time = 0
+<4>[   91.191880] LLLL: time = 0
+<4>[   91.259751] LLLL: time = 0
+<4>[   91.327622] LLLL: time = 0
+<4>[   91.395524] LLLL: time = 0
+<4>[   91.460038] LLLL: time = 0
+<4>[   91.527909] LLLL: time = 0
+<4>[   91.595780] LLLL: time = 0
+<4>[   91.663438] LLLL: time = 0
+<4>[   91.731309] LLLL: time = 0
+<4>[   91.799180] LLLL: time = 0
+<4>[   91.863694] LLLL: time = 0
+<4>[   91.931626] LLLL: time = 0
+<4>[   91.999497] LLLL: time = 0
+<4>[   92.067368] LLLL: time = 0
+<4>[   92.135270] LLLL: time = 0
+<4>[   92.199723] LLLL: time = 0
+<4>[   92.267655] LLLL: time = 0
+<4>[   92.335527] LLLL: time = 0
+<4>[   92.403428] LLLL: time = 0
+<4>[   92.471299] LLLL: time = 0
+<4>[   92.539170] LLLL: time = 0
+<4>[   92.603654] LLLL: time = 0
+<4>[   92.671556] LLLL: time = 0
+<4>[   92.739457] LLLL: time = 0
+<4>[   92.807512] LLLL: time = 0
+<4>[   92.875383] LLLL: time = 0
+<4>[   92.939744] LLLL: time = 0
+<4>[   93.007799] LLLL: time = 0
+<4>[   93.075700] LLLL: time = 0
+<4>[   93.143571] LLLL: time = 0
+<4>[   93.211442] LLLL: time = 0
+<4>[   93.279314] LLLL: time = 0
+<4>[   93.343858] LLLL: time = 0
+<4>[   93.411790] LLLL: time = 0
+<4>[   93.479448] LLLL: time = 0
+<4>[   93.547289] LLLL: time = 0
+<4>[   93.615129] LLLL: time = 0
+<4>[   93.679735] LLLL: time = 0
+<4>[   93.747515] LLLL: time = 0
+<4>[   93.815447] LLLL: time = 0
+<4>[   93.883348] LLLL: time = 0
+<4>[   93.951219] LLLL: time = 0
+<4>[   94.019091] LLLL: time = 0
+<4>[   94.083544] LLLL: time = 0
+<4>[   94.151506] LLLL: time = 0
+<4>[   94.219378] LLLL: time = 0
+<4>[   94.287249] LLLL: time = 0
+<4>[   94.355120] LLLL: time = 0
+<4>[   94.423052] LLLL: time = 0
+<4>[   94.487444] LLLL: time = 0
+<4>[   94.555407] LLLL: time = 0
+<4>[   94.623339] LLLL: time = 0
+<4>[   94.691363] LLLL: time = 0
+<4>[   94.759234] LLLL: time = 0
+<4>[   94.823626] LLLL: time = 0
+<4>[   94.891680] LLLL: time = 0
+<4>[   94.959490] LLLL: time = 0
+<4>[   95.027422] LLLL: time = 0
+<4>[   95.095294] LLLL: time = 0
+<4>[   95.163073] LLLL: time = 0
+<4>[   95.227679] LLLL: time = 0
+<4>[   95.295550] LLLL: time = 0
+<4>[   95.363299] LLLL: time = 0
+<4>[   95.431109] LLLL: time = 0
+<4>[   95.499011] LLLL: time = 0
+<4>[   95.563494] LLLL: time = 0
+<4>[   95.631335] LLLL: time = 0
+<4>[   95.699267] LLLL: time = 0
+<4>[   95.767169] LLLL: time = 0
+<4>[   95.835010] LLLL: time = 0
+<4>[   95.902911] LLLL: time = 0
+<4>[   95.967395] LLLL: time = 0
+<4>[   96.035266] LLLL: time = 0
+<4>[   96.103137] LLLL: time = 0
+<4>[   96.171069] LLLL: time = 0
+<4>[   96.238940] LLLL: time = 0
+<4>[   96.303455] LLLL: time = 0
+<4>[   96.371326] LLLL: time = 0
+<4>[   96.439227] LLLL: time = 0
+<4>[   96.507221] LLLL: time = 0
+<4>[   96.575183] LLLL: time = 0
+<4>[   96.643115] LLLL: time = 0
+<4>[   96.707599] LLLL: time = 0
+<4>[   96.775501] LLLL: time = 0
+<4>[   96.843372] LLLL: time = 0
+<4>[   96.911212] LLLL: time = 0
+<4>[   96.979114] LLLL: time = 0
+<4>[   97.043598] LLLL: time = 0
+<4>[   97.111499] LLLL: time = 0
+<4>[   97.179340] LLLL: time = 0
+<4>[   97.247028] LLLL: time = 0
+<4>[   97.314930] LLLL: time = 0
+<4>[   97.382862] LLLL: time = 0
+<4>[   97.447315] LLLL: time = 0
+<4>[   97.515156] LLLL: time = 0
+<4>[   97.583088] LLLL: time = 0
+<4>[   97.650989] LLLL: time = 0
+<4>[   97.718830] LLLL: time = 0
+<4>[   97.783344] LLLL: time = 0
+<4>[   97.851215] LLLL: time = 0
+<4>[   97.919086] LLLL: time = 0
+<4>[   97.987019] LLLL: time = 1
+<4>[   98.054890] LLLL: time = 0
+<4>[   98.122761] LLLL: time = 0
+<4>[   98.187306] LLLL: time = 0
+<4>[   98.255177] LLLL: time = 0
+<4>[   98.323078] LLLL: time = 0
+<4>[   98.391163] LLLL: time = 0
+<4>[   98.458973] LLLL: time = 0
+<4>[   98.523396] LLLL: time = 0
+<4>[   98.591389] LLLL: time = 0
+<4>[   98.659291] LLLL: time = 0
+<4>[   98.727192] LLLL: time = 0
+<4>[   98.795033] LLLL: time = 0
+<4>[   98.862874] LLLL: time = 0
+<4>[   98.927418] LLLL: time = 0
+<4>[   98.995289] LLLL: time = 1
+<4>[   99.063069] LLLL: time = 0
+<4>[   99.130910] LLLL: time = 0
+<4>[   99.198781] LLLL: time = 0
+<4>[   99.266621] LLLL: time = 0
+<4>[   99.331136] LLLL: time = 0
+<4>[   99.399007] LLLL: time = 0
+<4>[   99.466908] LLLL: time = 0
+<4>[   99.534749] LLLL: time = 0
+<4>[   99.602681] LLLL: time = 0
+<4>[   99.667195] LLLL: time = 0
+<4>[   99.735066] LLLL: time = 0
+<4>[   99.802968] LLLL: time = 0
+<4>[   99.870839] LLLL: time = 0
+<4>[   99.938680] LLLL: time = 0
+<4>[  100.006643] LLLL: time = 0
+<4>[  100.071096] LLLL: time = 0
+<4>[  100.138997] LLLL: time = 0
+<4>[  100.206960] LLLL: time = 0
+<4>[  100.274953] LLLL: time = 0
+<4>[  100.342885] LLLL: time = 0
+<4>[  100.407216] LLLL: time = 0
+<4>[  100.475240] LLLL: time = 0
+<4>[  100.543111] LLLL: time = 0
+<4>[  100.611013] LLLL: time = 0
+<4>[  100.678915] LLLL: time = 0
+<4>[  100.746633] LLLL: time = 0
+<4>[  100.811269] LLLL: time = 0
+<4>[  100.879141] LLLL: time = 0
+<4>[  100.946859] LLLL: time = 0
+<4>[  101.014669] LLLL: time = 0
+<4>[  101.082632] LLLL: time = 0
+<4>[  101.147085] LLLL: time = 0
+<4>[  101.214987] LLLL: time = 0
+<4>[  101.282858] LLLL: time = 0
+<4>[  101.350698] LLLL: time = 0
+<4>[  101.418600] LLLL: time = 0
+<4>[  101.486502] LLLL: time = 0
+<4>[  101.550985] LLLL: time = 0
+<4>[  101.618887] LLLL: time = 0
+<4>[  101.686789] LLLL: time = 0
+<4>[  101.754629] LLLL: time = 0
+<4>[  101.822500] LLLL: time = 0
+<4>[  101.887015] LLLL: time = 0
+<4>[  101.954886] LLLL: time = 0
+<4>[  102.022848] LLLL: time = 0
+<4>[  102.090872] LLLL: time = 0
+<4>[  102.158835] LLLL: time = 0
+<4>[  102.226645] LLLL: time = 0
+<4>[  102.291129] LLLL: time = 0
+<4>[  102.359030] LLLL: time = 0
+<4>[  102.426932] LLLL: time = 0
+<4>[  102.494803] LLLL: time = 0
+<4>[  102.562735] LLLL: time = 0
+<4>[  102.627219] LLLL: time = 0
+<4>[  102.695120] LLLL: time = 0
+<4>[  102.762931] LLLL: time = 0
+<4>[  102.830619] LLLL: time = 0
+<4>[  102.898490] LLLL: time = 0
+<4>[  102.966361] LLLL: time = 0
+<4>[  103.030906] LLLL: time = 0
+<4>[  103.098807] LLLL: time = 0
+<4>[  103.166709] LLLL: time = 0
+<4>[  103.234580] LLLL: time = 0
+<4>[  103.302421] LLLL: time = 0
+<4>[  103.366904] LLLL: time = 0
+<4>[  103.434836] LLLL: time = 0
+<4>[  103.502708] LLLL: time = 0
+<4>[  103.570609] LLLL: time = 0
+<4>[  103.638511] LLLL: time = 0
+<4>[  103.706412] LLLL: time = 0
+<4>[  103.770896] LLLL: time = 0
+<4>[  103.838737] LLLL: time = 0
+<4>[  103.906608] LLLL: time = 0
+<4>[  103.974723] LLLL: time = 0
+<4>[  104.042625] LLLL: time = 0
+<4>[  104.106986] LLLL: time = 0
+<4>[  104.175010] LLLL: time = 0
+<4>[  104.242881] LLLL: time = 0
+<4>[  104.310783] LLLL: time = 0
+<4>[  104.378654] LLLL: time = 0
+<4>[  104.446434] LLLL: time = 0
+<4>[  104.511039] LLLL: time = 0
+<4>[  104.578941] LLLL: time = 0
+<4>[  104.646690] LLLL: time = 0
+<4>[  104.714470] LLLL: time = 0
+<4>[  104.782341] LLLL: time = 0
+<4>[  104.850242] LLLL: time = 0
+<4>[  104.914726] LLLL: time = 0
+<4>[  104.982628] LLLL: time = 0
+<4>[  105.050560] LLLL: time = 0
+<4>[  105.118400] LLLL: time = 0
+<4>[  105.186302] LLLL: time = 0
+<4>[  105.250755] LLLL: time = 0
+<4>[  105.318626] LLLL: time = 0
+<4>[  105.386528] LLLL: time = 0
+<4>[  105.454460] LLLL: time = 0
+<4>[  105.522270] LLLL: time = 0
+<4>[  105.590233] LLLL: time = 0
+<4>[  105.654686] LLLL: time = 0
+<4>[  105.722557] LLLL: time = 0
+<4>[  105.790581] LLLL: time = 0
+<4>[  105.858574] LLLL: time = 0
+<4>[  105.926445] LLLL: time = 0
+<4>[  105.990807] LLLL: time = 0
+<4>[  106.058831] LLLL: time = 0
+<4>[  106.126702] LLLL: time = 0
+<4>[  106.194573] LLLL: time = 0
+<4>[  106.262475] LLLL: time = 0
+<4>[  106.330224] LLLL: time = 0
+<4>[  106.394829] LLLL: time = 0
+<4>[  106.462762] LLLL: time = 0
+<4>[  106.530450] LLLL: time = 0
+<4>[  106.598260] LLLL: time = 0
+<4>[  106.666192] LLLL: time = 0
+<4>[  106.730645] LLLL: time = 0
+<4>[  106.798547] LLLL: time = 0
+<4>[  106.866448] LLLL: time = 0
+<4>[  106.934319] LLLL: time = 0
+<4>[  107.002191] LLLL: time = 1
+<4>[  107.070123] LLLL: time = 0
+<4>[  107.134576] LLLL: time = 0
+<4>[  107.202477] LLLL: time = 0
+<4>[  107.270379] LLLL: time = 0
+<4>[  107.338281] LLLL: time = 0
+<4>[  107.406152] LLLL: time = 0
+<4>[  107.470636] LLLL: time = 0
+<4>[  107.538537] LLLL: time = 0
+<4>[  107.606378] LLLL: time = 0
+<4>[  107.674493] LLLL: time = 0
+<4>[  107.742425] LLLL: time = 0
+<4>[  107.810235] LLLL: time = 0
+<4>[  107.874719] LLLL: time = 0
+<4>[  107.942651] LLLL: time = 0
+<4>[  108.010553] LLLL: time = 0
+<4>[  108.078393] LLLL: time = 0
+<4>[  108.146295] LLLL: time = 0
+<4>[  108.210779] LLLL: time = 0
+<4>[  108.278680] LLLL: time = 0
+<4>[  108.346521] LLLL: time = 0
+<4>[  108.414240] LLLL: time = 0
+<4>[  108.482080] LLLL: time = 0
+<4>[  108.550043] LLLL: time = 0
+<4>[  108.614496] LLLL: time = 0
+<4>[  108.682398] LLLL: time = 0
+<4>[  108.750238] LLLL: time = 0
+<4>[  108.818170] LLLL: time = 0
+<4>[  108.886042] LLLL: time = 0
+<4>[  108.950525] LLLL: time = 0
+<4>[  109.018457] LLLL: time = 0
+<4>[  109.086298] LLLL: time = 0
+<4>[  109.154139] LLLL: time = 0
+<4>[  109.222040] LLLL: time = 0
+<4>[  109.289972] LLLL: time = 0
+<4>[  109.354456] LLLL: time = 0
+<4>[  109.422327] LLLL: time = 0
+<4>[  109.490229] LLLL: time = 0
+<4>[  109.558283] LLLL: time = 0
+<4>[  109.626185] LLLL: time = 0
+<4>[  109.694086] LLLL: time = 0
+<4>[  109.758601] LLLL: time = 0
+<4>[  109.826441] LLLL: time = 0
+<4>[  109.894343] LLLL: time = 0
+<4>[  109.962245] LLLL: time = 0
+<4>[  110.030024] LLLL: time = 0
+<4>[  110.094630] LLLL: time = 0
+<4>[  110.162501] LLLL: time = 0
+<4>[  110.230281] LLLL: time = 0
+<4>[  110.298060] LLLL: time = 0
+<4>[  110.365901] LLLL: time = 0
+<4>[  110.433833] LLLL: time = 0
+<4>[  110.498347] LLLL: time = 0
+<4>[  110.566188] LLLL: time = 0
+<4>[  110.634089] LLLL: time = 0
+<4>[  110.701991] LLLL: time = 0
+<4>[  110.769893] LLLL: time = 0
+<4>[  110.834346] LLLL: time = 0
+<4>[  110.902247] LLLL: time = 0
+<4>[  110.970088] LLLL: time = 0
+<4>[  111.038020] LLLL: time = 0
+<4>[  111.105891] LLLL: time = 0
+<4>[  111.173854] LLLL: time = 0
+<4>[  111.238277] LLLL: time = 0
+<4>[  111.306148] LLLL: time = 0
+<4>[  111.374110] LLLL: time = 0
+<4>[  111.442165] LLLL: time = 0
+<4>[  111.510036] LLLL: time = 0
+<4>[  111.574458] LLLL: time = 0
+<4>[  111.642391] LLLL: time = 0
+<4>[  111.710292] LLLL: time = 0
+<4>[  111.778163] LLLL: time = 0
+<4>[  111.846065] LLLL: time = 0
+<4>[  111.913814] LLLL: time = 0
+<4>[  111.978450] LLLL: time = 0
+<4>[  112.046352] LLLL: time = 0
+<4>[  112.113979] LLLL: time = 0
+<4>[  112.181881] LLLL: time = 0
+<4>[  112.249813] LLLL: time = 0
+<4>[  112.314297] LLLL: time = 0
+<4>[  112.382168] LLLL: time = 0
+<4>[  112.450008] LLLL: time = 0
+<4>[  112.517910] LLLL: time = 0
+<4>[  112.585781] LLLL: time = 0
+<4>[  112.653683] LLLL: time = 0
+<4>[  112.718197] LLLL: time = 0
+<4>[  112.786099] LLLL: time = 0
+<4>[  112.853970] LLLL: time = 0
+<4>[  112.921841] LLLL: time = 0
+<4>[  112.989712] LLLL: time = 0
+<4>[  113.054226] LLLL: time = 0
+<4>[  113.122097] LLLL: time = 0
+<4>[  113.189999] LLLL: time = 0
+<4>[  113.258114] LLLL: time = 0
+<4>[  113.325955] LLLL: time = 0
+<4>[  113.393856] LLLL: time = 0
+<4>[  113.458310] LLLL: time = 0
+<4>[  113.526242] LLLL: time = 0
+<4>[  113.594113] LLLL: time = 0
+<4>[  113.662014] LLLL: time = 0
+<4>[  113.729886] LLLL: time = 0
+<4>[  113.794400] LLLL: time = 0
+<4>[  113.862271] LLLL: time = 0
+<4>[  113.930081] LLLL: time = 0
+<4>[  113.997830] LLLL: time = 0
+<4>[  114.065701] LLLL: time = 0
+<4>[  114.133603] LLLL: time = 0
+<4>[  114.198117] LLLL: time = 0
+<4>[  114.265958] LLLL: time = 0
+<4>[  114.333859] LLLL: time = 0
+<4>[  114.401761] LLLL: time = 0
+<4>[  114.469632] LLLL: time = 0
+<4>[  114.534116] LLLL: time = 0
+<4>[  114.601956] LLLL: time = 0
+<4>[  114.669889] LLLL: time = 0
+<4>[  114.737821] LLLL: time = 0
+<4>[  114.805692] LLLL: time = 0
+<4>[  114.873532] LLLL: time = 0
+<4>[  114.938016] LLLL: time = 0
+<4>[  115.005948] LLLL: time = 1
+<4>[  115.073880] LLLL: time = 0
+<4>[  115.141935] LLLL: time = 0
+<4>[  115.209836] LLLL: time = 0
+<4>[  115.277677] LLLL: time = 0
+<4>[  115.342222] LLLL: time = 0
+<4>[  115.410062] LLLL: time = 0
+<4>[  115.477933] LLLL: time = 0
+<4>[  115.545805] LLLL: time = 0
+<4>[  115.613584] LLLL: time = 0
+<4>[  115.678220] LLLL: time = 0
+<4>[  115.746153] LLLL: time = 0
+<4>[  115.813871] LLLL: time = 0
+<4>[  115.881651] LLLL: time = 0
+<4>[  115.949491] LLLL: time = 0
+<4>[  116.017423] LLLL: time = 0
+<4>[  116.081877] LLLL: time = 0
+<4>[  116.149809] LLLL: time = 0
+<4>[  116.217680] LLLL: time = 0
+<4>[  116.285612] LLLL: time = 0
+<4>[  116.353453] LLLL: time = 0
+<4>[  116.417967] LLLL: time = 0
+<4>[  116.485838] LLLL: time = 0
+<4>[  116.553740] LLLL: time = 0
+<4>[  116.621611] LLLL: time = 0
+<4>[  116.689482] LLLL: time = 0
+<4>[  116.757445] LLLL: time = 0
+<4>[  116.821837] LLLL: time = 0
+<4>[  116.889738] LLLL: time = 0
+<4>[  116.957732] LLLL: time = 0
+<4>[  117.025725] LLLL: time = 0
+<4>[  117.093596] LLLL: time = 0
+<4>[  117.158018] LLLL: time = 0
+<4>[  117.226012] LLLL: time = 0
+<4>[  117.293883] LLLL: time = 0
+<4>[  117.361784] LLLL: time = 0
+<4>[  117.429625] LLLL: time = 0
+<4>[  117.497344] LLLL: time = 0
+<4>[  117.562010] LLLL: time = 0
+<4>[  117.629943] LLLL: time = 0
+<4>[  117.697600] LLLL: time = 0
+<4>[  117.765502] LLLL: time = 0
+<4>[  117.833342] LLLL: time = 0
+<4>[  117.897856] LLLL: time = 0
+<4>[  117.965758] LLLL: time = 0
+<4>[  118.033629] LLLL: time = 0
+<4>[  118.101531] LLLL: time = 0
+<4>[  118.169372] LLLL: time = 0
+<4>[  118.237304] LLLL: time = 0
+<4>[  118.301757] LLLL: time = 0
+<4>[  118.369658] LLLL: time = 0
+<4>[  118.437530] LLLL: time = 0
+<4>[  118.505431] LLLL: time = 0
+<4>[  118.573302] LLLL: time = 0
+<4>[  118.637817] LLLL: time = 0
+<4>[  118.705688] LLLL: time = 0
+<4>[  118.773559] LLLL: time = 0
+<4>[  118.841644] LLLL: time = 0
+<4>[  118.909545] LLLL: time = 0
+<4>[  118.977447] LLLL: time = 0
+<4>[  119.041900] LLLL: time = 0
+<4>[  119.109832] LLLL: time = 0
+<4>[  119.177734] LLLL: time = 0
+<4>[  119.245605] LLLL: time = 0
+<4>[  119.313446] LLLL: time = 0
+<4>[  119.377990] LLLL: time = 0
+<4>[  119.445831] LLLL: time = 0
+<4>[  119.513641] LLLL: time = 0
+<4>[  119.581421] LLLL: time = 0
+<4>[  119.649322] LLLL: time = 0
+<4>[  119.717163] LLLL: time = 0
+<4>[  119.781677] LLLL: time = 0
+<4>[  119.849548] LLLL: time = 0
+<4>[  119.917450] LLLL: time = 0
+<4>[  119.985351] LLLL: time = 0
+<4>[  120.053223] LLLL: time = 0
+<4>[  120.121094] LLLL: time = 0
+<4>[  120.185577] LLLL: time = 0
+<4>[  120.253449] LLLL: time = 0
+<4>[  120.321350] LLLL: time = 0
+<4>[  120.389252] LLLL: time = 0
+<4>[  120.457123] LLLL: time = 0
+<4>[  120.521607] LLLL: time = 0
+<4>[  120.589478] LLLL: time = 0
+<4>[  120.657440] LLLL: time = 0
+<4>[  120.725525] LLLL: time = 0
+<4>[  120.793396] LLLL: time = 0
+<4>[  120.861267] LLLL: time = 0
+<4>[  120.925782] LLLL: time = 0
+<4>[  120.993653] LLLL: time = 0
+<4>[  121.061585] LLLL: time = 0
+<4>[  121.129426] LLLL: time = 0
+<4>[  121.197236] LLLL: time = 0
+<4>[  121.261811] LLLL: time = 0
+<4>[  121.329682] LLLL: time = 0
+<4>[  121.397401] LLLL: time = 0
+<4>[  121.465241] LLLL: time = 0
+<4>[  121.533143] LLLL: time = 0
+<4>[  121.601014] LLLL: time = 0
+<4>[  121.665498] LLLL: time = 0
+<4>[  121.733369] LLLL: time = 0
+<4>[  121.801270] LLLL: time = 0
+<4>[  121.869141] LLLL: time = 0
+<4>[  121.937074] LLLL: time = 0
+<4>[  122.001496] LLLL: time = 0
+<4>[  122.069398] LLLL: time = 0
+<4>[  122.137300] LLLL: time = 0
+<4>[  122.205201] LLLL: time = 0
+<4>[  122.273042] LLLL: time = 0
+<4>[  122.341066] LLLL: time = 0
+<4>[  122.405458] LLLL: time = 0
+<4>[  122.473359] LLLL: time = 0
+<4>[  122.541322] LLLL: time = 0
+<4>[  122.609346] LLLL: time = 0
+<4>[  122.677247] LLLL: time = 0
+<4>[  122.741639] LLLL: time = 0
+<4>[  122.809602] LLLL: time = 0
+<4>[  122.877473] LLLL: time = 0
+<4>[  122.945436] LLLL: time = 0
+<4>[  123.013277] LLLL: time = 1
+<4>[  123.080965] LLLL: time = 0
+<4>[  123.145662] LLLL: time = 0
+<4>[  123.213503] LLLL: time = 0
+<4>[  123.281160] LLLL: time = 0
+<4>[  123.349062] LLLL: time = 0
+<4>[  123.416963] LLLL: time = 0
+<4>[  123.481478] LLLL: time = 0
+<4>[  123.549379] LLLL: time = 0
+<4>[  123.617220] LLLL: time = 0
+<4>[  123.685091] LLLL: time = 0
+<4>[  123.752993] LLLL: time = 0
+<4>[  123.820864] LLLL: time = 0
+<4>[  123.885347] LLLL: time = 0
+<4>[  123.953249] LLLL: time = 0
+<4>[  124.021181] LLLL: time = 1
+<4>[  124.088991] LLLL: time = 0
+<4>[  124.156893] LLLL: time = 0
+<4>[  124.221438] LLLL: time = 0
+<4>[  124.289309] LLLL: time = 0
+<4>[  124.357149] LLLL: time = 0
+<4>[  124.425265] LLLL: time = 0
+<4>[  124.493166] LLLL: time = 0
+<4>[  124.561098] LLLL: time = 0
+<4>[  124.625521] LLLL: time = 0
+<4>[  124.693392] LLLL: time = 0
+<4>[  124.761263] LLLL: time = 0
+<4>[  124.829226] LLLL: time = 0
+<4>[  124.897006] LLLL: time = 0
+<4>[  124.964724] LLLL: time = 0
+<4>[  125.029421] LLLL: time = 0
+<4>[  125.097232] LLLL: time = 0
+<4>[  125.165011] LLLL: time = 0
+<4>[  125.232882] LLLL: time = 0
+<4>[  125.300753] LLLL: time = 0
+<4>[  125.365268] LLLL: time = 0
+<4>[  125.433169] LLLL: time = 0
+<4>[  125.501040] LLLL: time = 0
+<4>[  125.568911] LLLL: time = 0
+<4>[  125.636813] LLLL: time = 0
+<4>[  125.704684] LLLL: time = 0
+<4>[  125.769168] LLLL: time = 0
+<4>[  125.837100] LLLL: time = 0
+<4>[  125.904941] LLLL: time = 0
+<4>[  125.972842] LLLL: time = 0
+<4>[  126.040713] LLLL: time = 0
+<4>[  126.105228] LLLL: time = 0
+<4>[  126.173099] LLLL: time = 0
+<4>[  126.241092] LLLL: time = 0
+<4>[  126.309085] LLLL: time = 0
+<4>[  126.376987] LLLL: time = 0
+<4>[  126.444827] LLLL: time = 0
+<4>[  126.509342] LLLL: time = 0
+<4>[  126.577243] LLLL: time = 0
+<4>[  126.645114] LLLL: time = 0
+<4>[  126.712986] LLLL: time = 0
+<4>[  126.780735] LLLL: time = 0
+<4>[  126.845432] LLLL: time = 0
+<4>[  126.913303] LLLL: time = 0
+<4>[  126.981022] LLLL: time = 0
+<4>[  127.048801] LLLL: time = 0
+<4>[  127.116703] LLLL: time = 0
+<4>[  127.184604] LLLL: time = 0
+<4>[  127.249088] LLLL: time = 0
+<4>[  127.316990] LLLL: time = 0
+<4>[  127.384891] LLLL: time = 0
+<4>[  127.452763] LLLL: time = 0
+<4>[  127.520603] LLLL: time = 0
+<4>[  127.585148] LLLL: time = 0
+<4>[  127.653019] LLLL: time = 0
+<4>[  127.720890] LLLL: time = 0
+<4>[  127.788792] LLLL: time = 0
+<4>[  127.856693] LLLL: time = 0
+<4>[  127.924656] LLLL: time = 0
+<4>[  127.989018] LLLL: time = 0
+<4>[  128.056919] LLLL: time = 0
+<4>[  128.124943] LLLL: time = 0
+<4>[  128.192906] LLLL: time = 0
+<4>[  128.260838] LLLL: time = 0
+<4>[  128.325291] LLLL: time = 0
+<4>[  128.393193] LLLL: time = 0
+<4>[  128.461064] LLLL: time = 0
+<4>[  128.528935] LLLL: time = 0
+<4>[  128.596806] LLLL: time = 0
+<4>[  128.664525] LLLL: time = 0
+<4>[  128.729222] LLLL: time = 0
+<4>[  128.797093] LLLL: time = 0
+<4>[  128.864781] LLLL: time = 0
+<4>[  128.932652] LLLL: time = 0
+<4>[  129.000523] LLLL: time = 0
+<4>[  129.065038] LLLL: time = 0
+<4>[  129.132878] LLLL: time = 0
+<4>[  129.200780] LLLL: time = 0
+<4>[  129.268712] LLLL: time = 0
+<4>[  129.336583] LLLL: time = 0
+<4>[  129.404454] LLLL: time = 0
+<4>[  129.468938] LLLL: time = 0
+<4>[  129.536809] LLLL: time = 0
+<4>[  129.604711] LLLL: time = 0
+<4>[  129.672643] LLLL: time = 0
+<4>[  129.740483] LLLL: time = 0
+<4>[  129.804998] LLLL: time = 0
+<4>[  129.872838] LLLL: time = 0
+<4>[  129.940709] LLLL: time = 0
+<4>[  130.008825] LLLL: time = 0
+<4>[  130.076757] LLLL: time = 0
+<4>[  130.144628] LLLL: time = 0
+<4>[  130.209112] LLLL: time = 0
+<4>[  130.277074] LLLL: time = 0
+<4>[  130.344823] LLLL: time = 0
+<4>[  130.412786] LLLL: time = 0
+<4>[  130.480596] LLLL: time = 0
+<4>[  130.548315] LLLL: time = 0
+<4>[  130.613073] LLLL: time = 0
+<4>[  130.680792] LLLL: time = 0
+<4>[  130.748602] LLLL: time = 0
+<4>[  130.816503] LLLL: time = 0
+<4>[  130.884374] LLLL: time = 0
+<4>[  130.948858] LLLL: time = 0
+<4>[  131.016699] LLLL: time = 0
+<4>[  131.084661] LLLL: time = 0
+<4>[  131.152532] LLLL: time = 0
+<4>[  131.220404] LLLL: time = 0
+<4>[  131.288305] LLLL: time = 0
+<4>[  131.352789] LLLL: time = 0
+<4>[  131.420599] LLLL: time = 0
+<4>[  131.488531] LLLL: time = 0
+<4>[  131.556433] LLLL: time = 0
+<4>[  131.624334] LLLL: time = 0
+<4>[  131.688818] LLLL: time = 0
+<4>[  131.756689] LLLL: time = 0
+<4>[  131.824682] LLLL: time = 0
+<4>[  131.892676] LLLL: time = 0
+<4>[  131.960577] LLLL: time = 0
+<4>[  132.028448] LLLL: time = 1
+<4>[  132.092932] LLLL: time = 0
+<4>[  132.160864] LLLL: time = 0
+<4>[  132.228705] LLLL: time = 0
+<4>[  132.296607] LLLL: time = 0
+<4>[  132.364386] LLLL: time = 0
+<4>[  132.428961] LLLL: time = 0
+<4>[  132.496832] LLLL: time = 0
+<4>[  132.564582] LLLL: time = 0
+<4>[  132.632392] LLLL: time = 0
+<4>[  132.700324] LLLL: time = 0
+<4>[  132.768195] LLLL: time = 0
+<4>[  132.832709] LLLL: time = 0
+<4>[  132.900550] LLLL: time = 0
+<4>[  132.968421] LLLL: time = 0
+<4>[  133.036353] LLLL: time = 0
+<4>[  133.104255] LLLL: time = 0
+<4>[  133.168708] LLLL: time = 0
+<4>[  133.236609] LLLL: time = 0
+<4>[  133.304481] LLLL: time = 0
+<4>[  133.372321] LLLL: time = 0
+<4>[  133.440253] LLLL: time = 0
+<4>[  133.508247] LLLL: time = 0
+<4>[  133.572639] LLLL: time = 0
+<4>[  133.640510] LLLL: time = 0
+<4>[  133.708595] LLLL: time = 0
+<4>[  133.776496] LLLL: time = 0
+<4>[  133.844367] LLLL: time = 0
+<4>[  133.908882] LLLL: time = 0
+<4>[  133.976753] LLLL: time = 0
+<4>[  134.044654] LLLL: time = 0
+<4>[  134.112556] LLLL: time = 0
+<4>[  134.180427] LLLL: time = 0
+<4>[  134.248115] LLLL: time = 0
+<4>[  134.312782] LLLL: time = 0
+<4>[  134.380592] LLLL: time = 0
+<4>[  134.448341] LLLL: time = 0
+<4>[  134.516243] LLLL: time = 0
+<4>[  134.584144] LLLL: time = 0
+<4>[  134.648628] LLLL: time = 0
+<4>[  134.716530] LLLL: time = 0
+<4>[  134.784370] LLLL: time = 0
+<4>[  134.852272] LLLL: time = 0
+<4>[  134.920174] LLLL: time = 0
+<4>[  134.988045] LLLL: time = 0
+<4>[  135.052528] LLLL: time = 0
+<4>[  135.120461] LLLL: time = 0
+<4>[  135.188301] LLLL: time = 0
+<4>[  135.256172] LLLL: time = 0
+<4>[  135.324104] LLLL: time = 0
+<4>[  135.392159] LLLL: time = 0
+<4>[  135.456490] LLLL: time = 0
+<4>[  135.524361] LLLL: time = 0
+<4>[  135.592446] LLLL: time = 0
+<4>[  135.660347] LLLL: time = 0
+<4>[  135.728249] LLLL: time = 0
+<4>[  135.792702] LLLL: time = 0
+<4>[  135.860573] LLLL: time = 0
+<4>[  135.928505] LLLL: time = 0
+<4>[  135.996407] LLLL: time = 0
+<4>[  136.064156] LLLL: time = 0
+<4>[  136.131966] LLLL: time = 0
+<4>[  136.196663] LLLL: time = 0
+<4>[  136.264382] LLLL: time = 0
+<4>[  136.332162] LLLL: time = 0
+<4>[  136.400063] LLLL: time = 0
+<4>[  136.467965] LLLL: time = 0
+<4>[  136.532479] LLLL: time = 0
+<4>[  136.600320] LLLL: time = 0
+<4>[  136.668252] LLLL: time = 0
+<4>[  136.736123] LLLL: time = 0
+<4>[  136.803933] LLLL: time = 0
+<4>[  136.871865] LLLL: time = 0
+<4>[  136.936410] LLLL: time = 0
+<4>[  137.004220] LLLL: time = 0
+<4>[  137.072152] LLLL: time = 0
+<4>[  137.139993] LLLL: time = 0
+<4>[  137.207955] LLLL: time = 0
+<4>[  137.272378] LLLL: time = 0
+<4>[  137.340310] LLLL: time = 0
+<4>[  137.408273] LLLL: time = 0
+<4>[  137.476297] LLLL: time = 0
+<4>[  137.544168] LLLL: time = 0
+<4>[  137.612069] LLLL: time = 0
+<4>[  137.676553] LLLL: time = 0
+<4>[  137.744455] LLLL: time = 0
+<4>[  137.812265] LLLL: time = 0
+<4>[  137.880167] LLLL: time = 0
+<4>[  137.947977] LLLL: time = 0
+<4>[  138.012552] LLLL: time = 0
+<4>[  138.080515] LLLL: time = 0
+<4>[  138.148142] LLLL: time = 0
+<4>[  138.215982] LLLL: time = 0
+<4>[  138.283853] LLLL: time = 0
+<4>[  138.351785] LLLL: time = 0
+<4>[  138.416300] LLLL: time = 0
+<4>[  138.484201] LLLL: time = 0
+<4>[  138.552042] LLLL: time = 0
+<4>[  138.619944] LLLL: time = 0
+<4>[  138.687815] LLLL: time = 0
+<4>[  138.752268] LLLL: time = 0
+<4>[  138.820200] LLLL: time = 0
+<4>[  138.955973] LLLL: time = 0
+<4>[  139.023813] LLLL: time = 0
+<4>[  139.091807] LLLL: time = 0
+<4>[  139.156290] LLLL: time = 0
+<4>[  139.224131] LLLL: time = 0
+<4>[  139.292124] LLLL: time = 0
+<4>[  139.360117] LLLL: time = 0
+<4>[  139.428019] LLLL: time = 0
+<4>[  139.492411] LLLL: time = 0
+<4>[  139.560343] LLLL: time = 0
+<4>[  139.628245] LLLL: time = 0
+<4>[  139.696146] LLLL: time = 0
+<4>[  139.764048] LLLL: time = 0
+<4>[  139.831706] LLLL: time = 0
+<4>[  139.896403] LLLL: time = 0
+<4>[  139.964213] LLLL: time = 0
+<4>[  140.031932] LLLL: time = 1
+<4>[  140.099803] LLLL: time = 0
+<4>[  140.167765] LLLL: time = 0
+<4>[  140.232219] LLLL: time = 0
+<4>[  140.300120] LLLL: time = 0
+<4>[  140.367961] LLLL: time = 0
+<4>[  140.435832] LLLL: time = 0
+<4>[  140.503795] LLLL: time = 0
+<4>[  140.571605] LLLL: time = 0
+<4>[  140.636088] LLLL: time = 0
+<4>[  140.704051] LLLL: time = 0
+<4>[  140.771892] LLLL: time = 0
+<4>[  140.839824] LLLL: time = 0
+<4>[  140.907664] LLLL: time = 0
+<4>[  140.975780] LLLL: time = 0
+<4>[  141.040050] LLLL: time = 0
+<4>[  141.107951] LLLL: time = 0
+<4>[  141.176067] LLLL: time = 0
+<4>[  141.243907] LLLL: time = 0
+<4>[  141.311839] LLLL: time = 0
+<4>[  141.376262] LLLL: time = 0
+<4>[  141.444194] LLLL: time = 0
+<4>[  141.512035] LLLL: time = 0
+<4>[  141.579967] LLLL: time = 0
+<4>[  141.647777] LLLL: time = 0
+<4>[  141.715526] LLLL: time = 0
+<4>[  141.780223] LLLL: time = 0
+<4>[  141.847973] LLLL: time = 0
+<4>[  141.915752] LLLL: time = 0
+<4>[  141.983654] LLLL: time = 0
+<4>[  142.051555] LLLL: time = 0
+<4>[  142.116070] LLLL: time = 0
+<4>[  142.183941] LLLL: time = 0
+<4>[  142.251812] LLLL: time = 0
+<4>[  142.319683] LLLL: time = 0
+<4>[  142.387524] LLLL: time = 0
+<4>[  142.455425] LLLL: time = 0
+<4>[  142.519970] LLLL: time = 0
+<4>[  142.587872] LLLL: time = 0
+<4>[  142.655743] LLLL: time = 0
+<4>[  142.723614] LLLL: time = 0
+<4>[  142.791546] LLLL: time = 0
+<4>[  142.855999] LLLL: time = 0
+<4>[  142.923840] LLLL: time = 0
+<4>[  142.991894] LLLL: time = 0
+<4>[  143.127728] LLLL: time = 0
+<4>[  143.195599] LLLL: time = 0
+<4>[  143.260144] LLLL: time = 0
+<4>[  143.328045] LLLL: time = 0
+<4>[  143.463788] LLLL: time = 0
+<4>[  143.531506] LLLL: time = 0
+<4>[  143.596203] LLLL: time = 0
+<4>[  143.664044] LLLL: time = 0
+<4>[  143.731732] LLLL: time = 0
+<4>[  143.799603] LLLL: time = 0
+<4>[  143.867444] LLLL: time = 0
+<4>[  143.935345] LLLL: time = 0
+<4>[  143.999890] LLLL: time = 0
+<4>[  144.067761] LLLL: time = 0
+<4>[  144.135602] LLLL: time = 0
+<4>[  144.203534] LLLL: time = 0
+<4>[  144.271436] LLLL: time = 0
+<4>[  144.335889] LLLL: time = 0
+<4>[  144.403790] LLLL: time = 0
+<4>[  144.471662] LLLL: time = 0
+<4>[  144.539533] LLLL: time = 0
+<4>[  144.607434] LLLL: time = 0
+<4>[  144.675458] LLLL: time = 0
+<4>[  144.739789] LLLL: time = 0
+<4>[  144.807660] LLLL: time = 0
+<4>[  144.875745] LLLL: time = 0
+<4>[  144.943647] LLLL: time = 0
+<4>[  145.076063] LLLL: time = 0
+<4>[  145.143903] LLLL: time = 0
+<4>[  145.211835] LLLL: time = 0
+<4>[  145.279737] LLLL: time = 0
+<4>[  145.347578] LLLL: time = 0
+<4>[  145.415266] LLLL: time = 0
+<4>[  145.479993] LLLL: time = 0
+<4>[  145.615522] LLLL: time = 0
+<4>[  145.683424] LLLL: time = 0
+<4>[  145.751325] LLLL: time = 0
+<4>[  145.819135] LLLL: time = 0
+<4>[  145.883680] LLLL: time = 0
+<4>[  145.951582] LLLL: time = 0
+<4>[  146.019483] LLLL: time = 0
+<4>[  146.087355] LLLL: time = 0
+<4>[  146.155226] LLLL: time = 0
+<4>[  146.219709] LLLL: time = 0
+<4>[  146.287581] LLLL: time = 0
+<4>[  146.355513] LLLL: time = 0
+<4>[  146.423414] LLLL: time = 0
+<4>[  146.491255] LLLL: time = 0
+<4>[  146.559370] LLLL: time = 0
+<4>[  146.623640] LLLL: time = 0
+<4>[  146.691542] LLLL: time = 0
+<4>[  146.759596] LLLL: time = 0
+<4>[  146.827528] LLLL: time = 0
+<4>[  146.895369] LLLL: time = 0
+<4>[  146.959914] LLLL: time = 0
+<4>[  147.027785] LLLL: time = 0
+<4>[  147.095686] LLLL: time = 0
+<4>[  147.163558] LLLL: time = 0
+<4>[  147.231337] LLLL: time = 0
+<4>[  147.299086] LLLL: time = 0
+<4>[  147.363783] LLLL: time = 0
+<4>[  147.431624] LLLL: time = 0
+<4>[  147.499373] LLLL: time = 0
+<4>[  147.567275] LLLL: time = 0
+<4>[  147.699630] LLLL: time = 0
+<4>[  147.767562] LLLL: time = 0
+<4>[  147.835402] LLLL: time = 0
+<4>[  147.903273] LLLL: time = 0
+<4>[  147.971114] LLLL: time = 0
+<4>[  148.039077] LLLL: time = 1
+<4>[  148.103530] LLLL: time = 0
+<4>[  148.171493] LLLL: time = 0
+<4>[  148.239333] LLLL: time = 0
+<4>[  148.307235] LLLL: time = 0
+<4>[  148.375198] LLLL: time = 0
+<4>[  148.439559] LLLL: time = 0
+<4>[  148.507461] LLLL: time = 0
+<4>[  148.575454] LLLL: time = 0
+<4>[  148.643447] LLLL: time = 0
+<4>[  148.711318] LLLL: time = 0
+<4>[  148.779250] LLLL: time = 0
+<4>[  148.843734] LLLL: time = 0
+<4>[  148.911605] LLLL: time = 0
+<4>[  148.979476] LLLL: time = 0
+<4>[  149.047378] LLLL: time = 0
+<4>[  149.115127] LLLL: time = 0
+<4>[  149.179763] LLLL: time = 0
+<4>[  149.247696] LLLL: time = 0
+<4>[  149.315323] LLLL: time = 0
+<4>[  149.383194] LLLL: time = 0
+<4>[  149.451034] LLLL: time = 0
+<4>[  149.518966] LLLL: time = 0
+<4>[  149.583481] LLLL: time = 0
+<4>[  149.651382] LLLL: time = 0
+<4>[  149.719253] LLLL: time = 0
+<4>[  149.787125] LLLL: time = 0
+<4>[  149.919510] LLLL: time = 0
+<4>[  149.987411] LLLL: time = 0
+<4>[  150.055252] LLLL: time = 0
+<4>[  150.123215] LLLL: time = 0
+<4>[  150.191055] LLLL: time = 0
+<4>[  150.259049] LLLL: time = 0
+<4>[  150.323349] LLLL: time = 0
+<4>[  150.391312] LLLL: time = 0
+<4>[  150.459397] LLLL: time = 0
+<4>[  150.527298] LLLL: time = 0
+<4>[  150.595169] LLLL: time = 0
+<4>[  150.659623] LLLL: time = 0
+<4>[  150.727555] LLLL: time = 0
+<4>[  150.795426] LLLL: time = 0
+<4>[  150.863327] LLLL: time = 0
+<4>[  150.931199] LLLL: time = 0
+<4>[  150.998856] LLLL: time = 0
+<4>[  151.063584] LLLL: time = 0
+<4>[  151.131394] LLLL: time = 0
+<4>[  151.199113] LLLL: time = 0
+<4>[  151.267045] LLLL: time = 0
+<4>[  151.334885] LLLL: time = 0
+<4>[  151.467332] LLLL: time = 0
+<4>[  151.535172] LLLL: time = 0
+<4>[  151.603074] LLLL: time = 0
+<4>[  151.670945] LLLL: time = 0
+<4>[  151.738816] LLLL: time = 0
+<4>[  151.803300] LLLL: time = 0
+<4>[  151.871171] LLLL: time = 0
+<4>[  151.939103] LLLL: time = 0
+<4>[  152.007005] LLLL: time = 0
+<4>[  152.074876] LLLL: time = 0
+<4>[  152.142961] LLLL: time = 0
+<4>[  152.207200] LLLL: time = 0
+<4>[  152.275193] LLLL: time = 0
+<4>[  152.343187] LLLL: time = 0
+<4>[  152.411088] LLLL: time = 0
+<4>[  152.478959] LLLL: time = 0
+<4>[  152.543504] LLLL: time = 0
+<4>[  152.611406] LLLL: time = 0
+<4>[  152.679307] LLLL: time = 0
+<4>[  152.747148] LLLL: time = 0
+<4>[  152.814897] LLLL: time = 0
+<4>[  152.882646] LLLL: time = 0
+<4>[  152.947404] LLLL: time = 0
+<4>[  153.082964] LLLL: time = 0
+<4>[  153.150865] LLLL: time = 0
+<4>[  153.218736] LLLL: time = 0
+<4>[  153.283190] LLLL: time = 0
+<4>[  153.351091] LLLL: time = 0
+<4>[  153.418993] LLLL: time = 0
+<4>[  153.486864] LLLL: time = 0
+<4>[  153.554735] LLLL: time = 0
+<4>[  153.622667] LLLL: time = 0
+<4>[  153.687151] LLLL: time = 0
+<4>[  153.755053] LLLL: time = 0
+<4>[  153.822924] LLLL: time = 0
+<4>[  153.890795] LLLL: time = 0
+<4>[  153.958788] LLLL: time = 0
+<4>[  154.023180] LLLL: time = 0
+<4>[  154.091082] LLLL: time = 0
+<4>[  154.159044] LLLL: time = 0
+<4>[  154.227038] LLLL: time = 0
+<4>[  154.294909] LLLL: time = 0
+<4>[  154.362841] LLLL: time = 0
+<4>[  154.427294] LLLL: time = 0
+<4>[  154.495226] LLLL: time = 0
+<4>[  154.563067] LLLL: time = 0
+<4>[  154.630938] LLLL: time = 0
+<4>[  154.698687] LLLL: time = 0
+<4>[  154.763415] LLLL: time = 0
+<4>[  154.831225] LLLL: time = 0
+<4>[  154.898883] LLLL: time = 0
+<4>[  154.966784] LLLL: time = 0
+<4>[  155.034655] LLLL: time = 0
+<4>[  155.102557] LLLL: time = 0
+<4>[  155.167071] LLLL: time = 0
+<4>[  155.234942] LLLL: time = 0
+<4>[  155.302783] LLLL: time = 0
+<4>[  155.370715] LLLL: time = 0
+<4>[  155.438586] LLLL: time = 0
+<4>[  155.503070] LLLL: time = 0
+<4>[  155.570971] LLLL: time = 0
+<4>[  155.638934] LLLL: time = 0
+<4>[  155.706744] LLLL: time = 0
+<4>[  155.774615] LLLL: time = 0
+<4>[  155.842670] LLLL: time = 0
+<4>[  155.907001] LLLL: time = 0
+<4>[  155.974841] LLLL: time = 0
+<4>[  156.042957] LLLL: time = 0
+<4>[  156.110889] LLLL: time = 0
+<4>[  156.178760] LLLL: time = 0
+<4>[  156.246662] LLLL: time = 0
+<4>[  156.311145] LLLL: time = 0
+<4>[  156.379016] LLLL: time = 0
+<4>[  156.446887] LLLL: time = 0
+<4>[  156.514728] LLLL: time = 0
+<4>[  156.582416] LLLL: time = 0
+<4>[  156.647174] LLLL: time = 0
+<4>[  156.714985] LLLL: time = 0
+<4>[  156.782764] LLLL: time = 0
+<4>[  156.850574] LLLL: time = 0
+<4>[  156.918476] LLLL: time = 0
+<4>[  156.986377] LLLL: time = 0
+<4>[  157.050892] LLLL: time = 1
+<4>[  157.118763] LLLL: time = 0
+<4>[  157.186664] LLLL: time = 0
+<4>[  157.254505] LLLL: time = 0
+<4>[  157.322407] LLLL: time = 0
+<4>[  157.386890] LLLL: time = 0
+<4>[  157.454792] LLLL: time = 0
+<4>[  157.522663] LLLL: time = 0
+<4>[  157.590565] LLLL: time = 0
+<4>[  157.658497] LLLL: time = 0
+<4>[  157.726551] LLLL: time = 0
+<4>[  157.790791] LLLL: time = 0
+<4>[  157.858784] LLLL: time = 0
+<4>[  157.926777] LLLL: time = 0
+<4>[  157.994648] LLLL: time = 0
+<4>[  158.062611] LLLL: time = 0
+<4>[  158.127125] LLLL: time = 0
+<4>[  158.194996] LLLL: time = 0
+<4>[  158.262867] LLLL: time = 0
+<4>[  158.330708] LLLL: time = 0
+<4>[  158.398488] LLLL: time = 0
+<4>[  158.466298] LLLL: time = 0
+<4>[  158.598744] LLLL: time = 0
+<4>[  158.666554] LLLL: time = 0
+<4>[  158.734395] LLLL: time = 0
+<4>[  158.802327] LLLL: time = 0
+<4>[  158.866780] LLLL: time = 0
+<4>[  158.934743] LLLL: time = 0
+<4>[  159.002522] LLLL: time = 0
+<4>[  159.070424] LLLL: time = 0
+<4>[  159.138356] LLLL: time = 0
+<4>[  159.206227] LLLL: time = 0
+<4>[  159.270741] LLLL: time = 0
+<4>[  159.338582] LLLL: time = 0
+<4>[  159.406514] LLLL: time = 0
+<4>[  159.474385] LLLL: time = 0
+<4>[  159.542409] LLLL: time = 0
+<4>[  159.606740] LLLL: time = 0
+<4>[  159.674672] LLLL: time = 0
+<4>[  159.742666] LLLL: time = 0
+<4>[  159.810598] LLLL: time = 0
+<4>[  159.878560] LLLL: time = 0
+<4>[  159.946401] LLLL: time = 0
+<4>[  160.010885] LLLL: time = 0
+<4>[  160.078786] LLLL: time = 0
+<4>[  160.146657] LLLL: time = 0
+<4>[  160.214590] LLLL: time = 0
+<4>[  160.282278] LLLL: time = 0
+<4>[  160.346914] LLLL: time = 0
+<4>[  160.414816] LLLL: time = 0
+<4>[  160.482534] LLLL: time = 0
+<4>[  160.550375] LLLL: time = 0
+<4>[  160.618276] LLLL: time = 0
+<4>[  160.686147] LLLL: time = 0
+<4>[  160.750662] LLLL: time = 0
+<4>[  160.818563] LLLL: time = 0
+<4>[  160.886465] LLLL: time = 0
+<4>[  160.954275] LLLL: time = 0
+<4>[  161.022177] LLLL: time = 0
+<4>[  161.090017] LLLL: time = 0
+<4>[  161.154593] LLLL: time = 0
+<4>[  161.222464] LLLL: time = 0
+<4>[  161.290365] LLLL: time = 0
+<4>[  161.358206] LLLL: time = 0
+<4>[  161.426291] LLLL: time = 0
+<4>[  161.490561] LLLL: time = 0
+<4>[  161.558523] LLLL: time = 0
+<4>[  161.626547] LLLL: time = 0
+<4>[  161.694510] LLLL: time = 0
+<4>[  161.762350] LLLL: time = 0
+<4>[  161.830252] LLLL: time = 0
+<4>[  161.894736] LLLL: time = 0
+<4>[  161.962607] LLLL: time = 0
+<4>[  162.030478] LLLL: time = 0
+<4>[  162.098319] LLLL: time = 0
+<4>[  162.166037] LLLL: time = 0
+<4>[  162.230765] LLLL: time = 0
+<4>[  162.298545] LLLL: time = 0
+<4>[  162.366355] LLLL: time = 0
+<4>[  162.434165] LLLL: time = 0
+<4>[  162.502066] LLLL: time = 0
+<4>[  162.569968] LLLL: time = 0
+<4>[  162.634452] LLLL: time = 0
+<4>[  162.702353] LLLL: time = 0
+<4>[  162.770224] LLLL: time = 0
+<4>[  162.838126] LLLL: time = 0
+<4>[  162.906028] LLLL: time = 0
+<4>[  162.970511] LLLL: time = 0
+<4>[  163.038383] LLLL: time = 0
+<4>[  163.106254] LLLL: time = 0
+<4>[  163.174155] LLLL: time = 0
+<4>[  163.242087] LLLL: time = 0
+<4>[  163.310172] LLLL: time = 0
+<4>[  163.374381] LLLL: time = 0
+<4>[  163.442374] LLLL: time = 0
+<4>[  163.510398] LLLL: time = 0
+<4>[  163.578239] LLLL: time = 0
+<4>[  163.646171] LLLL: time = 0
+<4>[  163.710685] LLLL: time = 0
+<4>[  163.778587] LLLL: time = 0
+<4>[  163.846427] LLLL: time = 0
+<4>[  163.914329] LLLL: time = 0
+<4>[  163.982048] LLLL: time = 0
+<4>[  164.049888] LLLL: time = 0
+<4>[  164.114585] LLLL: time = 0
+<4>[  164.182335] LLLL: time = 0
+<4>[  164.250175] LLLL: time = 0
+<4>[  164.318016] LLLL: time = 0
+<4>[  164.385887] LLLL: time = 0
+<4>[  164.450371] LLLL: time = 0
+<4>[  164.518303] LLLL: time = 0
+<4>[  164.586174] LLLL: time = 0
+<4>[  164.654106] LLLL: time = 0
+<4>[  164.721977] LLLL: time = 0
+<4>[  164.789848] LLLL: time = 0
+<4>[  164.854301] LLLL: time = 0
+<4>[  164.922203] LLLL: time = 0
+<4>[  164.990105] LLLL: time = 0
+<4>[  165.058006] LLLL: time = 1
+<4>[  165.125969] LLLL: time = 0
+<4>[  165.190392] LLLL: time = 0
+<4>[  165.258232] LLLL: time = 0
+<4>[  165.326287] LLLL: time = 0
+<4>[  165.394219] LLLL: time = 0
+<4>[  165.462090] LLLL: time = 0
+<4>[  165.529961] LLLL: time = 0
+<4>[  165.594506] LLLL: time = 0
+<4>[  165.662407] LLLL: time = 0
+<4>[  165.730309] LLLL: time = 0
+<4>[  165.798180] LLLL: time = 0
+<4>[  165.865838] LLLL: time = 0
+<4>[  165.930504] LLLL: time = 0
+<4>[  165.998406] LLLL: time = 0
+<4>[  166.066064] LLLL: time = 0
+<4>[  166.133965] LLLL: time = 0
+<4>[  166.201867] LLLL: time = 0
+<4>[  166.269768] LLLL: time = 0
+<4>[  166.334222] LLLL: time = 0
+<4>[  166.402123] LLLL: time = 0
+<4>[  166.469994] LLLL: time = 0
+<4>[  166.537927] LLLL: time = 0
+<4>[  166.605798] LLLL: time = 0
+<4>[  166.673638] LLLL: time = 0
+<4>[  166.738152] LLLL: time = 0
+<4>[  166.805993] LLLL: time = 0
+<4>[  166.873895] LLLL: time = 0
+<4>[  166.941827] LLLL: time = 0
+<4>[  167.009851] LLLL: time = 0
+<4>[  167.074212] LLLL: time = 0
+<4>[  167.142083] LLLL: time = 0
+<4>[  167.210168] LLLL: time = 0
+<4>[  167.278039] LLLL: time = 0
+<4>[  167.345941] LLLL: time = 0
+<4>[  167.413782] LLLL: time = 0
+<4>[  167.478326] LLLL: time = 0
+<4>[  167.546228] LLLL: time = 0
+<4>[  167.614130] LLLL: time = 0
+<4>[  167.681909] LLLL: time = 0
+<4>[  167.749658] LLLL: time = 0
+<4>[  167.814355] LLLL: time = 0
+<4>[  167.882104] LLLL: time = 0
+<4>[  167.949915] LLLL: time = 0
+<4>[  168.017786] LLLL: time = 0
+<4>[  168.085687] LLLL: time = 0
+<4>[  168.153558] LLLL: time = 0
+<4>[  168.218042] LLLL: time = 0
+<4>[  168.285913] LLLL: time = 0
+<4>[  168.353784] LLLL: time = 0
+<4>[  168.421747] LLLL: time = 0
+<4>[  168.489588] LLLL: time = 0
+<4>[  168.554071] LLLL: time = 0
+<4>[  168.621973] LLLL: time = 0
+<4>[  168.689844] LLLL: time = 0
+<4>[  168.757715] LLLL: time = 0
+<4>[  168.825678] LLLL: time = 0
+<4>[  168.893702] LLLL: time = 0
+<4>[  168.958002] LLLL: time = 0

@@ -1,0 +1,63 @@
+
+什么是git？
+简单说，git是一种分布式版本控制系统；复杂点的，大家还是自己上网搜索吧^_^
+
+直入正题，安装完git后，默认对中文支持是灰常有限的，为了支持中文需要做一系列配置：
+1、Git Bash 中输入 ls 命令，可以正常显示中文文件名：
+修改%Gi%t\etc\git-completion.bash，如果没有则在末尾添加下面一行：
+alias ls='ls --show-control-chars --color=auto'
+2、在Git Bash 中可以正常输入中文：
+修改%Git%\etc\inputrc，修改配置项如下：
+set output-meta on
+
+set convert-meta off
+3、Git Bash中查看日志是能正常显示中文：
+修改%Git%\etc\profile，在末尾添加如下一行：
+export LESSCHARSET=utf-8
+4、在git gui 中正常显示代码中的中文：
+修改%Git%\etc\gitconfig，添加如下配置项（如果代码文件是gb2312编码，就填gb2312）
+[gui]
+encoding = utf-8
+5、正常显示推、拉中文修订说明
+修改%Git%\etc\gitconfig，添加如下配置项
+[i18n]
+commitencoding = GB2312
+说明：若没有此项存在两个问题，一、我们推到服务器的中文修订说明会变成乱码；二、我们从服务器拉下来的别人推上去的中文修订说明也会是乱码。
+
+
+
+
+
+
+
+
+
+
+
+
+改一下配置就可以基本解决：
+1、etc\gitconfig：
+[gui]
+  encoding = utf-8
+[i18n]
+ commitencoding = gbk
+quotepath = true    #不管用，无法解决git status中文件名乱码的问题
+[svn]
+ pathnameencoding = gbk
+
+说明：打开 Git 环境中的中文支持。pathnameencoding设置了文件路径的中文支持。
+
+2、etc\git-completion.bash：
+alias ls='ls --show-control-chars --color=auto'
+说明：使得在 Git Bash 中输入 ls 命令，可以正常显示中文文件名。
+
+3、etc\inputrc：
+
+set output-meta on
+set convert-meta off
+说明：使得在 Git Bash 中可以正常输入中文，比如中文的 commit log。
+
+4、etc\profile：
+
+export LESSCHARSET=iso8859 #或者utf-8、gbk
+说 明：$ git log 命令不像其它 vcs 一样，n 条 log 从头滚到底，它会恰当地停在第一页，按 space 键再往后翻页。这是通过将 log 送给 less 处理实现的。以上即是设置 less 的字符编码，使得 $ git log 可以正常显示中文。其实，它的值不一定要设置为 utf-8，比如 latin1 也可以……。还有个办法是 $ git –no-pager log，在选项里禁止分页，则无需设置上面的选项

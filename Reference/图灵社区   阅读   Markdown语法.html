@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://www.ituring.com.cn/article/details/775 -->
+<html lang="zh-CN"><script type="text/javascript" async="" src="./图灵社区   阅读   Markdown语法_files/ga.js"></script><script type="text/javascript" src="chrome-extension://khbjahpecnkenngkidhioicnfpakihgo/iframe_raw.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./图灵社区   阅读   Markdown语法_files/shares.php" charset="utf-8"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+	<title>图灵社区 : 阅读 : Markdown语法</title>
+
+	<link type="text/css" href="./图灵社区   阅读   Markdown语法_files/asset.axd" rel="stylesheet">
+
+<!--[if IE 6]>
+<link href="/Content/2012/css/ie6.min.css" rel="stylesheet">
+<![endif]-->  
+    	<script type="text/javascript" src="./图灵社区   阅读   Markdown语法_files/asset(1).axd"></script>
+
+
+ 
+<!--Le HTML5 shim, for IE6-8 support of HTML5 elements-->
+<!--[if lt IE 9]>
+<script src="/Content/2012/js/html5.js"></script>
+<![endif]-->
+<!--[if IE 6]>
+<script src="/Content/2012/js/ie6.min.js"></script>
+<![endif]-->
+<!--Le fav and touch icons-->
+<link rel="shortcut icon" href="http://www.ituring.com.cn/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.ituring.com.cn/Content/2012/img/icon-touch-114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.ituring.com.cn/Content/2012/img/icon-touch-72.png">
+<link rel="apple-touch-icon-precomposed" href="http://www.ituring.com.cn/Content/2012/img/icon-touch-57.png">
+
+</head>
+<body class="nomsyh"><link href="./图灵社区   阅读   Markdown语法_files/jiathis_counter.css" rel="stylesheet" type="text/css"><script src="./图灵社区   阅读   Markdown语法_files/jiathis.php" charset="utf-8"></script><link href="./图灵社区   阅读   Markdown语法_files/jiathis_share.css" rel="stylesheet" type="text/css"><iframe style="position: absolute; opacity: 0; display: none; " frameborder="0"></iframe><div id="ckepop" style="position: absolute; z-index: 1000000000; top: 50%; left: 50%; overflow-x: auto; overflow-y: auto; display: none; "></div><div id="ckepop" style="position: absolute; z-index: 1000000000; display: none; overflow-x: auto; overflow-y: auto; "></div><iframe style="display: none; " frameborder="0" src="./图灵社区   阅读   Markdown语法_files/jiathis_utility.html"></iframe>
+	<div id="topnav"><div class="page">
+
+	    <ul id="usermenu">
+        <li>你好！ </li>
+
+        <li><a href="http://www.ituring.com.cn/account/logon">登录</a></li>
+        <li><a href="http://www.ituring.com.cn/account/register">注册</a></li>
+        <li><a href="http://www.ituring.com.cn/account/requestresetpassword">忘记密码</a></li>
+        <li><a href="http://www.ituring.com.cn/minibook/2">帮助</a></li>
+
+
+        
+    </ul>
+
+
+	</div></div>
+    <div class="page">
+        <div id="header">
+            <a href="http://www.ituring.com.cn/" id="title" title="图灵社区 首页">◁ 首页</a>
+
+            <div id="menucontainer">
+
+
+
+                <ul id="menu" class="article">
+                    <li><a class="book" href="http://www.ituring.com.cn/book">图 书</a></li>
+                    <li><a class="activity" href="http://www.ituring.com.cn/activity">活 动</a></li>
+                    <li><a class="article" href="http://www.ituring.com.cn/article">文 章</a></li>
+
+                    
+                    
+                    <li><a class="users" href="http://www.ituring.com.cn/users">会 员</a></li>
+
+                    <li><a class="write" href="http://www.ituring.com.cn/users/mywriting">写 作</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+        <div id="main" class="clearfix">
+        
+            
+
+
+<script type="text/javascript">
+
+    $(function () {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+
+</script>
+
+<div class="row">
+    <div class="span9">
+        <div id="question-header">
+            <h1>
+                <a href="http://www.ituring.com.cn/article/775">Markdown语法</a>
+            </h1>
+        </div>
+
+        <div class="row">
+            <div class="span1 votecell">
+                           
+<div id="votediv" class="vote">
+    
+<a data-ajax="true" data-ajax-mode="replace" data-ajax-update="#votediv" href="http://www.ituring.com.cn/article/vote/775">推荐</a>
+    <strong>4</strong>
+
+    <a data-ajax="true" data-ajax-mode="replace" data-ajax-update="#votediv" href="http://www.ituring.com.cn/article/vote/775?isFave=True">收藏</a>
+
+</div>
+
+
+
+
+            </div>
+            <div class="span8">
+                <div class="post-text">
+<p><a href="http://daringfireball.net/projects/markdown/syntax" target="_blank">原文地址</a> <a href="http://shukebeta.t.lava.cn/" target="_blank">shukebeta</a>翻译</p>
+
+<h2 id="overview">概述</h2>
+
+<h3 id="philosophy">哲学</h3>
+
+<p>Markdown 的目标是易读易写。</p>
+
+<p>Markdown强调可读性高于一切。一份Markdown格式的文档应该能直接以纯文本方式发布，而不致一眼看过去满眼都是标签和格式化指令。Markdown的语法确实受了几种现有的text转HTML过滤器影响－－包括 <a href="http://docutils.sourceforge.net/mirror/setext.html" target="_blank">Setext</a>, <a href="http://www.aaronsw.com/2002/atx/" target="_blank">atx</a>, <a href="http://textism.com/tools/textile/" target="_blank">Textile</a>, <a href="http://docutils.sourceforge.net/rst.html" target="_blank">reStructuredText</a>,<a href="http://www.triptico.com/software/grutatxt.html" target="_blank">Grutatext</a>, 和 <a href="http://ettext.taint.org/doc/" target="_blank">EtText</a> -- 其中对Markdown语法影响最大的单一来源是纯文本的Email格式。</p>
+
+<p>为实现这一目标，Markdown的语法几乎全部由标点符号构成，这些标点符号都是精心挑选而来，尽量做到能望文生义。如星号括着一个单词（Markdown中表示强调）看上去就像 *强调*。Markdown的列表看上去就像列表；Markdown的引文就象引文，和你使用email时的感觉一样。</p>
+
+<h3 id="html">内嵌HTML</h3>
+
+<p>Markdown的语法为“方便地在网上写作”这一目标而生。</p>
+
+<p>Markdown不是HTML替代品，也不是为了终接HTML。它的语法非常简单，只相当于HTML标签的一个非常非常小的子集。它并非是为了更容易输入HTML标签而创造一种新语法。在我看来，HTML标签已经够容易书写的了。Markdown的目标是让（在网上）让读文章、写文章、修改文章更容易。HTML是一种适合发表的格式；而Markdown是一种书写格式。正因如此，Markdown的格式化语法仅需解决用纯文本表达的问题。</p>
+
+<p>对Markdown语法无法支持的格式，你可以直接用HTML。你不需要事先声明或者使用什么定界符来告诉Markdown要写HTML了，你直接写就是了。</p>
+
+<p>唯一的限制是那些块级HTML元素 -- 如 <code>&lt;div&gt;</code>,<code>&lt;table&gt;</code>, <code>&lt;pre&gt;</code>, <code>&lt;p&gt;</code>等等 -- 必须使用空行与相邻内容分开，并且块元素的开始和结束标签之前不要留有空格或TAB。Markdown足够聪明不会添加额外的(也是不必要的)<code>&lt;p&gt;</code>标签包住这些块元素标签。</p>
+
+<p>下面这个例子，在一篇Markdown文章中添加了一个HTML表格：</p>
+
+<pre class="prettyprint"><code><span class="pun">这是一个普通的段落。</span><span class="pln">
+
+</span><span class="str">&lt;table&gt;</span><span class="pln">
+    </span><span class="str">&lt;tr&gt;</span><span class="pln">
+        </span><span class="str">&lt;td&gt;</span><span class="typ">Foo</span><span class="pun">&lt;</span><span class="str">/td&gt;
+    &lt;/</span><span class="pln">tr</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="pun">&lt;/</span><span class="pln">table</span><span class="pun">&gt;</span><span class="pln">
+
+</span><span class="pun">这是另一个普通的段落。</span></code></pre>
+
+<p>注意一点，不要在块级HTML元素内使用Markdown格式化命令，Markdown不会处理它们。比如你不要在一个HTML块中使用 <code>*emphasis*</code> 这样的Markdown格式化命令。</p>
+
+<p>行内HTML标签 -- 如 <code>&lt;span&gt;</code>, <code>&lt;cite&gt;</code>, 或 <code>&lt;del&gt;</code> -- 在一个Markdown段落里、列表中、或者标题中－－随便用。 如果需要，你甚至可以用HTML标签代替Markdown格式化命令。比方你可以直接用HTML标签 <code>&lt;a&gt;</code> 或 <code>&lt;img&gt;</code> 而不使用Markdown的链接和图片语法，随你的便。</p>
+
+<p>不同于这些块级HTML元素，在HTML行内元素内的Markdown语法标记会被正确处理。</p>
+
+<h3 id="autoescape">自动转换特殊字符</h3>
+
+<p>在HTML中，有两个字符需要特殊对待：<code>&lt;</code>和 <code>&amp;</code>。<code>&lt;</code>用于标签开始，<code>&amp;</code>用于标识HTML实体。如果打算把它们当成普通字符，你必须使用反引号转义它们，如<code>&lt;</code>和<code>&amp;</code>。</p>
+
+<p>对一些互联网作家来说，<code>&amp;</code>符号特别使人烦恼。如果你打算写'AT&amp;T'，你就得写 '<code>AT&amp;amp;T</code>'。甚至在URL中也得想着转义<code>&amp;</code>符号。比方你打算写：</p>
+
+<pre class="prettyprint"><code><span class="pln">http</span><span class="pun">:</span><span class="com">//images.google.com/images?num=30&amp;q=larry+bird</span></code></pre>
+
+<p>你就得在A标签中把<code>href</code>属性中的URL编码成：</p>
+
+<pre class="prettyprint"><code><span class="pln">http</span><span class="pun">:</span><span class="com">//images.google.com/images?num=30&amp;amp;q=larry+bird</span></code></pre>
+
+<p>不用说，这很容易忘。这往往是那些良构HTML站点中最容易出错的地方。</p>
+
+<p>在Markdown中，你尽管自然的使用这些字符，只需要关心那些必要的转义。如果使用在HTML实体中使用&amp;符号，它会保持不变；而在其它场合，它会转换成<code>&amp;</code>。</p>
+
+<p>所以，如果你打算在文章中书写版权符号，你可以这样写：</p>
+
+<pre class="prettyprint"><code><span class="pun">&amp;</span><span class="pln">copy</span><span class="pun">;</span></code></pre>
+
+<p>Markdown不会碰它。然而如果你书写</p>
+
+<pre class="prettyprint"><code><span class="pln">AT</span><span class="pun">&amp;</span><span class="pln">T</span></code></pre>
+
+<p>Markdown就会把它翻译成：</p>
+
+<pre class="prettyprint"><code><span class="pln">AT</span><span class="pun">&amp;</span><span class="pln">amp</span><span class="pun">;</span><span class="pln">T</span></code></pre>
+
+<p>类似的，既然Markdown支持内嵌HTML，如果你使用<code>&lt;</code>作为HTML标签定界符，Markdown就会把它们当成HTML标签定界符。可是如果你书写：</p>
+
+<pre class="prettyprint"><code><span class="lit">4</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln"> </span><span class="lit">5</span></code></pre>
+
+<p>Markdown就会把它翻译成：</p>
+
+<pre class="prettyprint"><code><span class="lit">4</span><span class="pln"> </span><span class="pun">&amp;</span><span class="pln">lt</span><span class="pun">;</span><span class="pln"> </span><span class="lit">5</span></code></pre>
+
+<p>然而，在Mardown代码行内标记和块级标记之中，<code>&lt;</code>和<code>&amp;</code><em>始终</em>会被自动编码。这使得在Markdown文件中书写HTML代码更容易.(相对于纯HTML。如果想在纯在纯HTML里贴一段HTML代码，那才是糟糕透顶，必须对代码中的每一个<code>&lt;</code>和<code>&amp;</code>都转义才成。)</p>
+
+<hr>
+
+<h2 id="block">块级元素</h2>
+
+<h3 id="p">段落和换行</h3>
+
+<p>一个段落由一行或多个相关文本行构成。段落之间用一个或多个空行分隔。（一个空行就是一个看上去什么也没有的行－－如果一行什么也没有或者只有空格和TAB都会被视为空行）正常的段落不要以空白或TAB字符开始。</p>
+
+<p>一行或多个相关文本行意味着Markdown支持“硬折行”。这一点与其它text转HTML的程序完全不同（包括Moveable Type的“Convert Line Breaks”选项），它们会将段落中的每一个换行符转换成<code>&lt;br /&gt;</code>标签。</p>
+
+<p>如果你<em>确实</em>需要使用Markdown插入一个<code>&lt;br /&gt;</code>换行符，只需要在每一行的末尾以两个或更多个空格符号结束，然后再打回车键。</p>
+
+<p>没错，在Markdown里生成一个<code>&lt;br /&gt;</code>稍稍有一点麻烦，但那种简单的“把每一个换行符都转换成<code>&lt;br /&gt;</code>规则”并不适用于Markdown。Markdown Email风格的 blockquoting 和 multi-paragraph list items更好用 -- 并且更美观 -- 在你用换行符对其格式化时。</p>
+
+<h3 id="header">标题</h3>
+
+<p>Markdown 支持两种风格的标题，<a href="http://docutils.sourceforge.net/mirror/setext.html" target="_blank">Setext</a> 和 <a href="http://www.aaronsw.com/2002/atx/" target="_blank">atx</a>.</p>
+
+<p>Setext-风格的一级标题下面一行使用等号符号，二级标题下面使用连字符符号，例如：</p>
+
+<pre class="prettyprint"><code><span class="pun">这是一个一级标题</span><span class="pln">
+</span><span class="pun">=============</span><span class="pln">
+
+</span><span class="pun">这是一个二级标题</span><span class="pln">
+</span><span class="pun">-------------</span></code></pre>
+
+<p>至少有一个<code>=</code>和<code>-</code>就能正常工作。</p>
+
+<p>Atx-风格的标题在每行的开头使用1－6个井号字符，分别对应标题级别1－6。例如：</p>
+
+<pre class="prettyprint"><code><span class="com"># 这是一级标题</span><span class="pln">
+
+</span><span class="com">## 这是二级标题</span><span class="pln">
+
+</span><span class="com">###### 这是六级标题</span></code></pre>
+
+<p>如果愿意, 你也可以 "结束" atx-风格的标题。这纯粹是美观考虑--如果你觉得这样会看上更舒服些的话。结束用的井号个数随便，不必与起始井号数量相同 (起始井号的数量决定标题级别)：</p>
+
+<pre class="prettyprint"><code><span class="com"># 这是一级标题 #</span><span class="pln">
+
+</span><span class="com">## 这是二级标题 ##</span><span class="pln">
+
+</span><span class="com">### 这是三级标题 ######</span></code></pre>
+
+<h3 id="blockquote">引用块</h3>
+
+<p>Markdown使用Email风格的 <code>&gt;</code> 字符引用块。如果你熟悉Email中的引用块，你就知道在Markdown中如何使用引用块。如果每一行你都使用硬换行并在行首放一个<code>&gt;</code>符号，看上去会很美观：</p>
+
+<pre class="prettyprint"><code><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">This</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> a blockquote </span><span class="kwd">with</span><span class="pln"> two paragraphs</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Lorem</span><span class="pln"> ipsum dolor sit amet</span><span class="pun">,</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> consectetuer adipiscing elit</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Aliquam</span><span class="pln"> hendrerit mi posuere lectus</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">Vestibulum</span><span class="pln"> enim wisi</span><span class="pun">,</span><span class="pln"> viverra nec</span><span class="pun">,</span><span class="pln"> fringilla </span><span class="kwd">in</span><span class="pun">,</span><span class="pln"> laoreet vitae</span><span class="pun">,</span><span class="pln"> risus</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">Donec</span><span class="pln"> sit amet nisl</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Aliquam</span><span class="pln"> semper ipsum sit amet velit</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Suspendisse</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> id sem consectetuer libero luctus adipiscing</span><span class="pun">.</span></code></pre>
+
+<p>（如果觉得每行写一个<code>&gt;</code>太累，）Markdown允许你偷懒，你只需在硬换行段落的第一行之前放一个<code>&gt;</code>号:</p>
+
+<pre class="prettyprint"><code><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">This</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> a blockquote </span><span class="kwd">with</span><span class="pln"> two paragraphs</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Lorem</span><span class="pln"> ipsum dolor sit amet</span><span class="pun">,</span><span class="pln">
+consectetuer adipiscing elit</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Aliquam</span><span class="pln"> hendrerit mi posuere lectus</span><span class="pun">.</span><span class="pln">
+</span><span class="typ">Vestibulum</span><span class="pln"> enim wisi</span><span class="pun">,</span><span class="pln"> viverra nec</span><span class="pun">,</span><span class="pln"> fringilla </span><span class="kwd">in</span><span class="pun">,</span><span class="pln"> laoreet vitae</span><span class="pun">,</span><span class="pln"> risus</span><span class="pun">.</span><span class="pln">
+
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">Donec</span><span class="pln"> sit amet nisl</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Aliquam</span><span class="pln"> semper ipsum sit amet velit</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Suspendisse</span><span class="pln">
+id sem consectetuer libero luctus adipiscing</span><span class="pun">.</span></code></pre>
+
+<p>只需要多加一个<code>&gt;</code>，就得到嵌套的引用块(即引用块中的引用块):</p>
+
+<pre class="prettyprint"><code><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">This</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> the first level of quoting</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">This</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> nested blockquote</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">Back</span><span class="pln"> to the first level</span><span class="pun">.</span></code></pre>
+
+<p>引用块中可包含其它Markdown元素，如标题、列表和代码块：</p>
+
+<pre class="prettyprint"><code><span class="pun">&gt;</span><span class="pln"> </span><span class="com">## This is a header.</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">1.</span><span class="pln">   </span><span class="typ">This</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> the first list item</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">2.</span><span class="pln">   </span><span class="typ">This</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> the second list item</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln">
+</span><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">Here</span><span class="str">'s some example code:
+&gt;
+&gt;     return shell_exec("echo $input | $markdown_script");</span></code></pre>
+
+<p>是个象样的文本编辑器都能实现Email风格的引用。比如在BBEdit里，你就可以选中一些文字之后从Text菜单里选择引用级别。</p>
+
+<h3 id="list">列表</h3>
+
+<p>Markdown 支持有序列表和无序列表</p>
+
+<p>无序列表可使用星号、加号和连字符（这几个符号是等价的，你喜欢哪个就用哪个）作为列表标记：</p>
+
+<pre class="prettyprint"><code><span class="pun">*</span><span class="pln">   </span><span class="typ">Red</span><span class="pln">
+</span><span class="pun">*</span><span class="pln">   </span><span class="typ">Green</span><span class="pln">
+</span><span class="pun">*</span><span class="pln">   </span><span class="typ">Blue</span></code></pre>
+
+<p>等同于：</p>
+
+<pre class="prettyprint"><code><span class="pun">+</span><span class="pln">   </span><span class="typ">Red</span><span class="pln">
+</span><span class="pun">+</span><span class="pln">   </span><span class="typ">Green</span><span class="pln">
+</span><span class="pun">+</span><span class="pln">   </span><span class="typ">Blue</span></code></pre>
+
+<p>也等同于：</p>
+
+<pre class="prettyprint"><code><span class="pun">-</span><span class="pln">   </span><span class="typ">Red</span><span class="pln">
+</span><span class="pun">-</span><span class="pln">   </span><span class="typ">Green</span><span class="pln">
+</span><span class="pun">-</span><span class="pln">   </span><span class="typ">Blue</span></code></pre>
+
+<p>有序列表则使用数字加英文句点：</p>
+
+<pre class="prettyprint"><code><span class="lit">1.</span><span class="pln">  </span><span class="typ">Bird</span><span class="pln">
+</span><span class="lit">2.</span><span class="pln">  </span><span class="typ">McHale</span><span class="pln">
+</span><span class="lit">3.</span><span class="pln">  </span><span class="typ">Parish</span></code></pre>
+
+<p>有一点需要注意，你在列表中输入的标记数字并不会反映到Markdown输出的HTML之中。上面这个列表Markdown会输出为：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;ol&gt;</span><span class="pln">
+</span><span class="tag">&lt;li&gt;</span><span class="pln">Bird</span><span class="tag">&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;li&gt;</span><span class="pln">McHale</span><span class="tag">&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;li&gt;</span><span class="pln">Parish</span><span class="tag">&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;/ol&gt;</span></code></pre>
+
+<p>即使你写成下面这样：</p>
+
+<pre class="prettyprint"><code><span class="lit">1.</span><span class="pln">  </span><span class="typ">Bird</span><span class="pln">
+</span><span class="lit">1.</span><span class="pln">  </span><span class="typ">McHale</span><span class="pln">
+</span><span class="lit">1.</span><span class="pln">  </span><span class="typ">Parish</span></code></pre>
+
+<p>甚至这样：</p>
+
+<pre class="prettyprint"><code><span class="lit">3.</span><span class="pln"> </span><span class="typ">Bird</span><span class="pln">
+</span><span class="lit">1.</span><span class="pln"> </span><span class="typ">McHale</span><span class="pln">
+</span><span class="lit">8.</span><span class="pln"> </span><span class="typ">Parish</span></code></pre>
+
+<p>都会得到一模一样（但正确的）输出。要点在于，如果你愿意，就在你的Markdown有序列表里顺序使用数字（这样源代码里的顺序和生成的顺序会一致），如果你希望省点儿事，你就不用费心（去手工编号）。</p>
+
+<p>如果你打算偷懒，记住列表的第一行使用数字 1。以后Markdown或许会支持有序列表从任意数字开始（译者注：这儿和前面的例子有点矛盾，原文如此）。</p>
+
+<p>列表标记通常从左边界开始，至多可以有三个空格的缩进。列表标记之后至少要跟一个空格或TAB。</p>
+
+<p>为了让列表看起来美观，你可以使用TAB缩进列表项内容，使其整齐:</p>
+
+<pre class="prettyprint"><code><span class="pun">*</span><span class="pln">   </span><span class="typ">Lorem</span><span class="pln"> ipsum dolor sit amet</span><span class="pun">,</span><span class="pln"> consectetuer adipiscing elit</span><span class="pun">.</span><span class="pln">
+    </span><span class="typ">Aliquam</span><span class="pln"> hendrerit mi posuere lectus</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Vestibulum</span><span class="pln"> enim wisi</span><span class="pun">,</span><span class="pln">
+    viverra nec</span><span class="pun">,</span><span class="pln"> fringilla </span><span class="kwd">in</span><span class="pun">,</span><span class="pln"> laoreet vitae</span><span class="pun">,</span><span class="pln"> risus</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">*</span><span class="pln">   </span><span class="typ">Donec</span><span class="pln"> sit amet nisl</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Aliquam</span><span class="pln"> semper ipsum sit amet velit</span><span class="pun">.</span><span class="pln">
+    </span><span class="typ">Suspendisse</span><span class="pln"> id sem consectetuer libero luctus adipiscing</span><span class="pun">.</span></code></pre>
+
+<p>不过如果你很懒，下面这样也行：</p>
+
+<pre class="prettyprint"><code><span class="pun">*</span><span class="pln">   </span><span class="typ">Lorem</span><span class="pln"> ipsum dolor sit amet</span><span class="pun">,</span><span class="pln"> consectetuer adipiscing elit</span><span class="pun">.</span><span class="pln">
+</span><span class="typ">Aliquam</span><span class="pln"> hendrerit mi posuere lectus</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Vestibulum</span><span class="pln"> enim wisi</span><span class="pun">,</span><span class="pln">
+viverra nec</span><span class="pun">,</span><span class="pln"> fringilla </span><span class="kwd">in</span><span class="pun">,</span><span class="pln"> laoreet vitae</span><span class="pun">,</span><span class="pln"> risus</span><span class="pun">.</span><span class="pln">
+</span><span class="pun">*</span><span class="pln">   </span><span class="typ">Donec</span><span class="pln"> sit amet nisl</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Aliquam</span><span class="pln"> semper ipsum sit amet velit</span><span class="pun">.</span><span class="pln">
+</span><span class="typ">Suspendisse</span><span class="pln"> id sem consectetuer libero luctus adipiscing</span><span class="pun">.</span></code></pre>
+
+<p>如果列表项之间用空行分隔，Markdown就会在HTML输出中使用<code>&lt;p&gt;</code>标签包裹列表项。比如：</p>
+
+<pre class="prettyprint"><code><span class="pun">*</span><span class="pln">   </span><span class="typ">Bird</span><span class="pln">
+</span><span class="pun">*</span><span class="pln">   </span><span class="typ">Magic</span></code></pre>
+
+<p>生成的HTML如下：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;ul&gt;</span><span class="pln">
+</span><span class="tag">&lt;li&gt;</span><span class="pln">Bird</span><span class="tag">&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;li&gt;</span><span class="pln">Magic</span><span class="tag">&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;/ul&gt;</span></code></pre>
+
+<p>而这个：</p>
+
+<pre class="prettyprint"><code><span class="pun">*</span><span class="pln">   </span><span class="typ">Bird</span><span class="pln">
+
+</span><span class="pun">*</span><span class="pln">   </span><span class="typ">Magic</span></code></pre>
+
+<p>生成的HTML是这样：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;ul&gt;</span><span class="pln">
+</span><span class="tag">&lt;li&gt;&lt;p&gt;</span><span class="pln">Bird</span><span class="tag">&lt;/p&gt;&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;li&gt;&lt;p&gt;</span><span class="pln">Magic</span><span class="tag">&lt;/p&gt;&lt;/li&gt;</span><span class="pln">
+</span><span class="tag">&lt;/ul&gt;</span></code></pre>
+
+<p>列表项有可能由多个段落组成，列表项的每个后续段落必须缩进至少4个空格或者一个TAB：</p>
+
+<pre class="prettyprint"><code><span class="lit">1.</span><span class="pln">  </span><span class="typ">This</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> a list item </span><span class="kwd">with</span><span class="pln"> two paragraphs</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Lorem</span><span class="pln"> ipsum dolor
+    sit amet</span><span class="pun">,</span><span class="pln"> consectetuer adipiscing elit</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Aliquam</span><span class="pln"> hendrerit
+    mi posuere lectus</span><span class="pun">.</span><span class="pln">
+
+    </span><span class="typ">Vestibulum</span><span class="pln"> enim wisi</span><span class="pun">,</span><span class="pln"> viverra nec</span><span class="pun">,</span><span class="pln"> fringilla </span><span class="kwd">in</span><span class="pun">,</span><span class="pln"> laoreet
+    vitae</span><span class="pun">,</span><span class="pln"> risus</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Donec</span><span class="pln"> sit amet nisl</span><span class="pun">.</span><span class="pln"> </span><span class="typ">Aliquam</span><span class="pln"> semper ipsum
+    sit amet velit</span><span class="pun">.</span><span class="pln">
+
+</span><span class="lit">2.</span><span class="pln">  </span><span class="typ">Suspendisse</span><span class="pln"> id sem consectetuer libero luctus adipiscing</span><span class="pun">.</span></code></pre>
+
+<p>像上面这样缩进后续段落的每一行看起来很美观（但稍有些麻烦），如果你比较懒（和我一样），没问题，Markdown支持你：</p>
+
+<pre class="prettyprint"><code><span class="pun">*</span><span class="pln">   </span><span class="typ">This</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> a list item </span><span class="kwd">with</span><span class="pln"> two paragraphs</span><span class="pun">.</span><span class="pln">
+
+    </span><span class="typ">This</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> the second paragraph </span><span class="kwd">in</span><span class="pln"> the list item</span><span class="pun">.</span><span class="pln"> </span><span class="typ">You</span><span class="str">'re
+only required to indent the first line. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit.
+
+*   Another item in the same list.</span></code></pre>
+
+<p>要在列表项中使用引用，引用定界符 <code>&gt;</code> 需要缩进：</p>
+
+<pre class="prettyprint"><code><span class="pun">*</span><span class="pln">   A list item </span><span class="kwd">with</span><span class="pln"> a blockquote</span><span class="pun">:</span><span class="pln">
+
+    </span><span class="pun">&gt;</span><span class="pln"> </span><span class="typ">This</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> a blockquote
+    </span><span class="pun">&gt;</span><span class="pln"> inside a list item</span><span class="pun">.</span></code></pre>
+
+<p>要在列表项中使用代码块，代码块需要缩进<em>两次</em> -- 8个空格或者两个TAB：</p>
+
+<pre class="prettyprint"><code><span class="pun">*</span><span class="pln">   A list item </span><span class="kwd">with</span><span class="pln"> a code block</span><span class="pun">:</span><span class="pln">
+
+        </span><span class="pun">&lt;</span><span class="pln">code goes here</span><span class="pun">&gt;</span></code></pre>
+
+<p>有时候不小心会触发一个有序列表，比方在写类似下面这样的东西时：</p>
+
+<pre class="prettyprint"><code><span class="lit">1986.</span><span class="pln"> </span><span class="typ">What</span><span class="pln"> a great season</span><span class="pun">.</span></code></pre>
+
+<p>换言之， 以<em>数字＋句点＋空格</em> 序列起始的行会触发有序列表。为避免此情况，要对句点符号进行转义：</p>
+
+<pre class="prettyprint"><code><span class="lit">1986</span><span class="pln">\. </span><span class="typ">What</span><span class="pln"> a great season</span><span class="pun">.</span></code></pre>
+
+<h3 id="precode">代码块</h3>
+
+<p>我们经常在写有关编程或标记语言源代码时用到预格式化的代码块。不像格式化普通段落，代码块中的行会按字面进行解释。Markdown对代码块同时使用<code>&lt;pre&gt;</code> 和 <code>&lt;code&gt;</code>标签包裹：</p>
+
+<p>在Markdown中要生成一个代码块，只需要在代码块内容的每一行缩进至少四个空格或者一个TAB。比如：</p>
+
+<pre class="prettyprint"><code><span class="typ">This</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> a normal paragraph</span><span class="pun">:</span><span class="pln">
+
+    </span><span class="typ">This</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> a code block</span><span class="pun">.</span></code></pre>
+
+<p>Markdown会生成：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;p&gt;</span><span class="pln">This is a normal paragraph:</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;pre&gt;&lt;code&gt;</span><span class="pln">This is a code block.
+</span><span class="tag">&lt;/code&gt;&lt;/pre&gt;</span></code></pre>
+
+<p>Markdown会从生成的代码块中删除一级缩进 -- 4个空格或者1个TAB。看下面这个例子：</p>
+
+<pre class="prettyprint"><code><span class="typ">Here</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> an example of </span><span class="typ">AppleScript</span><span class="pun">:</span><span class="pln">
+
+    tell application </span><span class="str">"Foo"</span><span class="pln">
+        beep
+    </span><span class="kwd">end</span><span class="pln"> tell</span></code></pre>
+
+<p>会得到：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;p&gt;</span><span class="pln">Here is an example of AppleScript:</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;pre&gt;&lt;code&gt;</span><span class="pln">tell application "Foo"
+    beep
+end tell
+</span><span class="tag">&lt;/code&gt;&lt;/pre&gt;</span></code></pre>
+
+<p>代码块在遇到没有缩进的一行，或者文件末尾时自动结束。</p>
+
+<p>在代码块中，<code>&amp;</code>符号和<code>&lt;</code>、<code>&gt;</code>会自动转换成HTML实体。因此在Markdown中包含HTML源代码只是小菜一碟－－粘贴进去，缩进一下。剩下的脏活累活Markdown自会处理。看下面这个例子：</p>
+
+<pre class="prettyprint"><code><span class="pln">    </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"sample_footer"</span><span class="tag">&gt;</span><span class="pln">
+        &amp;copy; 2004 Foo Corporation
+    </span><span class="tag">&lt;/div&gt;</span></code></pre>
+
+<p>Markdown会生成：<br>
+    </p><pre class="prettyprint"><code><div class="sample_footer"><br><span class="pln">
+        </span><span class="pun">©</span><span class="pln"> </span><span class="lit">2004</span><span class="pln"> </span><span class="typ">Foo</span><span class="pln"> </span><span class="typ">Corporation</span><br><span class="pln">
+    </span></div><br><span class="pln">
+    </span></code></pre><p></p>
+
+<p>Markdown不会解析代码块中的Markdown标记。如代码块中的星号就是星号，失去了它原来的Markdown含义。这意味着你能够使用Markdown编写Markdown自己的语法教程。（就象这篇文章一样）。</p>
+
+<h3 id="hr">水平线</h3>
+
+<p>如果在一行里只放三个或更多个连字符，或星号或下划线，你就会得到一个水平线标记(<code>&lt;hr /&gt;</code>)。下面每一行都会得到一个水平线：</p>
+
+<pre class="prettyprint"><code><span class="pun">*</span><span class="pln"> </span><span class="pun">*</span><span class="pln"> </span><span class="pun">*</span><span class="pln">
+
+</span><span class="pun">***</span><span class="pln">
+
+</span><span class="pun">*****</span><span class="pln">
+
+</span><span class="pun">-</span><span class="pln"> </span><span class="pun">-</span><span class="pln"> </span><span class="pun">-</span><span class="pln">
+
+</span><span class="pun">---------------------------------------</span></code></pre>
+
+<hr>
+
+<h2 id="span">行内元素</h2>
+
+<h3 id="link">链接</h3>
+
+<p>Markdown 支持两种风格的链接： <em>行内链接</em> 和 <em>引用链接</em>.</p>
+
+<p>两种风格的链接，链接文本都放在中括号之内[square brackets]。</p>
+
+<p>要生成一个行内链接，在链接文本之后紧跟用一对小括号。小括号里放链接地址和<em>可选的</em>的链接title。如果提供链接title的话，链接title要用引号包起来。例如：</p>
+
+<pre class="prettyprint"><code><span class="pun">这是一个</span><span class="pln"> </span><span class="pun">[</span><span class="pln">an example</span><span class="pun">](</span><span class="pln">http</span><span class="pun">:</span><span class="com">//example.com/ "Title") 行内链接。</span><span class="pln">
+
+</span><span class="pun">[这个链接](</span><span class="pln">http</span><span class="pun">:</span><span class="com">//example.net/) 没有title属性。</span></code></pre>
+
+<p>Markdown会生成：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;p&gt;</span><span class="pln">This is </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://example.com/"</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"Title"</span><span class="tag">&gt;</span><span class="pln">
+an example</span><span class="tag">&lt;/a&gt;</span><span class="pln"> inline link.</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;p&gt;&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://example.net/"</span><span class="tag">&gt;</span><span class="pln">This link</span><span class="tag">&lt;/a&gt;</span><span class="pln"> has no
+title attribute.</span><span class="tag">&lt;/p&gt;</span></code></pre>
+
+<p>如果你打算引用一个本地资源或者同一站点的资源，可以使用相对路径：</p>
+
+<pre class="prettyprint"><code><span class="pun">如果想进一步了解我，请参阅我的</span><span class="pln"> </span><span class="pun">[关于我](/</span><span class="pln">about</span><span class="pun">/)</span><span class="pln"> </span><span class="pun">页。</span></code></pre>
+
+<p>引用风格的链接，在链接文本之后紧跟又一对中括号。这对中括号里放的是该链接的标识符（可以理解为别名）：</p>
+
+<pre class="prettyprint"><code><span class="pun">这是一个引用型链接</span><span class="pln"> </span><span class="pun">[示例][</span><span class="pln">id</span><span class="pun">]。</span></code></pre>
+
+<p>如果你嫌弃两对中括号过于亲密，Markdown允许你在两对中括号之间放一个空格：</p>
+
+<pre class="prettyprint"><code><span class="pun">这是一个引用型链接</span><span class="pln"> </span><span class="pun">[示例]</span><span class="pln"> </span><span class="pun">[</span><span class="pln">id</span><span class="pun">]。</span></code></pre>
+
+<p>然后，我们可以在文档的任意位置，像下面这样定义链接标识与链接的对应关系（一行一个链接）：</p>
+
+<pre class="prettyprint"><code><span class="pun">[</span><span class="pln">id</span><span class="pun">]:</span><span class="pln"> http</span><span class="pun">:</span><span class="com">//example.com/  "Optional Title Here"</span></code></pre>
+
+<p>即：</p>
+
+<ul>
+<li>中括号内放链接标识符(行前可选缩进，至多不超过三个空格)；</li>
+<li>之后紧跟一个冒号；</li>
+<li>再后面是一个或多个空格（TAB也行）；</li>
+<li>接下来是链接URL；</li>
+<li>最后面是可选的用双引号或单引号或小括号括起来的链接title。</li>
+</ul>
+
+<p>下面三种链接定义方式是等价的：</p>
+
+<pre class="prettyprint"><code><span class="pun">[</span><span class="pln">foo</span><span class="pun">]:</span><span class="pln"> http</span><span class="pun">:</span><span class="com">//example.com/  "Optional Title Here"</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">foo</span><span class="pun">]:</span><span class="pln"> http</span><span class="pun">:</span><span class="com">//example.com/  'Optional Title Here'</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">foo</span><span class="pun">]:</span><span class="pln"> http</span><span class="pun">:</span><span class="com">//example.com/  (Optional Title Here)</span></code></pre>
+
+<p><strong>注意：</strong> Markdown.pl 1.0.1 版本有一个已知的bug，用单引号作为链接title的定界符会出问题。</p>
+
+<p>至于链接URL，还支持使用一对可选的尖括号包裹起来：</p>
+
+<pre class="prettyprint"><code><span class="pun">[</span><span class="pln">id</span><span class="pun">]:</span><span class="pln"> </span><span class="pun">&lt;</span><span class="pln">http</span><span class="pun">:</span><span class="com">//example.com/&gt;  "Optional Title Here"</span></code></pre>
+
+<p>你也可以将链接的title属性放在下一行并使用额外的空格或TAB填充，这样较长的URL会比较美观：</p>
+
+<pre class="prettyprint"><code><span class="pun">[</span><span class="pln">id</span><span class="pun">]:</span><span class="pln"> http</span><span class="pun">:</span><span class="com">//example.com/longish/path/to/resource/here</span><span class="pln">
+    </span><span class="str">"Optional Title Here"</span></code></pre>
+
+<p>链妆定义仅供Markdown解析器使用。最终输出的HTML当中不会包含链接定义。</p>
+
+<p>链接标识符可以由字母、数字、空格和标点符号组成－－不区分大小写。下面这两个链接：</p>
+
+<pre class="prettyprint"><code><span class="pun">[</span><span class="pln">link text</span><span class="pun">][</span><span class="pln">a</span><span class="pun">]</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">link text</span><span class="pun">][</span><span class="pln">A</span><span class="pun">]</span></code></pre>
+
+<p>是等价的。</p>
+
+<p><em>隐式链接标识</em> 允许我们省略链接标识，这时链接文本本身就是链接标识。在链接文本之后加一对空的中括号－－例如，使用"Google"文本链接到google.com站点，可以这样写：</p>
+
+<pre class="prettyprint"><code><span class="pun">[</span><span class="typ">Google</span><span class="pun">][]</span></code></pre>
+
+<p>然后这样定义它的链接：</p>
+
+<pre class="prettyprint"><code><span class="pun">[</span><span class="typ">Google</span><span class="pun">]:</span><span class="pln"> http</span><span class="pun">:</span><span class="com">//google.com/</span></code></pre>
+
+<p>链接名字有可能包含空格，不过没问题，这种情况照样正常工作：</p>
+
+<pre class="prettyprint"><code><span class="typ">Visit</span><span class="pln"> </span><span class="pun">[</span><span class="typ">Daring</span><span class="pln"> </span><span class="typ">Fireball</span><span class="pun">][]</span><span class="pln"> </span><span class="kwd">for</span><span class="pln"> more information</span><span class="pun">.</span></code></pre>
+
+<p>然后这样定义这个链接：</p>
+
+<pre class="prettyprint"><code><span class="pun">[</span><span class="typ">Daring</span><span class="pln"> </span><span class="typ">Fireball</span><span class="pun">]:</span><span class="pln"> http</span><span class="pun">:</span><span class="com">//daringfireball.net/</span></code></pre>
+
+<p>链接定义可放于Markdown文档的任意位置。我建议把它们就近放到最先使用它的段落之后。不过如果你更喜欢放到文档末尾，当成某种形式的尾注，随你的便。</p>
+
+<p>下面是一些引用链接的例子：</p>
+
+<pre class="prettyprint"><code><span class="pln">I </span><span class="kwd">get</span><span class="pln"> </span><span class="lit">10</span><span class="pln"> times more traffic </span><span class="kwd">from</span><span class="pln"> </span><span class="pun">[</span><span class="typ">Google</span><span class="pun">]</span><span class="pln"> </span><span class="pun">[</span><span class="lit">11</span><span class="pun">]</span><span class="pln"> than </span><span class="kwd">from</span><span class="pln">
+</span><span class="pun">[</span><span class="typ">Yahoo</span><span class="pun">]</span><span class="pln"> </span><span class="pun">[</span><span class="lit">12</span><span class="pun">]</span><span class="pln"> </span><span class="kwd">or</span><span class="pln"> </span><span class="pun">[</span><span class="pln">MSN</span><span class="pun">]</span><span class="pln"> </span><span class="pun">[</span><span class="lit">13</span><span class="pun">].</span><span class="pln">
+
+  </span><span class="pun">[</span><span class="lit">1</span><span class="pun">]:</span><span class="pln"> http</span><span class="pun">:</span><span class="com">//google.com/        "Google"</span><span class="pln">
+  </span><span class="pun">[</span><span class="lit">2</span><span class="pun">]:</span><span class="pln"> http</span><span class="pun">:</span><span class="com">//search.yahoo.com/  "Yahoo Search"</span><span class="pln">
+  </span><span class="pun">[</span><span class="lit">3</span><span class="pun">]:</span><span class="pln"> http</span><span class="pun">:</span><span class="com">//search.msn.com/    "MSN Search"</span></code></pre>
+
+<p>换成隐式链接标识，也可以这么写：</p>
+
+<pre class="prettyprint"><code><span class="pln">I </span><span class="kwd">get</span><span class="pln"> </span><span class="lit">10</span><span class="pln"> times more traffic </span><span class="kwd">from</span><span class="pln"> </span><span class="pun">[</span><span class="typ">Google</span><span class="pun">][]</span><span class="pln"> than </span><span class="kwd">from</span><span class="pln">
+</span><span class="pun">[</span><span class="typ">Yahoo</span><span class="pun">][]</span><span class="pln"> </span><span class="kwd">or</span><span class="pln"> </span><span class="pun">[</span><span class="pln">MSN</span><span class="pun">][].</span><span class="pln">
+
+  </span><span class="pun">[</span><span class="pln">google</span><span class="pun">]:</span><span class="pln"> http</span><span class="pun">:</span><span class="com">//google.com/        "Google"</span><span class="pln">
+  </span><span class="pun">[</span><span class="pln">yahoo</span><span class="pun">]:</span><span class="pln">  http</span><span class="pun">:</span><span class="com">//search.yahoo.com/  "Yahoo Search"</span><span class="pln">
+  </span><span class="pun">[</span><span class="pln">msn</span><span class="pun">]:</span><span class="pln">    http</span><span class="pun">:</span><span class="com">//search.msn.com/    "MSN Search"</span></code></pre>
+
+<p>上面两种写法最终得到HTML输出是一样的：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;p&gt;</span><span class="pln">I get 10 times more traffic from </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://google.com/"</span><span class="pln">
+</span><span class="atn">title</span><span class="pun">=</span><span class="atv">"Google"</span><span class="tag">&gt;</span><span class="pln">Google</span><span class="tag">&lt;/a&gt;</span><span class="pln"> than from
+</span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://search.yahoo.com/"</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"Yahoo Search"</span><span class="tag">&gt;</span><span class="pln">Yahoo</span><span class="tag">&lt;/a&gt;</span><span class="pln">
+or </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://search.msn.com/"</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"MSN Search"</span><span class="tag">&gt;</span><span class="pln">MSN</span><span class="tag">&lt;/a&gt;</span><span class="pln">.</span><span class="tag">&lt;/p&gt;</span></code></pre>
+
+<p>作为比较，下面这个段落使用Markdown的行内链接风格编写：</p>
+
+<pre class="prettyprint"><code><span class="pln">I </span><span class="kwd">get</span><span class="pln"> </span><span class="lit">10</span><span class="pln"> times more traffic </span><span class="kwd">from</span><span class="pln"> </span><span class="pun">[</span><span class="typ">Google</span><span class="pun">](</span><span class="pln">http</span><span class="pun">:</span><span class="com">//google.com/ "Google")</span><span class="pln">
+than </span><span class="kwd">from</span><span class="pln"> </span><span class="pun">[</span><span class="typ">Yahoo</span><span class="pun">](</span><span class="pln">http</span><span class="pun">:</span><span class="com">//search.yahoo.com/ "Yahoo Search") or</span><span class="pln">
+</span><span class="pun">[</span><span class="pln">MSN</span><span class="pun">](</span><span class="pln">http</span><span class="pun">:</span><span class="com">//search.msn.com/ "MSN Search").</span></code></pre>
+
+<p>引用型链接的亮点并不在于它更容易书写，而在于引用型链接让你的文档可读性更好。看看上面的例子：使用引用型链接，段落本身仅81个字符；而使用行内链接的例子，是176个字符。最终输出的HTML则有234个字符。纯HTML中标记字符甚至超过了文本本身。</p>
+
+<p>使用Markdown的引用型链接，源文档更接近于最终的浏览器输出效果。再加上Markdown允许将标记有关的元数据移到段落之外，你尽管添加链接，而不必担心打断文件的故事情节。</p>
+
+<h3 id="em">强调</h3>
+
+<p>Markdown使用星号(<code>*</code>)和下划线(<code>_</code>)作为表示强调。用一个 <code>*</code> 或 <code>_</code> 包裹的文本会使用 HTML <code>&lt;em&gt;</code> 标签包裹; 用两个 <code>*</code> 或 <code>_</code>包裹的文本会使用HTML<code>&lt;strong&gt;</code> 标签包裹。如：</p>
+
+<pre class="prettyprint"><code><span class="pun">*</span><span class="pln">single asterisks</span><span class="pun">*</span><span class="pln">
+
+_single underscores_
+
+</span><span class="pun">**</span><span class="kwd">double</span><span class="pln"> asterisks</span><span class="pun">**</span><span class="pln">
+
+__double underscores__</span></code></pre>
+
+<p>将会输出为：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;em&gt;</span><span class="pln">single asterisks</span><span class="tag">&lt;/em&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;em&gt;</span><span class="pln">single underscores</span><span class="tag">&lt;/em&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;strong&gt;</span><span class="pln">double asterisks</span><span class="tag">&lt;/strong&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;strong&gt;</span><span class="pln">double underscores</span><span class="tag">&lt;/strong&gt;</span></code></pre>
+
+<p>你喜欢哪一种风格就用哪一种，唯一的限制就是起始字符与关闭字符必须一致。</p>
+
+<p>强调符号可用于一个单词的一部分：</p>
+
+<pre class="prettyprint"><code><span class="pln">un</span><span class="pun">*</span><span class="pln">frigging</span><span class="pun">*</span><span class="pln">believable</span></code></pre>
+
+<p>不过如果你用空格包裹单独的 <code>*</code> 或 <code>_</code>，它们就失去了强调的含义，而成为字面上的星号或下划线。</p>
+
+<p>如果不想让Markdown解释这两个元字符，就转义它：</p>
+
+<pre class="prettyprint"><code><span class="pln">\*</span><span class="kwd">this</span><span class="pln"> text </span><span class="kwd">is</span><span class="pln"> surrounded </span><span class="kwd">by</span><span class="pln"> literal asterisks\*</span></code></pre>
+
+<h3 id="code">代码</h3>
+
+<p>要在行内表示部分代码，用反引号(<code>`</code>)包住它。与预格式代码块不同和，行内代码用于段落之内。例如：</p>
+
+<pre class="prettyprint"><code><span class="typ">Use</span><span class="pln"> the </span><span class="str">`printf()`</span><span class="pln"> </span><span class="kwd">function</span><span class="pun">.</span></code></pre>
+
+<p>会生成：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;p&gt;</span><span class="pln">Use the </span><span class="tag">&lt;code&gt;</span><span class="pln">printf()</span><span class="tag">&lt;/code&gt;</span><span class="pln"> function.</span><span class="tag">&lt;/p&gt;</span></code></pre>
+
+<p>要在一个行内代码中使用反引号（<code>`</code>）本身，用多个反引号作为定界符包住它：</p>
+
+<pre class="prettyprint"><code><span class="str">``</span><span class="typ">There</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> a literal backtick </span><span class="pun">(</span><span class="str">`) here.``</span></code></pre>
+
+<p>这样就会得到：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;p&gt;&lt;code&gt;</span><span class="pln">There is a literal backtick (`) here.</span><span class="tag">&lt;/code&gt;&lt;/p&gt;</span></code></pre>
+
+<p>包住行内代码的反引号定界符可以包括空格－－即在起始反引号之后，结束反引号之前可以有一个空格。这使得我们能够在行内代码的开始或结束处使用反引号：</p>
+
+<pre class="prettyprint"><code><span class="pln">A single backtick </span><span class="kwd">in</span><span class="pln"> a code span</span><span class="pun">:</span><span class="pln"> </span><span class="str">``</span><span class="pln"> </span><span class="str">` ``
+
+A backtick-delimited string in a code span: `` `</span><span class="pln">foo</span><span class="str">` ``</span></code></pre>
+
+<p>会生成：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;p&gt;</span><span class="pln">A single backtick in a code span: </span><span class="tag">&lt;code&gt;</span><span class="pln">`</span><span class="tag">&lt;/code&gt;&lt;/p&gt;</span><span class="pln">
+
+</span><span class="tag">&lt;p&gt;</span><span class="pln">A backtick-delimited string in a code span: </span><span class="tag">&lt;code&gt;</span><span class="pln">`foo`</span><span class="tag">&lt;/code&gt;&lt;/p&gt;</span></code></pre>
+
+<p>在行内代码中，<code>&amp;</code>和<code>&lt;</code>和<code>&gt;</code>会自动编码为HTML实体，以方便包含HTML标签。Markdown会把下面这行：</p>
+
+<pre class="prettyprint"><code><span class="typ">Please</span><span class="pln"> don</span><span class="str">'t use any `&lt;blink&gt;` tags.</span></code></pre>
+
+<p>转换为：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;p&gt;</span><span class="pln">Please don't use any </span><span class="tag">&lt;code&gt;&lt;blink&gt;&lt;/code&gt;</span><span class="pln"> tags.</span><span class="tag">&lt;/p&gt;</span></code></pre>
+
+<p>你也可以这样写：</p>
+
+<pre class="prettyprint"><code><span class="str">`&amp;#8212;`</span><span class="pln"> </span><span class="kwd">is</span><span class="pln"> the </span><span class="kwd">decimal</span><span class="pun">-</span><span class="pln">encoded equivalent of </span><span class="str">`&amp;mdash;`</span><span class="pun">.</span></code></pre>
+
+<p>会得到：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;p&gt;&lt;code&gt;</span><span class="pln">&amp;#8212;</span><span class="tag">&lt;/code&gt;</span><span class="pln"> is the decimal-encoded
+equivalent of </span><span class="tag">&lt;code&gt;</span><span class="pln">&amp;mdash;</span><span class="tag">&lt;/code&gt;</span><span class="pln">.</span><span class="tag">&lt;/p&gt;</span></code></pre>
+
+<h3 id="img">图片</h3>
+
+<p>必须承认，要以“自然的”语法把一个图片放到一个纯文本文档之中，确实是一个挑战。</p>
+
+<p>Markdown使用了类似链接语法来表示图片，同样有两种风格：<em>行内图片</em>和<em>引用图片</em>。</p>
+
+<p>行内图片语法示例：</p>
+
+<pre class="prettyprint"><code><span class="pun">![</span><span class="typ">Alt</span><span class="pln"> text</span><span class="pun">](/</span><span class="pln">path</span><span class="pun">/</span><span class="pln">to</span><span class="pun">/</span><span class="pln">img</span><span class="pun">.</span><span class="pln">jpg</span><span class="pun">)</span><span class="pln">
+
+</span><span class="pun">![</span><span class="typ">Alt</span><span class="pln"> text</span><span class="pun">](/</span><span class="pln">path</span><span class="pun">/</span><span class="pln">to</span><span class="pun">/</span><span class="pln">img</span><span class="pun">.</span><span class="pln">jpg </span><span class="str">"Optional title"</span><span class="pun">)</span></code></pre>
+
+<p>即：</p>
+
+<ul>
+<li>一个感叹号<code>!</code>开头；</li>
+<li>其后紧跟一对中括号，中括号内存放图片的alt`属性；</li>
+<li>其后紧跟一对小括号，小括号内存放图片的URL或路径，及可选的用双引号或单引号或小括号括起来的图片<code>title</code></li>
+</ul>
+
+<p>引用图片语法如下：</p>
+
+<pre class="prettyprint"><code><span class="pun">![</span><span class="typ">Alt</span><span class="pln"> text</span><span class="pun">][</span><span class="pln">id</span><span class="pun">]</span></code></pre>
+
+<p>这里 "id" 是图片引用标识。图片引用定义的语法与链接定义完全相同：</p>
+
+<pre class="prettyprint"><code><span class="pun">[</span><span class="pln">id</span><span class="pun">]:</span><span class="pln"> url</span><span class="pun">/</span><span class="pln">to</span><span class="pun">/</span><span class="pln">image  </span><span class="str">"Optional title attribute"</span></code></pre>
+
+<p>在写这篇文章时，Markdown还没有语法指定图片的大小，如果这一点对你特别重要，你可以直接使用<code>&lt;img&gt;</code>标签。</p>
+
+<hr>
+
+<h2 id="misc">杂七杂八</h2>
+
+<h3 id="autolink">自动链接</h3>
+
+<p>Markdown提供了一种快捷方式"自动地"定义链接和Email地址：直接用一对尖括号把URL或Email地址包住。这表示链接文本就是URL本身，Email文本就是Email本身。这样你就得到了一个可点击的链接，如：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;http</span><span class="pln">:</span><span class="pun">//</span><span class="atn">example</span><span class="pln">.</span><span class="atn">com</span><span class="tag">/&gt;</span></code></pre>
+
+<p>Markdown会将它转换为：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"http://example.com/"</span><span class="tag">&gt;</span><span class="pln">http://example.com/</span><span class="tag">&lt;/a&gt;</span></code></pre>
+
+<p>自动Email地址工作方式相似，只有一点不同。Markdown自动的用一些十进制和十六进制数字表示你的Email，以防止遭遇垃圾邮件袭击。 例如：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;address</span><span class="pln">@</span><span class="atn">example</span><span class="pln">.</span><span class="atn">com</span><span class="tag">&gt;</span></code></pre>
+
+<p>会被转换为：</p>
+
+<pre class="prettyprint"><code><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"&amp;#x6D;&amp;#x61;i&amp;#x6C;&amp;#x74;&amp;#x6F;:&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;
+&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;
+&amp;#109;"</span><span class="tag">&gt;</span><span class="pln">&amp;#x61;&amp;#x64;&amp;#x64;&amp;#x72;&amp;#x65;&amp;#115;&amp;#115;&amp;#64;&amp;#101;&amp;#120;&amp;#x61;
+&amp;#109;&amp;#x70;&amp;#x6C;e&amp;#x2E;&amp;#99;&amp;#111;&amp;#109;</span><span class="tag">&lt;/a&gt;</span></code></pre>
+
+<p>浏览器会将它渲染为一个可点击的链接，并正确显示 "address@example.com"。</p>
+
+<p>(这种实体编码的小方法可以骗过一些收集邮件地址的机器人，不过它确实无法骗过所有的机器人。有总比没有强，聊胜于无。能阻止一点就阻止一点好了。)</p>
+
+<h3 id="backslash">反斜线转义</h3>
+
+<p>Markdown允许你使用反斜线转义那些Markdown元字符，让它们失去原有的“魔力”。举个例子，如果你确实想用星号包住一个词组（而不是想得到<code>&lt;em&gt;</code>标签），就可以在星号之前使用反斜线将其转义。即：</p>
+
+<pre class="prettyprint"><code><span class="pln">\*literal asterisks\*</span></code></pre>
+
+<p>Markdown中，以下字符支持使用反斜线转义：</p>
+
+<pre class="prettyprint"><code><span class="pln">\   </span><span class="pun">反斜线</span><span class="pln">
+</span><span class="str">`   反引号
+*   星号
+_   下划线
+{}  大括号
+[]  中括号
+()  小括号
+#   井号
++   加号
+-   减号（连字符）
+.   句点
+!   感叹号</span></code></pre>
+                </div>
+                <div class="post-taglist">
+                         <a class="post-tag" href="http://www.ituring.com.cn/article/tagged/214" tagid="214">markdown</a>
+                    <!-- JiaThis Button BEGIN -->
+                    <div id="ckepop"><span class="jiathis_txt"></span><a class="jiathis_button_tsina" title="分享到新浪微博"><span class="jiathis_txt jtico jtico_tsina"></span></a><a class="jiathis_button_douban" title="分享到豆瓣"><span class="jiathis_txt jtico jtico_douban"></span></a><a class="jiathis_button_tqq" title="分享到腾讯微博"><span class="jiathis_txt jtico jtico_tqq"></span></a><a class="jiathis_button_linkedin" title="分享到LinkedIn"><span class="jiathis_txt jtico jtico_linkedin"></span></a><a href="http://www.jiathis.com/share?uid=891559" target="_blank" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis"></a><a class="jiathis_counter_style"><span class="jiathis_button_expanded jiathis_counter jiathis_bubble_style" id="jiathis_counter_30" title="累计分享4次">4</span></a></div>
+                    <!-- JiaThis Button END -->
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="span9">
+                <div class="well">
+
+                    <div class="btn-admins pull-right">
+
+
+
+
+
+                    </div>
+                    <div class="user-info clearfix">
+                         <a href="http://www.ituring.com.cn/users/4985">
+                             <img class="avatar show-user-card" userid="4985" src="./图灵社区   阅读   Markdown语法_files/4985">shukebeta
+                         </a> <br>
+                         <span class="status-date">发表于 2011-12-21 15:39
+                         </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a name="firstcomment"></a>
+
+        <div id="CommentList">
+            
+    <div class="subheader">
+        <h1>
+            评论</h1>
+        <div id="tabs">
+            <a class="" data-ajax="true" data-ajax-mode="replace" data-ajax-update="#CommentList" href="http://www.ituring.com.cn/articlecomment/index/775?sort=newest">时间</a>
+            <a class="youarehere" data-ajax="true" data-ajax-mode="replace" data-ajax-update="#CommentList" href="http://www.ituring.com.cn/articlecomment/index/775?sort=vote">推荐</a>
+        </div>
+    </div>
+
+
+    <div class="row reply-item" id="comment-2336">
+    <div class="firstcomment">
+        <div class="span1 votecell">
+                       
+<div id="votediv2336" class="vote">
+    
+<a data-ajax="true" data-ajax-mode="replace" data-ajax-update="#votediv2336" href="http://www.ituring.com.cn/ArticleComment/vote/2336">推荐</a>
+    <strong>0</strong>
+
+</div>
+
+
+
+        </div>
+        <div class="span8 postcell">
+            <div class="post-text">
+            好详细！翻译不错。
+            </div>
+            <div class="user-info clearfix pull-right user-comment">
+                <img class="avatar show-user-card" userid="7163" src="./图灵社区   阅读   Markdown语法_files/7163" width="32" height="32"><a class="show-user-card" href="http://www.ituring.com.cn/users/7163" userid="7163">Python发烧友</a><br>
+                <span class="status-date"> 02-16 10:36 </span>
+            </div>
+
+            <div class="replies" id="replies-2336">
+            </div>
+            <div class="btn-replies">
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <div class="row reply-item" id="comment-2215">
+    <div>
+        <div class="span1 votecell">
+                       
+<div id="votediv2215" class="vote">
+    
+<a data-ajax="true" data-ajax-mode="replace" data-ajax-update="#votediv2215" href="http://www.ituring.com.cn/ArticleComment/vote/2215">推荐</a>
+    <strong>0</strong>
+
+</div>
+
+
+
+        </div>
+        <div class="span8 postcell">
+            <div class="post-text">
+            markdown里面比较麻烦的事情是绘制表格~~有什么好的解决方案么？
+            </div>
+            <div class="user-info clearfix pull-right user-comment">
+                <img class="avatar show-user-card" userid="84785" src="./图灵社区   阅读   Markdown语法_files/84785" width="32" height="32"><a class="show-user-card" href="http://www.ituring.com.cn/users/84785" userid="84785">陈钢</a><br>
+                <span class="status-date"> 02-12 15:17 </span>
+            </div>
+
+            <div class="replies" id="replies-2215">
+
+        <div id="reply-3830">
+        <div class="reply">
+            <span class="comment-copy">php markdown extra 提供了一种增强型的markdown语法，支持用很简单快捷的方式画出表格。如果你用PHP,后端可以考虑用PHP markdown extra。http://michelf.com/projects/php-markdown/extra/</span> –&nbsp;
+            <a class="show-user-card" userid="4985" href="http://www.ituring.com.cn/users/info/4985">shukebeta</a>
+            <span class="status-date">02-15 06:30</span>
+        </div>
+        </div>
+        <div id="reply-3967">
+        <div class="reply">
+            <span class="comment-copy">我是用来写一些简单的文档。为了方便输出，选用了markdown，但表格却比较麻烦。</span> –&nbsp;
+            <a class="show-user-card" userid="84785" href="http://www.ituring.com.cn/users/info/84785">陈钢</a>
+            <span class="status-date">02-20 09:03</span>
+        </div>
+        </div>            </div>
+            <div class="btn-replies">
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <div class="row reply-item" id="comment-1265">
+    <div>
+        <div class="span1 votecell">
+                       
+<div id="votediv1265" class="vote">
+    
+<a data-ajax="true" data-ajax-mode="replace" data-ajax-update="#votediv1265" href="http://www.ituring.com.cn/ArticleComment/vote/1265">推荐</a>
+    <strong>0</strong>
+
+</div>
+
+
+
+        </div>
+        <div class="span8 postcell">
+            <div class="post-text">
+            对于俺这种不看HTML源码就难受的Web开发者而言，Markdown语法实在让人抓狂，嘿嘿
+<br>
+<br>推荐阅读《偶得新玩具——通用文档转换器Pandoc》（http://www.ituring.com.cn/article/details/680）
+<br>及其它两篇与 pandoc 标签相关的文章。
+            </div>
+            <div class="user-info clearfix pull-right user-comment">
+                <img class="avatar show-user-card" userid="2898" src="./图灵社区   阅读   Markdown语法_files/2898" width="32" height="32"><a class="show-user-card" href="http://www.ituring.com.cn/users/2898" userid="2898">高翌翔</a><br>
+                <span class="status-date"> 2011-12-21 23:15 </span>
+            </div>
+
+            <div class="replies" id="replies-1265">
+            </div>
+            <div class="btn-replies">
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <div class="row reply-item" id="comment-1263">
+    <div>
+        <div class="span1 votecell">
+                       
+<div id="votediv1263" class="vote">
+    
+<a data-ajax="true" data-ajax-mode="replace" data-ajax-update="#votediv1263" href="http://www.ituring.com.cn/ArticleComment/vote/1263">推荐</a>
+    <strong>0</strong>
+
+</div>
+
+
+
+        </div>
+        <div class="span8 postcell">
+            <div class="post-text">
+            感谢shukebeta的辛勤翻译，收藏了。
+<br>个人认为这篇的译法更贴近我们的用语。“重译”是有价值的。
+            </div>
+            <div class="user-info clearfix pull-right user-comment">
+                <img class="avatar show-user-card" userid="82062" src="./图灵社区   阅读   Markdown语法_files/82062" width="32" height="32"><a class="show-user-card" href="http://www.ituring.com.cn/users/82062" userid="82062">何逸勤</a><br>
+                <span class="status-date"> 2011-12-21 22:49 </span>
+            </div>
+
+            <div class="replies" id="replies-1263">
+            </div>
+            <div class="btn-replies">
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <div class="row reply-item" id="comment-1258">
+    <div>
+        <div class="span1 votecell">
+                       
+<div id="votediv1258" class="vote">
+    
+<a data-ajax="true" data-ajax-mode="replace" data-ajax-update="#votediv1258" href="http://www.ituring.com.cn/ArticleComment/vote/1258">推荐</a>
+    <strong>0</strong>
+
+</div>
+
+
+
+        </div>
+        <div class="span8 postcell">
+            <div class="post-text">
+            之前markdown.tw网站也翻译过这篇：http://www.ituring.com.cn/article/504，您可以看看。
+            </div>
+            <div class="user-info clearfix pull-right user-comment">
+                <img class="avatar show-user-card" userid="82554" src="./图灵社区   阅读   Markdown语法_files/82554" width="32" height="32"><a class="show-user-card" href="http://www.ituring.com.cn/users/82554" userid="82554">hi_jeanne小杨</a><br>
+                <span class="status-date"> 2011-12-21 15:47 </span>
+            </div>
+
+            <div class="replies" id="replies-1258">
+
+        <div id="reply-2575">
+        <div class="reply">
+            <span class="comment-copy">唉呀，事前没搜，重复劳动了。差不多四个小时呢。多谢老兄！ </span> –&nbsp;
+            <a class="show-user-card" userid="4985" href="http://www.ituring.com.cn/users/info/4985">shukebeta</a>
+            <span class="status-date">2011-12-21 16:53</span>
+        </div>
+        </div>
+        <div id="reply-2576">
+        <div class="reply">
+            <span class="comment-copy">翻译了一遍，对于markdown的用法肯定印象深刻。</span> –&nbsp;
+            <a class="show-user-card" userid="82554" href="http://www.ituring.com.cn/users/info/82554">hi_jeanne小杨</a>
+            <span class="status-date">2011-12-21 17:17</span>
+        </div>
+        </div>            </div>
+            <div class="btn-replies">
+            </div>
+        </div>
+    </div>
+    </div>
+    <hr>
+
+
+        <h3>我要评论</h3>
+
+    <div id="CommentForm">
+        
+    <div id="logon-div">
+    
+
+
+
+<form action="http://www.ituring.com.cn/account/_logon/775?Length=7" class="well form-inline" data-ajax="true" data-ajax-failure="onLogonFail" data-ajax-success="onLogonSuccess" id="form0" method="post"><legend>需要登录后才能发言</legend>
+<input data-val="true" data-val-required="请填写用户名" id="UserName" name="UserName" type="text" value="">     
+<input data-val="true" data-val-required="请填写密码" id="Password" name="Password" type="password">     
+<input data-val="true" data-val-required="The 记住我 field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true"><input name="RememberMe" type="hidden" value="false">     
+<label for="RememberMe">记住我</label>     
+    <input type="submit" value=" 登录 " class="btn btn-primary">
+</form>
+
+
+
+        <script type="text/javascript">
+
+            function onLogonSuccess() {
+                 $.get("/articlecomment/add/775?isErrata=False", function (data) {
+                    $("#CommentForm").html(data);
+                    $.get("/account/_logonpartial", function(logdata) {
+                        $("#logindisplay").html(logdata);
+                    });
+                });
+            }
+
+            function onLogonFail(jqXHR) {
+                $("#logon-div").html(jqXHR.responseText);
+            }  
+
+        </script>
+
+
+    </div>
+
+    </div>
+
+
+
+<div id="reply-form" class="hide">
+
+<form action="http://www.ituring.com.cn/reply/add" data-ajax="true" data-ajax-begin="window.disableCalmer" data-ajax-failure="onReplyFailure" data-ajax-mode="after" data-ajax-success="onReplySuccess" data-ajax-update="#placeholder" id="form1" method="post">        <input type="hidden" name="">
+        <textarea name="body" style="width: 95%">        </textarea>
+        <br>
+<input type="submit" value=" 提交 " class="btn btn-primary calmer"> <input type="button" id="cancel" value=" 取消 " class="btn"> <span id="reply-error" style="color: #c33"></span>
+</form>
+</div>
+
+<script type="text/javascript">
+
+    function onReplySuccess() {
+        $(".add-reply").parent().show();
+        $("#reply-form").hide();
+        window.enableCalmer();
+    }
+
+    function onReplyFailure(jqXHR) {
+        $("#reply-error").text(jqXHR.responseText);
+        window.enableCalmer();
+    }
+
+
+    $(function () {
+
+        $("#cancel").click(function () {
+            $("#reply-form").hide();
+            $(".add-reply").parent().show();
+        });
+
+        $(".add-reply").click(function () {
+            var replyForm = $("#reply-form");
+            replyForm.find("form").attr("data-ajax-update", "#replies-" + $(this).attr("target-id"))
+            replyForm.find("input[type=hidden]").attr("name", $(this).attr("target-name"));
+            replyForm.find("input[type=hidden]").val($(this).attr("target-id"));
+            replyForm.find("textarea").val("");
+
+            replyForm.show().appendTo($("#reply-form-" + $(this).attr("target-id")));
+            $("#reply-error").text("");
+
+            $(this).parent().hide();
+            return false;
+        });
+
+    });
+</script>
+
+        </div>
+
+
+    </div>
+    <div class="span3 side-right">
+
+        <div class="module">
+<form action="http://www.ituring.com.cn/Article" method="post">            <div class="input-append">
+            <input class="span2" id="keyword" name="keyword" type="text" value=""><input type="submit" class="btn" value="搜索">
+            </div>
+</form>        </div>
+
+
+
+                         
+
+                         
+
+
+    <div id="related-tags" class="module">
+        <h4 id="h-related-tags">
+            本文标签</h4>
+
+             <a class="post-tag" href="http://www.ituring.com.cn/article/tagged/214" tagid="214">markdown</a>
+            <span class="item-multiplier">×&nbsp;10</span>
+            <br>
+
+    </div>
+
+
+
+
+
+    <div class="module">
+        <h4 id="h-related-tags">
+            推荐会员</h4>
+            <a href="http://www.ituring.com.cn/users/47">
+                <img class="side-avatar show-user-card" userid="47" src="./图灵社区   阅读   Markdown语法_files/47" width="32" height="32">
+            </a>
+            <a href="http://www.ituring.com.cn/users/82062">
+                <img class="side-avatar show-user-card" userid="82062" src="./图灵社区   阅读   Markdown语法_files/82062" width="32" height="32">
+            </a>
+            <a href="http://www.ituring.com.cn/users/70">
+                <img class="side-avatar show-user-card" userid="70" src="./图灵社区   阅读   Markdown语法_files/70" width="32" height="32">
+            </a>
+            <a href="http://www.ituring.com.cn/users/83306">
+                <img class="side-avatar show-user-card" userid="83306" src="./图灵社区   阅读   Markdown语法_files/83306" width="32" height="32">
+            </a>
+        <div style="clear:both"></div>
+    </div>
+
+    <div class="module">
+        <h4 id="h-related-tags">
+            相关标签</h4>
+
+
+
+    </div>
+
+
+
+    </div>
+</div>
+
+        </div>
+        
+    </div>
+    <div id="footer">
+      <div class="container">
+        <p>
+          © 2005-2012 北京图灵文化发展有限公司, All Rights Reserved.<br>地址: 北京市朝阳区北苑路13号院1号楼领地OFFICE C座603室 100107<br>
+          电话: 010-51095181 51095182 51095183　传真: 010-52086950　E-mail: contact@turingbook.com<br>
+          京ICP备11039595号
+        </p>
+      </div>
+    </div>
+        <div id="popup"><div class="user-card" id="tagcard"></div><p class="corner"></p></div>
+            
+        
+
+</body></html>

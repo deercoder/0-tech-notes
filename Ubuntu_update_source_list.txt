@@ -1,0 +1,48 @@
+Ubuntu 11.04 update source backup
+
+
+deb http://mirrors.shlug.org/ubuntu/ natty main universe restricted multiverse 
+deb-src http://mirrors.shlug.org/ubuntu/ natty main universe restricted multiverse 
+deb http://mirrors.shlug.org/ubuntu/ natty-security universe main multiverse restricted 
+deb-src http://mirrors.shlug.org/ubuntu/ natty-security universe main multiverse restricted 
+deb http://mirrors.shlug.org/ubuntu/ natty-updates universe main multiverse restricted 
+deb http://mirrors.shlug.org/ubuntu/ natty-proposed universe main multiverse restricted 
+deb-src http://mirrors.shlug.org/ubuntu/ natty-proposed universe main multiverse restricted 
+deb http://mirrors.shlug.org/ubuntu/ natty-backports universe main multiverse restricted 
+deb-src http://mirrors.shlug.org/ubuntu/ natty-backports universe main multiverse restricted 
+deb-src http://mirrors.shlug.org/ubuntu/ natty-updates universe main multiverse restricted
+
+
+#Ubuntu 11.04 tw
+
+deb http://tw.archive.Ubuntu.com/ubuntu/ natty main universe restricted multiverse
+deb-src http://tw.archive.Ubuntu.com/ubuntu/ natty main universe restricted multiverse
+deb http://tw.archive.Ubuntu.com/ubuntu/ natty-security universe main multiverse restricted
+deb-src http://tw.archive.Ubuntu.com/ubuntu/ natty-security universe main multiverse restricted
+deb http://tw.archive.Ubuntu.com/ubuntu/ natty-updates universe main multiverse restricted
+deb-src http://tw.archive.Ubuntu.com/ubuntu/ natty-updates universe main multiverse restricted
+
+
+deb-src http://cn.archive.Ubuntu.com/ubuntu/ natty multiverse
+deb http://cn.archive.Ubuntu.com/ubuntu/ natty-updates multiverse
+deb-src http://cn.archive.Ubuntu.com/ubuntu/ natty-updates multiverse
+deb http://security.Ubuntu.com/ubuntu natty-security main restricted
+deb-src http://security.Ubuntu.com/ubuntu natty-security main restricted
+deb http://security.Ubuntu.com/ubuntu natty-security universe
+deb-src http://security.Ubuntu.com/ubuntu natty-security universe
+deb http://security.Ubuntu.com/ubuntu natty-security multiverse
+deb-src http://security.Ubuntu.com/ubuntu natty-security multiverse
+deb http://archive.canonical.com/Ubuntu natty partner
+deb-src http://archive.canonical.com/Ubuntu natty partner
+
+
+deb http://archive.ubuntu.com/ubuntu natty main universe restricted multiverse
+deb-src http://archive.ubuntu.com/ubuntu natty main universe restricted multiverse #Added by software-properties
+deb http://security.ubuntu.com/ubuntu/ natty-security universe main multiverse restricted
+deb-src http://security.ubuntu.com/ubuntu/ natty-security universe main multiverse restricted
+deb http://archive.ubuntu.com/ubuntu natty-updates universe main multiverse restricted
+deb-src http://archive.ubuntu.com/ubuntu natty-updates universe main multiverse restricted
+deb http://archive.ubuntu.com/ubuntu natty-proposed universe main multiverse restricted
+deb-src http://archive.ubuntu.com/ubuntu natty-proposed universe main multiverse restricted
+deb http://archive.ubuntu.com/ubuntu natty-backports universe main multiverse restricted
+deb-src http://archive.ubuntu.com/ubuntu natty-backports universe main multiverse restricted
