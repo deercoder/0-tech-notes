@@ -1,0 +1,72 @@
+Su, Yu-Chuan, Tzu-Hsuan Chiu, Yan-Ying Chen, Chun-Yen Yeh, and Winston H. Hsu. "Enabling low bitrate mobile visual recognition: a performance versus bandwidth evaluation." In Proceedings of the 21st ACM international conference on Multimedia, pp. 73-82. ACM, 2013.
+
+
+
+recognition bitrate: amount of transmition data under same recognition performance.
+thumbnail image is most competitive for low bitrate recognition.
+
+New strategy: combining single local feature signature with thumbnail image could greatly reduce bitrate with only little performance degrade. [contribution]
+
+Why low bitrate?
+    1) low bitrate lead to faster response time.
+    2) lower network usage, reducing the power consumption.
+
+user statisfaction(for the system)
+    1. response time
+    2. accuracy
+    3. power consumption
+    4. scale of semantic space
+
+the paper mainly comparing some transferring strategy performance:
+    1. features with moderate dimension
+    2. compressed feature
+    3. feature signature
+    4. scaled-down images
+conclusion: scaled-down images(=thumbnail) best, because it contains multfeatures at once.
+
+Main contribution:
+    1. recognition bitrate concept (original)
+    2. comparisons of various strategy
+    3. combing multi features. -> reduce bitrate
+    4. New strategy: single feature + thumbnail.
+
+
+Setup:
+1) selecting features.
+    global features(color histogram, color moment, gabor, lbp, phog);
+    loca feature(DoG, HA, Dense, SURF`)
+
+2) Descriptor.
+    LLC(Bag of Words)
+    VLAD(Fisher Vector)
+
+3) Feature extraction
+    different scale(1/2, 1/4, 1/8, 1/16).
+
+4) classifier
+    SVM linear kernel.
+
+5) compression factor of images
+    image scaling, openCV.
+
+Multi feature fusion !!!(IMPORTANT)
+1. compare global, local feature's accuracy(---> single feature is not enough, even though local feature's accuracy is high)
+2. add feature fusion's accuracy, comparing, then conclude that multiple feature fusion has a significant improvement for the accuracy, fusion is important.
+(see Figure4, 5, 6, 7)
+
+Image scaling reduces bitrate
+1. performance of global feature not degrade after image scaling down.
+2. performance of LOCAL feature degrade more comparing with global feature.
+3. feature fusion(multiple feature) still outperformance the single feature.
+COMMENT:
+this part seems the performance vs bitrate, but actually I cannot find the comparison, I just noticed all the global vs local, single feature vs multiple feature(feature fusion), then according the graph under the same Byte, we could see fusion is better
+
+
+Feature signature achives lower bitrate
+    1. compare fusion, local feature's bitrate, even though multiple local feature is best, taking the computing ability of mobile device, using thumbnail+signature is a good way to reduce power consumption.
+
+
+future work:
+1. focus(currently dimension of feature and data transmittion), will extend to real system and photos taken by the mobile device.
+2. recognition bitrate of videos.
+3. better signature generation.
