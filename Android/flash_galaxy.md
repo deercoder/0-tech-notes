@@ -5,9 +5,9 @@ How to flash Android system for Galaxy Nexus?
 This is for flashing the galaxy nexus phone:
 
 - download CM recovery.img and flash it by using 
-```
-fastboot flash recovery CM-xxx-recovery.img
-```
+	```
+	fastboot flash recovery CM-xxx-recovery.img
+	```
 
 - download the CM11 `*.zip` files and put in the sdcard
 
