@@ -4,9 +4,7 @@ To-do-List(time-tracking)
 ### **Time-Tracking**
 
 - **Sept 2014 ~ Feb 2015**: abandoned
-
 - **Mar 2015**: finish lshort and know basic editing in LaTeX
-
 - **April 2015**: markdown review and practice
 
 --------
@@ -21,28 +19,13 @@ Long time no coding and using many useful tools about programming, even though w
 ### **Content**
 
 - Survey about OpenCV, OpenIMAJ and Vlfeat's performance, algorithm types.(emergently,Sept.25th, **abandoned**)
-
 - Operating System(Highest with most prevailing books) (**abandoned**)
-
-
 - Algorithms(Highest with the implementation of current learning chapters)
-
-
 - Markdown: (**In progress**)
-
-
 - Tmux:
-
-
 - LaTeX: March 2015 (**80%**)
-
-
 - Vim:
-
-
 - Python: March 2015 (**40%**)
-
-
 - Mac operation&development.
 
 
