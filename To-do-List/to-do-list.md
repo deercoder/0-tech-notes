@@ -7,14 +7,10 @@ To-do-List(time-tracking)
 - **Mar 2015**: finish lshort and know basic editing in LaTeX
 - **April 2015**: markdown review and practice
 
---------
-
 ### **Target**
 
 Long time no coding and using many useful tools about programming, even though we're currently focusing on researching, I decide to spare some time to pick up my programming skills and tools, so this repo records my plans about this long time self-study.
 
-
---------
 
 ### **Content**
 
