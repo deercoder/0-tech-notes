@@ -1,30 +1,26 @@
-To-do-List
+To-do-List(time-tracking)
 ==========
 
-Time tracking of to-do-list
-
---------
-
-#### **Time-Tracking**
+### **Time-Tracking**
 
 - **Sept 2014 ~ Feb 2015**: abandoned
 
-- **Mar 2015**: finish lshort and know basic editing in LaTex
+- **Mar 2015**: finish lshort and know basic editing in LaTeX
 
-- **April 2015**: mark down review and practice
+- **April 2015**: markdown review and practice
 
 --------
 
-#### **Target**
+### **Target**
 
 Long time no coding and using many useful tools about programming, even though we're currently focusing on researching, I decide to spare some time to pick up my programming skills and tools, so this repo records my plans about this long time self-study.
 
 
 --------
 
-#### **Content**
+### **Content**
 
-Survey about OpenCV, OpenIMAJ and Vlfeat's performance, algorithm types.(emergently,Sept.25th, abandoned)
+Survey about OpenCV, OpenIMAJ and Vlfeat's performance, algorithm types.(emergently,Sept.25th, **abandoned**)
 
 - Operating System(Highest with most prevailing books) (**abandoned**)
 
