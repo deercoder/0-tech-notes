@@ -7,16 +7,19 @@ Time tracking of to-do-list
 
 #### **Time-Tracking**
 
-**Sept 2014 ~ Feb 2015**: abandoned
+- **Sept 2014 ~ Feb 2015**: abandoned
 
-Mar 2015: finish lshort and know basic editing in LaTex
+- Mar 2015: finish lshort and know basic editing in LaTex
 
+
+--------
 
 #### **Target**
 
 Long time no coding and using many useful tools about programming, even though we're currently focusing on researching, I decide to spare some time to pick up my programming skills and tools, so this repo records my plans about this long time self-study.
 
 
+--------
 
 #### **Content**
 
@@ -46,4 +49,3 @@ Survey about OpenCV, OpenIMAJ and Vlfeat's performance, algorithm types.(emergen
 - Mac operation&development.
 
 
------- to be continue....
