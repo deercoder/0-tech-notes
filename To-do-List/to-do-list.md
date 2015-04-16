@@ -20,7 +20,7 @@ Long time no coding and using many useful tools about programming, even though w
 
 ### **Content**
 
-Survey about OpenCV, OpenIMAJ and Vlfeat's performance, algorithm types.(emergently,Sept.25th, **abandoned**)
+- Survey about OpenCV, OpenIMAJ and Vlfeat's performance, algorithm types.(emergently,Sept.25th, **abandoned**)
 
 - Operating System(Highest with most prevailing books) (**abandoned**)
 
