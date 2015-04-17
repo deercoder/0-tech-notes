@@ -3,7 +3,7 @@ Some tips about Linux
 
 1) find  *.c or *.h which contains the keyword 'rotateX'
 
-	```find -name *.[ch] | xargs grep -E "rotateX"```
+	find -name *.[ch] | xargs grep -E "rotateX"
 
 2) difference of `.bashrc` or `.bashprofile`
 
@@ -14,8 +14,11 @@ Some tips about Linux
 ~/.bashprofile: current user's bash profile
 ```
 
-## Note: must add gid and uid to get write access. no matter what option you set
+3) mount server's file system automatically
+
+```
 sudo mount -t smbfs -o rw,username=liuchang,password=,uid=liuchang,gid=liuchang //172.31.130.100/liuchang ~/100-server/
 sudo mount -t smbfs -o rw,username=liuchang,password=,uid=liuchang,gid=liuchang //172.31.130.130/liuchang ~/130-server/
 sudo mount -t smbfs -o rw,username=liuchang,password=,uid=liuchang,gid=liuchang //172.31.130.100/liuchang/mini ~/mini/
-### The above part is used to mount automatically
+```
+## Note: must add gid and uid to get write access. no matter what option you set
