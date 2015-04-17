@@ -21,4 +21,4 @@ sudo mount -t smbfs -o rw,username=liuchang,password=,uid=liuchang,gid=liuchang 
 sudo mount -t smbfs -o rw,username=liuchang,password=,uid=liuchang,gid=liuchang //172.31.130.130/liuchang ~/130-server/
 sudo mount -t smbfs -o rw,username=liuchang,password=,uid=liuchang,gid=liuchang //172.31.130.100/liuchang/mini ~/mini/
 ```
-## Note: must add gid and uid to get write access. no matter what option you set
+**Note**: Must add gid and uid to get write access, no matter what option you set
