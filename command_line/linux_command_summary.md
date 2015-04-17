@@ -1,11 +1,18 @@
-1. �ں�׺��Ϊ.c����.h���ļ��в�������ΪrotateX�ĺ�����
-find -name *.[ch] | xargs grep -E "rotateX"
+Some tips about Linux
+====
 
-2. bashrc �� bashprofile������
-/etc/bash.bashrc: ��ǰ�û���Ч
-/etc/bashprofile: �����û���Ч
-~/.bashrc: ��ǰ�û���Ч(ÿ���½�һ��bashִ��һ��)
-~/.bashprofile: �����û���Ч(ϵͳ������ʱ��ִ��һ��)
+1) find  *.c or *.h which contains the keyword 'rotateX'
+
+	```find -name *.[ch] | xargs grep -E "rotateX"```
+
+2) difference of `.bashrc` or `.bashprofile`
+
+```
+/etc/bash.bashrc: system's bashrc when booted in
+/etc/bashprofile: system's bashprofile when booted in
+~/.bashrc: user's bash config when current user booted in
+~/.bashprofile: current user's bash profile
+```
 
 ## Note: must add gid and uid to get write access. no matter what option you set
 sudo mount -t smbfs -o rw,username=liuchang,password=,uid=liuchang,gid=liuchang //172.31.130.100/liuchang ~/100-server/
