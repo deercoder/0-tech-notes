@@ -17,8 +17,8 @@ Long time no coding and using many useful tools about programming, even though w
 - Survey about OpenCV, OpenIMAJ and Vlfeat's performance, algorithm types.(emergently,Sept.25th, **abandoned**)
 - Operating System(Highest with most prevailing books) (**abandoned**)
 - Algorithms(Highest with the implementation of current learning chapters)
-- Markdown: (**In progress**)
-- Tmux:
+- Markdown: April 2015(** 70% **)
+- Tmux: (**In progress**)
 - LaTeX: March 2015 (**80%**)
 - Vim:
 - Python: March 2015 (**40%**)
