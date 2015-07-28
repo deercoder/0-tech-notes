@@ -24,4 +24,6 @@ Long time no coding and using many useful tools about programming, even though w
 - Python: March 2015 (**40%**)
 - Mac operation&development.
 
+### **Summer**
 
+- Bash(**In Progress, July**)
