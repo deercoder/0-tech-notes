@@ -5,6 +5,18 @@ INSTALL
 
 This file describe how to install the zsh in short, mainly focus on how to configure it and what's the problem when using it.
 
+## INSTALL
+
+Use the refer [site](https://github.com/robbyrussell/oh-my-zsh/blob/master/README.markdown) to install the **zsh** for MacOS. We can just directly use `apt-get install zsh` to install under Ubuntu(but we can also the previous site to install it)
+
+
+NOTICE some file that are important:
+	
+	* `~/.zshrc`, this file is the user-configuration file to `zsh`, just like the `~/.bashrc`
+	* `~/.oh-my-zsh`, this file stores the extended themes/plugins for zsh which makes it more powerful
+
+
+
 ## Problem Solution
 
 1. Strange code showing
