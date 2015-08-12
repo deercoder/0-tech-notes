@@ -56,15 +56,13 @@ Basic command
 
 	Command                                     Description
 
-	tmux new-session                            Creates a new session without a name. Can be
-                                            	    shortened to tmux new or simply tmux.
+	`tmux new-session`:                         Creates a new session without a name.Can be shortened to tmux new or simply tmux.
 
-	tmux new -s development                     Creates a new session called “development.”
+	`tmux new -s development`                   Creates a new session called “development.”
 
-	tmux new -s development -n editor           Creates a session named “development” and
-	                                            names the first window “editor.”
+	`tmux new -s development -n editor`         Creates a session named “development” and names the first window “editor.”
 
-	tmux attach -t development                  Attaches to a session named “development.”
+	`tmux attach -t development`                Attaches to a session named “development.”
 
 ----------------------------------------------------------------------------------------------------------------
 
@@ -72,25 +70,23 @@ Basic command
 
 Command                                      Description
 
-PREFIX d                                    Detaches from the session, leaving the session running in the
-                                            background.
+`PREFIX d`                                    Detaches from the session, leaving the session running in the background.
 
-PREFIX :                                    Enters Command mode.
+`PREFIX :`                                    Enters Command mode.
 
-PREFIX c                                    Creates a new window from within an existing tmux session.
-                                            Shortcut for new-window.
+`PREFIX c`                                    Creates a new window from within an existing tmux session.  Shortcut for new-window.
 
-PREFIX 0 ... 9                              Selects windows by number.
+`PREFIX 0 ... 9`                              Selects windows by number.
 
-PREFIX w                                    Displays a selectable list of windows in the current session.
+`PREFIX w`                                    Displays a selectable list of windows in the current session.
 
-PREFIX ,                                    Displays a prompt to rename a window.
+`PREFIX ,`                                    Displays a prompt to rename a window.
 
-PREFIX &                                    Closes the current window after prompting for confirmation.
+`PREFIX &`                                    Closes the current window after prompting for confirmation.
 
-PREFIX %                                    Divides the current window in half vertically.
+`PREFIX %`                                    Divides the current window in half vertically.
 
-PREFIX "                                    Divides the current window in half horizontally.
+`PREFIX "`                                    Divides the current window in half horizontally.
 
 -----------------------------------------------------------------------------------------------------------------
 
@@ -98,19 +94,19 @@ PREFIX "                                    Divides the current window in half h
 
 Command                                      Description
 
-PREFIX o                                     Cycles through open panes.
+`PREFIX o`                                     Cycles through open panes.
 
-PREFIX q                                     Momentarily displays pane numbers in each pane.
+`PREFIX q`                                     Momentarily displays pane numbers in each pane.
 
-PREFIX x                                     Closes the current pane after prompting for confirmation.
+`PREFIX x`                                     Closes the current pane after prompting for confirmation.
 
-PREFIX SPACE                                 Cycles through the various pane layouts.
+`PREFIX SPACE`                                 Cycles through the various pane layouts.
 
 -----------------------------------------------------------------------------------------------------------------
 
 ## 复习命令：
 
-tmux new -s basic -n test -d : 创建一个名为basic的session，并在该session中创建窗口，名为test，然后detach掉。
+`tmux new -s basic -n test -d` : 创建一个名为basic的session，并在该session中创建窗口，名为test，然后detach掉。
 
 
 ##  配置Tmux
