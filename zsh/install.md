@@ -12,8 +12,8 @@ Use the refer [site](https://github.com/robbyrussell/oh-my-zsh/blob/master/READM
 
 NOTICE some file that are important:
 	
-	* `~/.zshrc`, this file is the user-configuration file to `zsh`, just like the `~/.bashrc`
-	* `~/.oh-my-zsh`, this file stores the extended themes/plugins for zsh which makes it more powerful
+* `~/.zshrc`, this file is the user-configuration file to `zsh`, just like the `~/.bashrc`
+* `~/.oh-my-zsh`, this file stores the extended themes/plugins for zsh which makes it more powerful
 
 
 
@@ -21,27 +21,27 @@ NOTICE some file that are important:
 
 1. Strange code showing
 
-In their github [wiki page](https://gist.github.com/agnoster/3712874), that shows we need to install powerline fonts for these special characters to show normally. According to my experience in Ubuntu and MacOS, it is necessary for both of them to install, but the difference is that:
+	In their github [wiki page](https://gist.github.com/agnoster/3712874), that shows we need to install powerline fonts for these special characters to show normally. According to my experience in Ubuntu and MacOS, it is necessary for both of them to install, but the difference is that:
 
 	* Ubuntu, it needs extra steps as [here](https://powerline.readthedocs.org/en/latest/installation/linux.html#font-installation) shows.
 	* MacOS, there is no extra commands needed using this github [repo](https://github.com/powerline/fonts) to install the font
 
-So the difference is that Ubuntu has to use the webpage to manually configure it, but MacOS we can just use the `INSTALL.sh` to install the font under the `/Library/XXX` path.
+	So the difference is that Ubuntu has to use the webpage to manually configure it, but MacOS we can just use the `INSTALL.sh` to install the font under the `/Library/XXX` path.
 
-After that, for **Ubuntu**, it should work; For **MacOS**, make it work by selecting the Terminal's profile and select the font as the `Ubuntu Mono Powerline` font, otherwise it's still not showing correctly.
+	After that, for **Ubuntu**, it should work; For **MacOS**, make it work by selecting the Terminal's profile and select the font as the `Ubuntu Mono Powerline` font, otherwise it's still not showing correctly.
 
 
 2. Hide the hostname
 
-In this problem, we want to hide some specific information like `User@localhost-T440s` information, even though in **Ubuntu** there is a lot of people saying that we can juse add the command `export DEFAULT_USER="chang"` or set directly this `DEFAULT_USER="chang"` in the file `~/.zshrc`, I still cannot make it work well. No matter I reboot or logout, it's still useless. I also tried `source ~/.zshrc` to make it work.
+	In this problem, we want to hide some specific information like `User@localhost-T440s` information, even though in **Ubuntu** there is a lot of people saying that we can juse add the command `export DEFAULT_USER="chang"` or set directly this `DEFAULT_USER="chang"` in the file `~/.zshrc`, I still cannot make it work well. No matter I reboot or logout, it's still useless. I also tried `source ~/.zshrc` to make it work.
 
-After googling some result I finally find it very effect to eliminate the area by deleting the character `%m` in `~/.oh-my-zsh/themes/agnoster.zsh.theme`, this is from the [site](http://stackoverflow.com/questions/28491458/zsh-agnoster-theme-showing-machine-name), like this figure ![img](./images/install_zsh.jpg)
+	After googling some result I finally find it very effect to eliminate the area by deleting the character `%m` in `~/.oh-my-zsh/themes/agnoster.zsh.theme`, this is from the [site](http://stackoverflow.com/questions/28491458/zsh-agnoster-theme-showing-machine-name), like this figure ![img](./images/install_zsh.jpg)
 
-So it works well now!
+	So it works well now!
 
 3. Color scheme
 
-It seems that the color for `agnoster` style is not so satisfying, especially the current directory color, that uses the color of **blue**. OMG, it looks so hurt to my eye, so I try to change the color by changing the theme file of `agnoster`, and it succeed, I plan to change it to `green` instead of `blue`, and it looks much better, we can also try `cyan` or other light color.
+	It seems that the color for `agnoster` style is not so satisfying, especially the current directory color, that uses the color of **blue**. OMG, it looks so hurt to my eye, so I try to change the color by changing the theme file of `agnoster`, and it succeed, I plan to change it to `green` instead of `blue`, and it looks much better, we can also try `cyan` or other light color.
 
 
 ## Additonal points
